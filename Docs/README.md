@@ -17,7 +17,7 @@ This might change in future, but in time of wirtting I plan to use:
 
 Diagram shows very high level architecture.
 
-[Diagram to be added]
+![HighLevelArchitecture](https://raw.githubusercontent.com/zalogatomek/CV/master/Docs/Diagrams/HighLevelArchitecture.png)
 
 Each element on a diagram is a separate framework or app. Two lines is a layer boundary. Elements in same layer are different implementation of same thing. Elements will be aslo splited on smaller sublayers.
 
