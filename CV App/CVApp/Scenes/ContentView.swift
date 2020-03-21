@@ -4,6 +4,8 @@
 
 import SwiftUI
 
+import CVDomain
+
 struct ContentView: View {
     var body: some View {
         Text("Hello, World!")

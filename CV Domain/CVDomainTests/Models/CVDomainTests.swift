@@ -1,11 +1,12 @@
 //
 //  Created by Tomasz Załoga on 21/03/2020.
 //  
+//
 
 import XCTest
-@testable import CV_App
+@testable import CVDomain
 
-class CV_AppTests: XCTestCase {
+class CVDomainTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
