@@ -1,6 +1,5 @@
 //
 //  Created by Tomasz Załoga on 21/03/2020.
-//  
 //
 
 #import <Foundation/Foundation.h>
