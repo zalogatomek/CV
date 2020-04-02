@@ -7,6 +7,8 @@ import SwiftUI
 import CVDomain
 
 struct ContentView: View {
+    var cv: CV?
+    
     var body: some View {
         Text("Hello, World!")
     }

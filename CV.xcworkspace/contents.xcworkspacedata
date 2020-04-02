@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "container:/Users/omek/Library/Mobile Documents/com~apple~CloudDocs/Developer/W&#x142;asne/CV/CV App/CVApp.xcodeproj">
+      location = "group:CVApp/CVApp.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:/Users/omek/Library/Mobile Documents/com~apple~CloudDocs/Developer/W&#x142;asne/CV/CV Domain/CVDomain.xcodeproj">
+      location = "group:CVDomain">
    </FileRef>
 </Workspace>

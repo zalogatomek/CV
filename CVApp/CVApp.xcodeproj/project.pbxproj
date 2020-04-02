@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A48119324366EE400E054DA /* CVDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 9A48119224366EE400E054DA /* CVDomain */; };
 		9A5CCF8424263251009006CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8324263251009006CD /* AppDelegate.swift */; };
 		9A5CCF8624263251009006CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8524263251009006CD /* SceneDelegate.swift */; };
 		9A5CCF8824263251009006CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8724263251009006CD /* ContentView.swift */; };
@@ -14,8 +15,6 @@
 		9A5CCF8D24263253009006CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8C24263253009006CD /* Preview Assets.xcassets */; };
 		9A5CCF9024263253009006CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8E24263253009006CD /* LaunchScreen.storyboard */; };
 		9A5CCF9B24263253009006CD /* CV_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF9A24263253009006CD /* CV_AppTests.swift */; };
-		9AAAC64824263AC900BAD4EC /* CVDomain.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAAC64724263AC900BAD4EC /* CVDomain.framework */; };
-		9AAAC64924263AC900BAD4EC /* CVDomain.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAAC64724263AC900BAD4EC /* CVDomain.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,21 +27,9 @@
 		};
 /* End PBXContainerItemProxy section */
 
-/* Begin PBXCopyFilesBuildPhase section */
-		9AAAC646242639E900BAD4EC /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				9AAAC64924263AC900BAD4EC /* CVDomain.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
+		9A48117D24366D5800E054DA /* CVDomain */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CVDomain; path = ../CVDomain; sourceTree = "<group>"; };
+		9A48117E24366DA500E054DA /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../CVDomain/Package.swift; sourceTree = "<group>"; };
 		9A5CCF8024263251009006CD /* CVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5CCF8324263251009006CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A5CCF8524263251009006CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AAAC64824263AC900BAD4EC /* CVDomain.framework in Frameworks */,
+				9A48119324366EE400E054DA /* CVDomain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +172,8 @@
 		9AAAC643242639E900BAD4EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A48117E24366DA500E054DA /* Package.swift */,
+				9A48117D24366D5800E054DA /* CVDomain */,
 				9AAAC64724263AC900BAD4EC /* CVDomain.framework */,
 			);
 			name = Frameworks;
@@ -200,13 +189,15 @@
 				9A5CCF7C24263251009006CD /* Sources */,
 				9A5CCF7D24263251009006CD /* Frameworks */,
 				9A5CCF7E24263251009006CD /* Resources */,
-				9AAAC646242639E900BAD4EC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = CVApp;
+			packageProductDependencies = (
+				9A48119224366EE400E054DA /* CVDomain */,
+			);
 			productName = "CV App";
 			productReference = 9A5CCF8024263251009006CD /* CVApp.app */;
 			productType = "com.apple.product-type.application";
@@ -558,6 +549,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A48119224366EE400E054DA /* CVDomain */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CVDomain;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9A5CCF7824263251009006CD /* Project object */;
 }
