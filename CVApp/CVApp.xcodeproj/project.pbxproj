@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A48119324366EE400E054DA /* CVDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 9A48119224366EE400E054DA /* CVDomain */; };
+		9A1D9A8624367DD60060BE29 /* CVStatic in Frameworks */ = {isa = PBXBuildFile; productRef = 9A1D9A8524367DD60060BE29 /* CVStatic */; };
+		9A1D9A8824367E540060BE29 /* CVDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 9A1D9A8724367E540060BE29 /* CVDomain */; };
 		9A5CCF8424263251009006CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8324263251009006CD /* AppDelegate.swift */; };
 		9A5CCF8624263251009006CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8524263251009006CD /* SceneDelegate.swift */; };
 		9A5CCF8824263251009006CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8724263251009006CD /* ContentView.swift */; };
@@ -28,8 +29,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9A48117D24366D5800E054DA /* CVDomain */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CVDomain; path = ../CVDomain; sourceTree = "<group>"; };
-		9A48117E24366DA500E054DA /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Package.swift; path = ../CVDomain/Package.swift; sourceTree = "<group>"; };
 		9A5CCF8024263251009006CD /* CVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5CCF8324263251009006CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A5CCF8524263251009006CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,7 +40,6 @@
 		9A5CCF9624263253009006CD /* CVAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5CCF9A24263253009006CD /* CV_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV_AppTests.swift; sourceTree = "<group>"; };
 		9A5CCF9C24263253009006CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9AAAC64724263AC900BAD4EC /* CVDomain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CVDomain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,7 +47,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A48119324366EE400E054DA /* CVDomain in Frameworks */,
+				9A1D9A8624367DD60060BE29 /* CVStatic in Frameworks */,
+				9A1D9A8824367E540060BE29 /* CVDomain in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,9 +171,6 @@
 		9AAAC643242639E900BAD4EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9A48117E24366DA500E054DA /* Package.swift */,
-				9A48117D24366D5800E054DA /* CVDomain */,
-				9AAAC64724263AC900BAD4EC /* CVDomain.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -196,7 +192,8 @@
 			);
 			name = CVApp;
 			packageProductDependencies = (
-				9A48119224366EE400E054DA /* CVDomain */,
+				9A1D9A8524367DD60060BE29 /* CVStatic */,
+				9A1D9A8724367E540060BE29 /* CVDomain */,
 			);
 			productName = "CV App";
 			productReference = 9A5CCF8024263251009006CD /* CVApp.app */;
@@ -551,7 +548,11 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9A48119224366EE400E054DA /* CVDomain */ = {
+		9A1D9A8524367DD60060BE29 /* CVStatic */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CVStatic;
+		};
+		9A1D9A8724367E540060BE29 /* CVDomain */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CVDomain;
 		};

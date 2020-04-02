@@ -4,18 +4,21 @@
 import PackageDescription
 
 let package = Package(
-    name: "CVDomain",
+    name: "CVStatic",
     products: [
         .library(
-            name: "CVDomain",
-            targets: ["CVDomain"]),
+            name: "CVStatic",
+            targets: ["CVStatic"]),
+    ],
+    dependencies: [
+        .package(path: "CVDomain")
     ],
     targets: [
         .target(
-            name: "CVDomain",
+            name: "CVStatic",
             dependencies: []),
         .testTarget(
-            name: "CVDomainTests",
-            dependencies: ["CVDomain"]),
+            name: "CVStaticTests",
+            dependencies: ["CVStatic"]),
     ]
 )

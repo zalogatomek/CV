@@ -5,5 +5,5 @@
 import Foundation
 
 public protocol CVRepository {
-    func cv() -> CV
+    func cv() -> CV?
 }
