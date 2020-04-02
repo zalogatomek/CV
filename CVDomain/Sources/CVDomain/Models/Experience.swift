@@ -5,7 +5,6 @@
 import Foundation
 
 public struct Experience {
-    
     public struct Responsibility: Value {
         public let value: String
         
