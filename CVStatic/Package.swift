@@ -16,9 +16,9 @@ let package = Package(
     targets: [
         .target(
             name: "CVStatic",
-            dependencies: []),
+            dependencies: ["CVDomain"]),
         .testTarget(
             name: "CVStaticTests",
-            dependencies: ["CVStatic"]),
+            dependencies: ["CVStatic", "CVDomain"]),
     ]
 )

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9A1D9A8624367DD60060BE29 /* CVStatic in Frameworks */ = {isa = PBXBuildFile; productRef = 9A1D9A8524367DD60060BE29 /* CVStatic */; };
-		9A1D9A8824367E540060BE29 /* CVDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 9A1D9A8724367E540060BE29 /* CVDomain */; };
+		9A4BD2B724389FD80049BE17 /* CVDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 9A4BD2B624389FD80049BE17 /* CVDomain */; };
+		9A4BD2B924389FDB0049BE17 /* CVStatic in Frameworks */ = {isa = PBXBuildFile; productRef = 9A4BD2B824389FDB0049BE17 /* CVStatic */; };
 		9A5CCF8424263251009006CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8324263251009006CD /* AppDelegate.swift */; };
 		9A5CCF8624263251009006CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8524263251009006CD /* SceneDelegate.swift */; };
 		9A5CCF8824263251009006CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8724263251009006CD /* ContentView.swift */; };
@@ -16,6 +16,7 @@
 		9A5CCF8D24263253009006CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8C24263253009006CD /* Preview Assets.xcassets */; };
 		9A5CCF9024263253009006CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8E24263253009006CD /* LaunchScreen.storyboard */; };
 		9A5CCF9B24263253009006CD /* CV_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF9A24263253009006CD /* CV_AppTests.swift */; };
+		9A717D5E243895B700AB3AD4 /* CVHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A717D5D243895B700AB3AD4 /* CVHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		9A5CCF9624263253009006CD /* CVAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5CCF9A24263253009006CD /* CV_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV_AppTests.swift; sourceTree = "<group>"; };
 		9A5CCF9C24263253009006CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A717D5D243895B700AB3AD4 /* CVHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,8 +49,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A1D9A8624367DD60060BE29 /* CVStatic in Frameworks */,
-				9A1D9A8824367E540060BE29 /* CVDomain in Frameworks */,
+				9A4BD2B724389FD80049BE17 /* CVDomain in Frameworks */,
+				9A4BD2B924389FDB0049BE17 /* CVStatic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +64,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A4BD2BC2438A3350049BE17 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9A5CCF7724263251009006CD = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +96,7 @@
 				9A5CCFA824263291009006CD /* Resources */,
 				9A5CCFA52426326E009006CD /* Main */,
 				9A5CCFA624263279009006CD /* Scenes */,
+				9A717D5B2438957D00AB3AD4 /* Views */,
 			);
 			path = CVApp;
 			sourceTree = "<group>";
@@ -168,6 +178,23 @@
 			path = Assets;
 			sourceTree = "<group>";
 		};
+		9A717D5B2438957D00AB3AD4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A4BD2BC2438A3350049BE17 /* Extensions */,
+				9A717D5C243895A000AB3AD4 /* CV */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A717D5C243895A000AB3AD4 /* CV */ = {
+			isa = PBXGroup;
+			children = (
+				9A717D5D243895B700AB3AD4 /* CVHeaderView.swift */,
+			);
+			path = CV;
+			sourceTree = "<group>";
+		};
 		9AAAC643242639E900BAD4EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -192,8 +219,8 @@
 			);
 			name = CVApp;
 			packageProductDependencies = (
-				9A1D9A8524367DD60060BE29 /* CVStatic */,
-				9A1D9A8724367E540060BE29 /* CVDomain */,
+				9A4BD2B624389FD80049BE17 /* CVDomain */,
+				9A4BD2B824389FDB0049BE17 /* CVStatic */,
 			);
 			productName = "CV App";
 			productReference = 9A5CCF8024263251009006CD /* CVApp.app */;
@@ -281,6 +308,7 @@
 			files = (
 				9A5CCF8424263251009006CD /* AppDelegate.swift in Sources */,
 				9A5CCF8624263251009006CD /* SceneDelegate.swift in Sources */,
+				9A717D5E243895B700AB3AD4 /* CVHeaderView.swift in Sources */,
 				9A5CCF8824263251009006CD /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -548,13 +576,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9A1D9A8524367DD60060BE29 /* CVStatic */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = CVStatic;
-		};
-		9A1D9A8724367E540060BE29 /* CVDomain */ = {
+		9A4BD2B624389FD80049BE17 /* CVDomain */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CVDomain;
+		};
+		9A4BD2B824389FDB0049BE17 /* CVStatic */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CVStatic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

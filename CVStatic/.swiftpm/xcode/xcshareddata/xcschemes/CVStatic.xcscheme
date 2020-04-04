@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9A5CCF7F24263251009006CD"
-               BuildableName = "CVApp.app"
-               BlueprintName = "CVApp-iOS"
-               ReferencedContainer = "container:CVApp-iOS.xcodeproj">
+               BlueprintIdentifier = "CVStatic"
+               BuildableName = "CVStatic"
+               BlueprintName = "CVStatic"
+               ReferencedContainer = "container:">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9A5CCF9524263253009006CD"
-               BuildableName = "CVAppTests.xctest"
-               BlueprintName = "CVAppTests"
-               ReferencedContainer = "container:CVApp.xcodeproj">
+               BlueprintIdentifier = "CVStaticTests"
+               BuildableName = "CVStaticTests"
+               BlueprintName = "CVStaticTests"
+               ReferencedContainer = "container:">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -50,25 +50,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9A5CCF7F24263251009006CD"
-            BuildableName = "CVApp.app"
-            BlueprintName = "CVApp"
-            ReferencedContainer = "container:CVApp.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9A5CCF7F24263251009006CD"
-            BuildableName = "CVApp.app"
-            BlueprintName = "CVApp-iOS"
-            ReferencedContainer = "container:CVApp-iOS.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -76,16 +57,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9A5CCF7F24263251009006CD"
-            BuildableName = "CVApp.app"
-            BlueprintName = "CVApp-iOS"
-            ReferencedContainer = "container:CVApp-iOS.xcodeproj">
+            BlueprintIdentifier = "CVStatic"
+            BuildableName = "CVStatic"
+            BlueprintName = "CVStatic"
+            ReferencedContainer = "container:">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
