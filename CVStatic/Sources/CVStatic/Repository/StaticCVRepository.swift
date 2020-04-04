@@ -5,11 +5,11 @@
 import Foundation
 import CVDomain
 
-public final class StaticCVRepository: CVRepository {
+final class StaticCVRepository: CVRepository {
     
     // MARK: - CVRepository
     
-    public func cv() -> CV? {
+    func cv() -> CV? {
         return CV(
             userData: userData(),
             education: education(),

@@ -5,9 +5,11 @@
 import SwiftUI
 
 import CVDomain
+// TODO: Use DI
+import CVStatic
 
 struct ContentView: View {
-    var cv: CV?
+    let cvUseCase: CVUseCase
     
     var body: some View {
         Text("Hello, World!")
@@ -16,6 +18,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        // TODO: Use DI
+        ContentView(cvUseCase: CVStaticFactory.createCvUseCase())
     }
 }
