@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		9A4BD2B724389FD80049BE17 /* CVDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 9A4BD2B624389FD80049BE17 /* CVDomain */; };
 		9A4BD2B924389FDB0049BE17 /* CVStatic in Frameworks */ = {isa = PBXBuildFile; productRef = 9A4BD2B824389FDB0049BE17 /* CVStatic */; };
+		9A4D606D2439EA11005F7F96 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D606C2439EA11005F7F96 /* CircleImage.swift */; };
+		9A4D60712439F383005F7F96 /* CVHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D60702439F383005F7F96 /* CVHeaderViewModel.swift */; };
 		9A5CCF8424263251009006CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8324263251009006CD /* AppDelegate.swift */; };
 		9A5CCF8624263251009006CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8524263251009006CD /* SceneDelegate.swift */; };
 		9A5CCF8824263251009006CD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8724263251009006CD /* ContentView.swift */; };
@@ -32,6 +34,8 @@
 /* Begin PBXFileReference section */
 		9A4D603C2439E49C005F7F96 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		9A4D603D2439E49C005F7F96 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		9A4D606C2439EA11005F7F96 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		9A4D60702439F383005F7F96 /* CVHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVHeaderViewModel.swift; sourceTree = "<group>"; };
 		9A5CCF8024263251009006CD /* CVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5CCF8324263251009006CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A5CCF8524263251009006CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,13 +70,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9A4BD2BC2438A3350049BE17 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		9A4D603B2439E49C005F7F96 /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +78,15 @@
 			);
 			name = SwiftLint;
 			path = ../SwiftLint;
+			sourceTree = "<group>";
+		};
+		9A4D606F2439F36A005F7F96 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				9A4D60702439F383005F7F96 /* CVHeaderViewModel.swift */,
+				9A717D5D243895B700AB3AD4 /* CVHeaderView.swift */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		9A5CCF7724263251009006CD = {
@@ -134,6 +140,7 @@
 		9A5CCFA624263279009006CD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				9A4D606F2439F36A005F7F96 /* Header */,
 				9A5CCF8724263251009006CD /* ContentView.swift */,
 			);
 			path = Scenes;
@@ -194,18 +201,9 @@
 		9A717D5B2438957D00AB3AD4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9A4BD2BC2438A3350049BE17 /* Extensions */,
-				9A717D5C243895A000AB3AD4 /* CV */,
+				9A4D606C2439EA11005F7F96 /* CircleImage.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		9A717D5C243895A000AB3AD4 /* CV */ = {
-			isa = PBXGroup;
-			children = (
-				9A717D5D243895B700AB3AD4 /* CVHeaderView.swift */,
-			);
-			path = CV;
 			sourceTree = "<group>";
 		};
 		9AAAC643242639E900BAD4EC /* Frameworks */ = {
@@ -345,6 +343,8 @@
 				9A5CCF8624263251009006CD /* SceneDelegate.swift in Sources */,
 				9A717D5E243895B700AB3AD4 /* CVHeaderView.swift in Sources */,
 				9A5CCF8824263251009006CD /* ContentView.swift in Sources */,
+				9A4D60712439F383005F7F96 /* CVHeaderViewModel.swift in Sources */,
+				9A4D606D2439EA11005F7F96 /* CircleImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
