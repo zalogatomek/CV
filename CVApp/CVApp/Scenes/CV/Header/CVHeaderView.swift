@@ -3,6 +3,7 @@
 //
 
 import SwiftUI
+import CVDomain
 
 struct CVHeaderView: View {
     let viewModel: CVHeaderViewModel
@@ -27,10 +28,12 @@ struct CVHeaderView: View {
 struct CVHeaderView_Previews: PreviewProvider {
     
     static var viewModel: CVHeaderViewModel {
-        CVHeaderViewModel(
-            name: "John Appleseed",
-            summary: "Hello, I'm John, and this is my CV",
-            imageName: "Avatar")
+        let userData = UserDataBuilder()
+            .set(firstName: "John")
+            .set(lastName: "Appleseed")
+            .set(summary: "Hi, I'm John Appleseed and this is my CV")
+            .build()
+        return CVHeaderViewModel(userData: userData!)
     }
     
     static var previews: some View {

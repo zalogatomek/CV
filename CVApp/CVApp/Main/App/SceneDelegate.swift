@@ -18,7 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     {
         // TODO: Use DI
         let cvUseCase = CVStaticFactory.createCvUseCase()
-        let contentView = ContentView(cvUseCase: cvUseCase)
+        let viewModel = CVViewModel(useCase: cvUseCase)
+        let contentView = CVView(viewModel: viewModel)
 
         // Use a UIHostingController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
