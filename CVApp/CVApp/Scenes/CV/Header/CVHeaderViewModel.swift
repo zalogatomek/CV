@@ -21,6 +21,8 @@ struct CVHeaderViewModel {
     
     var name: String { "\(userData.firstName) \(userData.lastName)" }
     var summary: String? { userData.summary }
-    // TODO: Proper imageName
-    var imageName: String? { "Avatar" }
+    var imageName: String? {
+        guard case .asset(let name) = userData.photo ?? userData.avatar else { return nil }
+        return name
+    }
 }

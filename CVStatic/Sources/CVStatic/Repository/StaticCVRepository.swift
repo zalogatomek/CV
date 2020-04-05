@@ -24,7 +24,13 @@ final class StaticCVRepository: CVRepository {
             .set(firstName: "Tomasz")
             .set(lastName: "Załoga")
             .set(birthDate: date(year: 1989, month: 12, day: 4))
+            .set(avatarName: "Avatar")
+            .set(summary: summary)
             .build()
+    }
+    
+    private var summary: String {
+        "Application development for the iOS platform, starting from iOS7. Knowledge of Objective-C and Swift. Experience both in small, single-person projects and in large scrum teams"
     }
     
     // MARK: - Education

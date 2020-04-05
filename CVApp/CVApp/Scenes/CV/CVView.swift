@@ -12,8 +12,9 @@ struct CVView: View {
     let viewModel: CVViewModel
     
     var body: some View {
-        VStack() {
+        VStack(spacing: 8.0) {
             CVHeaderView(viewModel: viewModel.header!)
+            Spacer()
         }
         .padding()
     }

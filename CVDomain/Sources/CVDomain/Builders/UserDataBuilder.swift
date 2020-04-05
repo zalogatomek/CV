@@ -11,8 +11,10 @@ public final class UserDataBuilder {
     private var firstName: String?
     private var lastName: String?
     private var birthDate: Date?
-    private var photo: String?
-    private var avatar: String?
+    private var photoUrl: String?
+    private var photoName: String?
+    private var avatarUrl: String?
+    private var avatarName: String?
     private var email: String?
     private var street: String?
     private var postCode: String?
@@ -40,13 +42,23 @@ public final class UserDataBuilder {
         return self
     }
     
-    public func set(photo: String?) -> Self {
-        self.photo = photo
+    public func set(photoUrl: String?) -> Self {
+        self.photoUrl = photoUrl
         return self
     }
     
-    public func set(avatar: String?) -> Self {
-        self.avatar = avatar
+    public func set(photoName: String?) -> Self {
+        self.photoName = photoName
+        return self
+    }
+    
+    public func set(avatarUrl: String?) -> Self {
+        self.avatarUrl = avatarUrl
+        return self
+    }
+    
+    public func set(avatarName: String?) -> Self {
+        self.avatarName = avatarName
         return self
     }
     
@@ -80,13 +92,33 @@ public final class UserDataBuilder {
             firstName: Name(firstName),
             lastName: Name(lastName),
             birthDate: birthDate,
-            photo: Photo(photo),
-            avatar: Photo(avatar),
+            photo: photo(),
+            avatar: avatar(),
             email: Email(email),
             address: Address(
                 street: street,
                 postCode: postCode,
                 city: city),
             summary: summary)
+    }
+    
+    // MARK: - Helpers
+    
+    private func photo() -> Photo? {
+        if let photoUrl = photoUrl, let url = URL(string: photoUrl) {
+            return .path(url: url)
+        } else if let photoName = photoName {
+            return .asset(named: photoName)
+        }
+        return nil
+    }
+    
+    private func avatar() -> Photo? {
+        if let avatarUrl = avatarUrl, let url = URL(string: avatarUrl) {
+            return .path(url: url)
+        } else if let avatarName = avatarName {
+            return .asset(named: avatarName)
+        }
+        return nil
     }
 }

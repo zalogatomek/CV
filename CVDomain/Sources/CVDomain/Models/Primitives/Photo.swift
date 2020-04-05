@@ -4,16 +4,7 @@
 
 import Foundation
 
-public struct Photo {
-    public let url: URL
-    
-    public init?(_ stringUrl: String?) {
-        guard let stringUrl = stringUrl else { return nil }
-        self.init(URL(string: stringUrl))
-    }
-    
-    public init?(_ url: URL?) {
-        guard let url = url else { return nil }
-        self.url = url
-    }
+public enum Photo {
+    case path(url: URL)
+    case asset(named: String)
 }

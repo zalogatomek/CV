@@ -4,14 +4,18 @@
 
 import SwiftUI
 import CVDomain
+// TODO: Use DI
+import CVStatic
 
 struct CVHeaderView: View {
     let viewModel: CVHeaderViewModel
     
     var body: some View {
         HStack(alignment: .top) {
-            CircleImage(viewModel.imageName ?? "")
-                .frame(width: 100.0, height: 100.0)
+            if viewModel.imageName != nil {
+                CircleImage(viewModel.imageName!)
+                    .frame(width: 100.0, height: 100.0)
+            }
             
             VStack {
                 Text(viewModel.name)
@@ -28,12 +32,9 @@ struct CVHeaderView: View {
 struct CVHeaderView_Previews: PreviewProvider {
     
     static var viewModel: CVHeaderViewModel {
-        let userData = UserDataBuilder()
-            .set(firstName: "John")
-            .set(lastName: "Appleseed")
-            .set(summary: "Hi, I'm John Appleseed and this is my CV")
-            .build()
-        return CVHeaderViewModel(userData: userData!)
+        // TODO: Use DI/Stub?
+        let userData = CVStaticFactory.createCvUseCase().cv()!.userData
+        return CVHeaderViewModel(userData: userData)
     }
     
     static var previews: some View {
