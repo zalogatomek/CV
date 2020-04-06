@@ -9,14 +9,15 @@ struct CVView: View {
     let viewModel: CVViewModel
     
     var body: some View {
-        VStack(spacing: 16.0) {
+        Form {
             CVHeaderView(viewModel: viewModel.header!)
-            ForEach(viewModel.experience, id: \.title) { viewModel in
-                CVExperienceView(viewModel: viewModel)
+            
+            Section(header: Text("WORK EXPERIENCE")) {
+                ForEach(viewModel.experience, id: \.title) { viewModel in
+                    CVExperienceView(viewModel: viewModel)
+                }
             }
-            Spacer()
         }
-        .padding()
     }
 }
 
