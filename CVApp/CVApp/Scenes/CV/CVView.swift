@@ -3,10 +3,7 @@
 //  
 
 import SwiftUI
-
 import CVDomain
-// TODO: Use DI
-import CVStatic
 
 struct CVView: View {
     let viewModel: CVViewModel
@@ -21,14 +18,7 @@ struct CVView: View {
 }
 
 struct CVView_Previews: PreviewProvider {
-    
-    static var viewModel: CVViewModel {
-        // TODO: Use DI/Stub?
-        let cvUseCase = CVStaticFactory.createCvUseCase()
-        return CVViewModel(useCase: cvUseCase)
-    }
-    
     static var previews: some View {
-        return CVView(viewModel: viewModel)
+        return CVView(viewModel: DependencyPreviewContainer.createCvViewModel())
     }
 }

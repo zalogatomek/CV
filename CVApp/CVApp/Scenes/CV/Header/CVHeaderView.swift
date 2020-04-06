@@ -4,8 +4,6 @@
 
 import SwiftUI
 import CVDomain
-// TODO: Use DI
-import CVStatic
 
 struct CVHeaderView: View {
     let viewModel: CVHeaderViewModel
@@ -30,15 +28,8 @@ struct CVHeaderView: View {
 }
 
 struct CVHeaderView_Previews: PreviewProvider {
-    
-    static var viewModel: CVHeaderViewModel {
-        // TODO: Use DI/Stub?
-        let userData = CVStaticFactory.createCvUseCase().cv()!.userData
-        return CVHeaderViewModel(userData: userData)
-    }
-    
     static var previews: some View {
-        CVHeaderView(viewModel: viewModel)
+        CVHeaderView(viewModel: DependencyPreviewContainer.createCvViewModel().header!)
             .frame(width: 300.0, height: nil)
             .previewLayout(.sizeThatFits)
     }

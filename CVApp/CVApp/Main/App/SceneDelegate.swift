@@ -5,9 +5,6 @@
 import UIKit
 import SwiftUI
 
-// TODO: Use DI
-import CVStatic
-
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
@@ -16,15 +13,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                willConnectTo session: UISceneSession,
                options connectionOptions: UIScene.ConnectionOptions)
     {
-        // TODO: Use DI
-        let cvUseCase = CVStaticFactory.createCvUseCase()
-        let viewModel = CVViewModel(useCase: cvUseCase)
-        let contentView = CVView(viewModel: viewModel)
-
-        // Use a UIHostingController as window root view controller.
+        let cvView = DependencyContainer.createCvView()
+        
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            window.rootViewController = UIHostingController(rootView: contentView)
+            window.rootViewController = UIHostingController(rootView: cvView)
             self.window = window
             window.makeKeyAndVisible()
         }

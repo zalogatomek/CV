@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A46E344243BB699004A472E /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E343243BB699004A472E /* DependencyContainer.swift */; };
+		9A46E346243BB6FC004A472E /* DependencyContainer+CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E345243BB6FC004A472E /* DependencyContainer+CV.swift */; };
+		9A46E349243BB9DB004A472E /* DependencyPreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E348243BB9DB004A472E /* DependencyPreviewContainer.swift */; };
+		9A46E34B243BBA07004A472E /* DependencyPreviewContainer+CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E34A243BBA07004A472E /* DependencyPreviewContainer+CV.swift */; };
+		9A46E34D243BBA2B004A472E /* CVSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E34C243BBA2B004A472E /* CVSceneFactory.swift */; };
 		9A4BD2B724389FD80049BE17 /* CVDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 9A4BD2B624389FD80049BE17 /* CVDomain */; };
 		9A4BD2B924389FDB0049BE17 /* CVStatic in Frameworks */ = {isa = PBXBuildFile; productRef = 9A4BD2B824389FDB0049BE17 /* CVStatic */; };
 		9A4D606D2439EA11005F7F96 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D606C2439EA11005F7F96 /* CircleImage.swift */; };
@@ -33,6 +38,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A46E343243BB699004A472E /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		9A46E345243BB6FC004A472E /* DependencyContainer+CV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DependencyContainer+CV.swift"; sourceTree = "<group>"; };
+		9A46E348243BB9DB004A472E /* DependencyPreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyPreviewContainer.swift; sourceTree = "<group>"; };
+		9A46E34A243BBA07004A472E /* DependencyPreviewContainer+CV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DependencyPreviewContainer+CV.swift"; sourceTree = "<group>"; };
+		9A46E34C243BBA2B004A472E /* CVSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSceneFactory.swift; sourceTree = "<group>"; };
 		9A4D603C2439E49C005F7F96 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		9A4D603D2439E49C005F7F96 /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
 		9A4D606C2439EA11005F7F96 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
@@ -72,6 +82,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A46E342243BB65C004A472E /* DependencyContainer */ = {
+			isa = PBXGroup;
+			children = (
+				9A46E343243BB699004A472E /* DependencyContainer.swift */,
+				9A46E348243BB9DB004A472E /* DependencyPreviewContainer.swift */,
+				9A46E347243BB990004A472E /* CVScene */,
+			);
+			path = DependencyContainer;
+			sourceTree = "<group>";
+		};
+		9A46E347243BB990004A472E /* CVScene */ = {
+			isa = PBXGroup;
+			children = (
+				9A46E34C243BBA2B004A472E /* CVSceneFactory.swift */,
+				9A46E345243BB6FC004A472E /* DependencyContainer+CV.swift */,
+				9A46E34A243BBA07004A472E /* DependencyPreviewContainer+CV.swift */,
+			);
+			path = CVScene;
+			sourceTree = "<group>";
+		};
 		9A4D603B2439E49C005F7F96 /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				9A5CCFA724263286009006CD /* App */,
+				9A46E342243BB65C004A472E /* DependencyContainer */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -350,12 +381,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A46E346243BB6FC004A472E /* DependencyContainer+CV.swift in Sources */,
 				9A5CCF8424263251009006CD /* AppDelegate.swift in Sources */,
+				9A46E34D243BBA2B004A472E /* CVSceneFactory.swift in Sources */,
 				9A5CCF8624263251009006CD /* SceneDelegate.swift in Sources */,
+				9A46E34B243BBA07004A472E /* DependencyPreviewContainer+CV.swift in Sources */,
 				9A717D5E243895B700AB3AD4 /* CVHeaderView.swift in Sources */,
 				9A5CCF8824263251009006CD /* CVView.swift in Sources */,
 				9A4D60712439F383005F7F96 /* CVHeaderViewModel.swift in Sources */,
 				9A4D606D2439EA11005F7F96 /* CircleImage.swift in Sources */,
+				9A46E344243BB699004A472E /* DependencyContainer.swift in Sources */,
+				9A46E349243BB9DB004A472E /* DependencyPreviewContainer.swift in Sources */,
 				9A4D60742439F49B005F7F96 /* CVViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
