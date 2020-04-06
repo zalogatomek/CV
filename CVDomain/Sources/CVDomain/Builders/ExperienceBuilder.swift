@@ -8,9 +8,10 @@ public final class ExperienceBuilder {
     
     // MARK: - Properties
     
+    private var role: String?
     private var startDate: Date?
     private var endDate: Date?
-    private var companyName: String?
+    private var company: String?
     private var responsibilities: [String] = []
     
     // MARK: - Lifecycle
@@ -18,6 +19,11 @@ public final class ExperienceBuilder {
     public init() { }
     
     // MARK: - Building
+    
+    public func set(role: String?) -> Self {
+        self.role = role
+        return self
+    }
     
     public func set(endDate: Date?) -> Self {
         self.endDate = endDate
@@ -29,8 +35,8 @@ public final class ExperienceBuilder {
         return self
     }
     
-    public func set(companyName: String?) -> Self {
-        self.companyName = companyName
+    public func set(company: String?) -> Self {
+        self.company = company
         return self
     }
     
@@ -46,10 +52,11 @@ public final class ExperienceBuilder {
             Experience.Responsibility($0)
         }
         return Experience(
+            role: Name(role),
             dateRange: DateRange(
                 startDate: startDate,
                 endDate: endDate),
-            companyName: Name(companyName),
+            company: Name(company),
             responsibilities: responsibilities)
     }
 }

@@ -9,21 +9,24 @@ struct CVHeaderView: View {
     let viewModel: CVHeaderViewModel
     
     var body: some View {
-        HStack(alignment: .top) {
-            if viewModel.imageName != nil {
-                CircleImage(viewModel.imageName!)
-                    .frame(width: 100.0, height: 100.0)
-            }
-            
-            VStack {
+        VStack(spacing: 8.0) {
+            HStack(alignment: .top) {
+                if viewModel.imageName != nil {
+                    CircleImage(viewModel.imageName!)
+                        .frame(width: 60.0, height: 60.0)
+                }
+                
                 Text(viewModel.name)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .font(.headline)
-                Text(viewModel.summary ?? "")
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .font(.body)
             }
+            
+            Text(viewModel.summary ?? "")
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .font(.body)
+                .foregroundColor(.gray)
         }
+
     }
 }
 

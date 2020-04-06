@@ -9,8 +9,11 @@ struct CVView: View {
     let viewModel: CVViewModel
     
     var body: some View {
-        VStack(spacing: 8.0) {
+        VStack(spacing: 16.0) {
             CVHeaderView(viewModel: viewModel.header!)
+            ForEach(viewModel.experience, id: \.title) { viewModel in
+                CVExperienceView(viewModel: viewModel)
+            }
             Spacer()
         }
         .padding()

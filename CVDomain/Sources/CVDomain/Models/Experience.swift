@@ -14,20 +14,24 @@ public struct Experience {
         }
     }
     
+    public let role: Name
+    public let company: Name
     public let dateRange: DateRange
-    public let companyName: Name
     public let responsibilities: [Responsibility]
     
-    public init?(dateRange: DateRange?,
-                 companyName: Name?,
+    public init?(role: Name?,
+                 dateRange: DateRange?,
+                 company: Name?,
                  responsibilities: [Responsibility]?)
     {
-        guard let dateRange = dateRange,
-            let companyName = companyName
+        guard let role = role,
+            let dateRange = dateRange,
+            let company = company
         else { return nil }
         
+        self.role = role
         self.dateRange = dateRange
-        self.companyName = companyName
+        self.company = company
         self.responsibilities = responsibilities ?? []
     }
 }

@@ -24,6 +24,7 @@ final class StaticCVRepository: CVRepository {
             .set(firstName: "Tomasz")
             .set(lastName: "Załoga")
             .set(birthDate: date(year: 1989, month: 12, day: 4))
+            // TODO: Since image is referenced by name, should be providen with package
             .set(avatarName: "Avatar")
             .set(summary: summary)
             .build()
@@ -48,8 +49,9 @@ final class StaticCVRepository: CVRepository {
     
     private func workExperience() -> [Experience] {
         let sirocco = ExperienceBuilder()
+            .set(role: "iOS Developer")
             .set(startDate: date(year: 2018, month: 3, day: 26))
-            .set(companyName: "Sirocco Mobile")
+            .set(company: "Sirocco Mobile")
             .build()
         return [sirocco].compactMap { $0 }
     }

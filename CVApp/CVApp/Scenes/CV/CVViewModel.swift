@@ -32,4 +32,9 @@ class CVViewModel {
         return CVHeaderViewModel(userData: cv.userData)
     }
     
+    var experience: [CVExperienceViewModel] {
+        guard let cv = cv else { return [] }
+        return cv.workExperience.map{ CVExperienceViewModel(experience: $0) }
+    }
+    
 }
