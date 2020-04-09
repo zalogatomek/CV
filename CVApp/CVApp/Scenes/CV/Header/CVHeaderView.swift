@@ -11,8 +11,8 @@ struct CVHeaderView: View {
     var body: some View {
         VStack(spacing: 8.0) {
             HStack(alignment: .top) {
-                if viewModel.imageName != nil {
-                    CircleImage(viewModel.imageName!)
+                IfLet(viewModel.imageName) { imageName in
+                    CircleImage(imageName)
                         .frame(width: 60.0, height: 60.0)
                 }
                 
@@ -26,7 +26,6 @@ struct CVHeaderView: View {
                 .font(.body)
                 .foregroundColor(.gray)
         }
-
     }
 }
 
