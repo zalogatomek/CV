@@ -1,6 +1,9 @@
 import Vapor
 
-/// Register your application's routes here.
 public func routes(_ router: Router) throws {
     
+    // MARK: - Home
+    
+    let homeController = HomeController()
+    try router.register(collection: homeController)
 }
