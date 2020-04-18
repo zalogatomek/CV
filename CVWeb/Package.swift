@@ -3,6 +3,9 @@ import PackageDescription
 
 let package = Package(
     name: "CVWeb",
+    products: [
+        .library(name: "App", targets: ["App"])
+    ],
     dependencies: [
         .package(url: "https://github.com/vapor/vapor.git", from: "3.0.0"),
         .package(url: "https://github.com/vapor/leaf.git", from: "3.0.0")
