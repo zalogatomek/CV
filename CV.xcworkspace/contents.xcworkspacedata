@@ -10,4 +10,7 @@
    <FileRef
       location = "group:CVStatic">
    </FileRef>
+   <FileRef
+      location = "group:CVWeb">
+   </FileRef>
 </Workspace>
