@@ -1,0 +1,4 @@
+module CNIOOpenSSL {
+    umbrella "/Users/omek/Library/Mobile Documents/com~apple~CloudDocs/Developer/Własne/CV/CVWeb/.build/checkouts/swift-nio-ssl/Sources/CNIOOpenSSL/include"
+    export *
+}
