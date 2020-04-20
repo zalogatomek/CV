@@ -16,4 +16,3 @@ let package = Package(
         .testTarget(name: "App-Tests", dependencies: ["App"])
     ]
 )
-
