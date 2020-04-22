@@ -18,7 +18,7 @@
     </head>
     <body id="BaseBody">
         <!-- Navigation -->
-        #embed("NavigationBar")
+        #embed("NavigationBar/NavigationBar")
         
         <!-- Page content -->
         <div class="container mt-3">
