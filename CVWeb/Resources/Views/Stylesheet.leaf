@@ -7,5 +7,6 @@
 }
 
 #embed("NavigationBar/NavigationBarStyle")
+#embed("Summary/SummaryStyle")
 
 </style>

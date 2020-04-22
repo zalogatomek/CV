@@ -17,7 +17,7 @@
         <title>Hello World</title>
     </head>
     <body id="BaseBody">
-        <!-- Navigation -->
+        <!-- Page Content -->
         #embed("NavigationBar/NavigationBar")
         
         <!-- Page content -->
