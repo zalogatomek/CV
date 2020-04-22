@@ -1,5 +1,5 @@
-#set("sectionId") { Education }
-#set("title") { Education }
+#set("sectionId") {Education}
+#set("title") {Education}
 #set("content") {
     
 }

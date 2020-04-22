@@ -1,5 +1,5 @@
 <!-- Navigation-->
-<nav class="navbar navbar-expand-lg" id="NavigationBar">
+<nav class="navbar navbar-expand-lg sticky-top" id="NavigationBar">
     <div class="container">
         <a class="navbar-brand js-scroll-trigger" href="#BaseBody">Tomasz Załoga</a>
             <button class="navbar-toggler navbar-toggler-right"

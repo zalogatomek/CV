@@ -1,5 +1,5 @@
-#set("sectionId") { Skills }
-#set("title") { Skills }
+#set("sectionId") {Skills}
+#set("title") {Skills}
 #set("content") {
     
 }
