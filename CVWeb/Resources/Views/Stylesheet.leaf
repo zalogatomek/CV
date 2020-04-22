@@ -6,6 +6,10 @@
     --text-light: #FFFFFF;
 }
 
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* Reusable items */
 #embed("Divider/DividerStyle")
 #embed("Section/SectionStyle")
