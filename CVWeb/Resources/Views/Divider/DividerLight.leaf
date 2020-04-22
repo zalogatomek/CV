@@ -1,0 +1,3 @@
+<div class="divider-custom divider-light">
+    #embed("Divider/DividerContent")
+</div>

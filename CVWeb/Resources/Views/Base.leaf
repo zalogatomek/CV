@@ -21,9 +21,7 @@
         #embed("NavigationBar/NavigationBar")
         
         <!-- Page content -->
-        <div class="container mt-3">
-            #get(content)
-        </div>
+        #get(content)
         
         <!-- Bootstrap JavaScript -->
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"

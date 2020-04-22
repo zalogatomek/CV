@@ -6,7 +6,13 @@
     --text-light: #FFFFFF;
 }
 
+/* Reusable items */
+#embed("Divider/DividerStyle")
+#embed("Section/SectionStyle")
+
+/* Home page content */
 #embed("NavigationBar/NavigationBarStyle")
 #embed("Summary/SummaryStyle")
+#embed("Experience/ExperienceStyle")
 
 </style>
