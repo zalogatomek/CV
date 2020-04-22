@@ -1,9 +1,8 @@
 #set("content") {
-    <!-- Summary -->
     #embed("Summary/Summary")
-
-    <!-- Experience -->
     #embed("Experience/Experience")
+    #embed("Education/Education")
+    #embed("Skills/Skills")
 }
 
 #embed("Base")

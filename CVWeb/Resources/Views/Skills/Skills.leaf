@@ -1,0 +1,7 @@
+#set("sectionId") { Skills }
+#set("title") { Skills }
+#set("content") {
+    
+}
+
+#embed("Section/Section")
