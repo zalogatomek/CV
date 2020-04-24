@@ -12,7 +12,7 @@ public final class ExperienceBuilder {
     private var startDate: Date?
     private var endDate: Date?
     private var company: String?
-    private var responsibilities: [String] = []
+    private var summary: String?
     
     // MARK: - Lifecycle
     
@@ -40,23 +40,18 @@ public final class ExperienceBuilder {
         return self
     }
     
-    public func add(responsibility: String?) -> Self {
-        if let responsibility = responsibility {
-            self.responsibilities.append(responsibility)
-        }
+    public func set(summary: String?) -> Self {
+        self.summary = summary
         return self
     }
     
     public func build() -> Experience? {
-        let responsibilities = self.responsibilities.compactMap {
-            Experience.Responsibility($0)
-        }
         return Experience(
             role: Name(role),
             dateRange: DateRange(
                 startDate: startDate,
                 endDate: endDate),
             company: Name(company),
-            responsibilities: responsibilities)
+            summary: summary)
     }
 }

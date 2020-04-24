@@ -17,12 +17,12 @@ public struct Experience {
     public let role: Name
     public let company: Name
     public let dateRange: DateRange
-    public let responsibilities: [Responsibility]
+    public let summary: String?
     
     public init?(role: Name?,
                  dateRange: DateRange?,
                  company: Name?,
-                 responsibilities: [Responsibility]?)
+                 summary: String?)
     {
         guard let role = role,
             let dateRange = dateRange,
@@ -32,6 +32,6 @@ public struct Experience {
         self.role = role
         self.dateRange = dateRange
         self.company = company
-        self.responsibilities = responsibilities ?? []
+        self.summary = summary
     }
 }
