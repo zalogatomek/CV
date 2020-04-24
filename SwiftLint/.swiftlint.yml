@@ -1,6 +1,10 @@
 included:
   - ../
 
+excluded:
+# exlude SPM Dependencies
+- ../*/.build*
+
 # Check rules at https://realm.github.io/SwiftLint/rule-directory.html
 whitelist_rules:
   - todo
