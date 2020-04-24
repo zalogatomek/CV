@@ -1,7 +1,11 @@
 #set("sectionId") {Education}
 #set("title") {Education}
 #set("content") {
-    
+    #set("title") {Silesian University of Technology}
+    #set("subtitle") {Bachelor of Engineering}
+    #set("dateRange") {September 2008 - February 2012}
+    #set("summary") {Computer Science}
+    #embed("Section/SectionItem")
 }
 
 #embed("Section/Section")

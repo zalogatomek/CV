@@ -19,6 +19,5 @@
 /* Home page content */
 #embed("NavigationBar/NavigationBarStyle")
 #embed("Summary/SummaryStyle")
-#embed("Experience/ExperienceStyle")
 
 </style>

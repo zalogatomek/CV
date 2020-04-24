@@ -7,6 +7,11 @@
     text-align: center
 }
 
+.section .section-item {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
 .section .section-item .section-date {
     text-align: right;
     color: var(--primary);
