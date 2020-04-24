@@ -3,8 +3,9 @@
 :root {
     --primary: #1089FF;
     --secondary: #23374D;
+    --light: #FFFFFF;
     --text-primary: #23374D;
-    --text-secondary: #5F6D7D;
+    --text-secondary: #4B5B6D;
     --text-light: #FFFFFF;
 }
 
@@ -19,5 +20,6 @@
 /* Home page content */
 #embed("NavigationBar/NavigationBarStyle")
 #embed("Summary/SummaryStyle")
+#embed("Summary/SocialIconsStyle")
 
 </style>

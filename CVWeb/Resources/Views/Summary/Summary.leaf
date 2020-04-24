@@ -8,5 +8,7 @@
         #embed("Divider/DividerLight")
         <!-- Masthead Subheading-->
         <p class="masthead-subheading mb-0">Summary goes here</p>
+        <!-- Social icons -->
+        #embed("Summary/SocialIcons")
     </div>
 </header>
