@@ -1,6 +1,6 @@
-<section class="page-section" id="#get(sectionId)">
+<section class="section" id="#get(sectionId)">
     <div class="container">
-        <h2 class="page-section-heading mb-0">#get(title)</h2>
+        <h2 class="section-heading mb-0">#get(title)</h2>
         #embed("Divider/Divider")
         #get(content)
     </div>

@@ -1,14 +1,16 @@
 <style>
+/* Colors */
 :root {
     --primary: #1089FF;
     --secondary: #23374D;
-    --text-primary: #FFFFFF;
+    --text-primary: #23374D;
+    --text-secondary: #5F6D7D;
     --text-light: #FFFFFF;
 }
 
-* {
-    font-family: 'Montserrat', sans-serif;
-}
+/* Fonts */
+#embed("Stylesheet/Fonts")
+
 
 /* Reusable items */
 #embed("Divider/DividerStyle")

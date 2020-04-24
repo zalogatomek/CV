@@ -1,11 +1,14 @@
-.page-section {
-    padding: 6rem 0;
+.section {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
 }
 
-.page-section .page-section-heading {
-    font-size: 2.25rem;
-    line-height: 2rem;
-    font-weight: bold;
-    text-transform: uppercase;
+.section .section-heading {
     text-align: center
+}
+
+.section .section-item .section-date {
+    text-align: right;
+    color: var(--primary);
+    white-space: nowrap;
 }

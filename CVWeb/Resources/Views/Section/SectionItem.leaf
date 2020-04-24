@@ -1,0 +1,10 @@
+<div class="section-item d-flex flex-column flex-md-row justify-content-between mb-5">
+    <div class="container">
+        <h3 class="mb-0">#get(title)</h3>
+        <div class="subheading mb-3">#get(subtitle)</div>
+        <p>#get(summary)</p>
+    </div>
+    <div class="section-date">
+        <p>#get(dateRange)</p>
+    </div>
+</div>

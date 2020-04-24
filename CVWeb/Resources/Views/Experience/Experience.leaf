@@ -1,7 +1,11 @@
 #set("sectionId") {Experience}
 #set("title") {Experience}
 #set("content") {
-    
+    #set("title") {iOS Developer}
+    #set("subtitle") {Sirocco Mobile}
+    #set("dateRange") {March 2018 - Present}
+    #set("summary") {Summary goes here}
+    #embed("Section/SectionItem")
 }
 
 #embed("Section/Section")

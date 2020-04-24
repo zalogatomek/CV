@@ -7,6 +7,6 @@
         <!-- Icon Divider-->
         #embed("Divider/DividerLight")
         <!-- Masthead Subheading-->
-        <p class="masthead-subheading font-weight-light mb-0">Summary goes here</p>
+        <p class="masthead-subheading mb-0">Summary goes here</p>
     </div>
 </header>
