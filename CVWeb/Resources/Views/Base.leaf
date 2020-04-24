@@ -42,7 +42,12 @@
             crossorigin="anonymous">
         </script>
         
+        
+        <!-- jQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+       
         <!-- Site JavaScript -->
-        <script src="/Scripts/scripts.js"></script>
+        <script src="Scripts/jQueryEasing.js"></script>
+        <script src="Scripts/resume.js"></script>
     </body>
 </html>
