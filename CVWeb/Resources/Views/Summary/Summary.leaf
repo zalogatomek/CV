@@ -5,10 +5,10 @@
         <!-- Masthead Heading-->
         <h1 class="masthead-heading mb-0">Tomasz Załoga</h1>
         <!-- Icon Divider-->
-        #embed("Divider/DividerLight")
+        #embed("Components/Divider/DividerLight")
         <!-- Masthead Subheading-->
         <p class="masthead-subheading mb-0">Summary goes here</p>
         <!-- Social icons -->
-        #embed("Summary/SocialIcons")
+        #embed("Components/SocialIcons/SocialIcons")
     </div>
 </header>

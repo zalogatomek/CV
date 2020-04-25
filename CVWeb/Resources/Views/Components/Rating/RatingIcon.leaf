@@ -1,0 +1,9 @@
+<div class="rating-icon">
+    #if(style == "empty") {
+        <i class="far fa-star"></i>
+    } else if(style == "half") {
+        <i class="fas fa-star-half-alt"></i>
+    } else {
+        <i class="fas fa-star"></i>
+    }
+</div>

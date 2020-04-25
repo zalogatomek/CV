@@ -1,7 +1,29 @@
 #set("sectionId") {Skills}
 #set("title") {Skills}
 #set("content") {
+    #set("value") {three}
+    #set("name") {Swift}
+    #embed("Components/Rating/Rating")
+
+    #set("value") {twoAndAHalf}
+    #set("name") {UIKit}
+    #embed("Components/Rating/Rating")
+
+    #set("value") {two}
+    #set("name") {iOS SDK}
+    #embed("Components/Rating/Rating")
+
+    #set("value") {oneAndAHalf}
+    #set("name") {SwiftUI}
+    #embed("Components/Rating/Rating")
     
+    #set("value") {oneAndAHalf}
+    #set("name") {Swift Package Manager}
+    #embed("Components/Rating/Rating")
+
+    #set("value") {one}
+    #set("name") {Vapor}
+    #embed("Components/Rating/Rating")
 }
 
-#embed("Section/Section")
+#embed("Components/Section/Section")

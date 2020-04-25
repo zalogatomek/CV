@@ -1,7 +1,7 @@
 <section class="section" id="#get(sectionId)">
     <div class="container">
         <h2 class="section-heading mb-0">#get(title)</h2>
-        #embed("Divider/Divider")
+        #embed("Components/Divider/Divider")
         #get(content)
     </div>
 </section>

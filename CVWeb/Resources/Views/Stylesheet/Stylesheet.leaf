@@ -12,14 +12,14 @@
 /* Fonts */
 #embed("Stylesheet/Fonts")
 
-
 /* Reusable items */
-#embed("Divider/DividerStyle")
-#embed("Section/SectionStyle")
+#embed("Components/Divider/DividerStyle")
+#embed("Components/Rating/RatingStyle")
+#embed("Components/Section/SectionStyle")
+#embed("Components/SocialIcons/SocialIconsStyle")
 
 /* Home page content */
 #embed("NavigationBar/NavigationBarStyle")
 #embed("Summary/SummaryStyle")
-#embed("Summary/SocialIconsStyle")
 
 </style>

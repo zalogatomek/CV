@@ -5,13 +5,13 @@
     #set("subtitle") {Sirocco Mobile}
     #set("dateRange") {March 2018 - Present}
     #set("summary") {Summary goes here}
-    #embed("Section/SectionItem")
+    #embed("Components/Section/SectionItem")
 
     #set("title") {Software Developer}
-    #set("subtitle") {Sirocco Mobile}
+    #set("subtitle") {Ipix S.C.}
     #set("dateRange") {September 2013 - March 2018}
     #set("summary") {Summary goes here}
-    #embed("Section/SectionItem")
+    #embed("Components/Section/SectionItem")
 }
 
-#embed("Section/Section")
+#embed("Components/Section/Section")

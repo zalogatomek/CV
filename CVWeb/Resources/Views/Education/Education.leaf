@@ -5,7 +5,7 @@
     #set("subtitle") {Bachelor of Engineering}
     #set("dateRange") {September 2008 - February 2012}
     #set("summary") {Computer Science}
-    #embed("Section/SectionItem")
+    #embed("Components/Section/SectionItem")
 }
 
-#embed("Section/Section")
+#embed("Components/Section/Section")

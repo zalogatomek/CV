@@ -1,0 +1,14 @@
+.rating {
+    
+}
+
+.rating .rating-icon {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.rating h3 {
+    display: inline-block;
+    margin-left: 1rem;
+    text-transform : none;
+}
