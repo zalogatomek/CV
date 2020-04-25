@@ -4,7 +4,7 @@
 }
 
 .section .section-heading {
-    text-align: center
+    text-align: center;
 }
 
 .section .section-item {

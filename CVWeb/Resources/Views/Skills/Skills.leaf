@@ -1,29 +1,46 @@
 #set("sectionId") {Skills}
 #set("title") {Skills}
 #set("content") {
-    #set("value") {three}
-    #set("name") {Swift}
-    #embed("Components/Rating/Rating")
-
-    #set("value") {twoAndAHalf}
-    #set("name") {UIKit}
-    #embed("Components/Rating/Rating")
-
-    #set("value") {two}
-    #set("name") {iOS SDK}
-    #embed("Components/Rating/Rating")
-
-    #set("value") {oneAndAHalf}
-    #set("name") {SwiftUI}
-    #embed("Components/Rating/Rating")
-    
-    #set("value") {oneAndAHalf}
-    #set("name") {Swift Package Manager}
-    #embed("Components/Rating/Rating")
-
-    #set("value") {one}
-    #set("name") {Vapor}
-    #embed("Components/Rating/Rating")
+    <div class="skills">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col">
+                    #set("value") {three}
+                    #set("name") {Swift}
+                    #embed("Components/Rating/Rating")
+                </div>
+                <div class="col">
+                    #set("value") {twoAndAHalf}
+                    #set("name") {UIKit}
+                    #embed("Components/Rating/Rating")
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col">
+                    #set("value") {two}
+                    #set("name") {iOS SDK}
+                    #embed("Components/Rating/Rating")
+                </div>
+                <div class="col">
+                    #set("value") {oneAndAHalf}
+                    #set("name") {SwiftUI}
+                    #embed("Components/Rating/Rating")
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col">
+                    #set("value") {oneAndAHalf}
+                    #set("name") {Swift Package Manager}
+                    #embed("Components/Rating/Rating")
+                </div>
+                <div class="col">
+                    #set("value") {one}
+                    #set("name") {Vapor}
+                    #embed("Components/Rating/Rating")
+                </div>
+            </div>
+        </div>
+    </div>
 }
 
 #embed("Components/Section/Section")

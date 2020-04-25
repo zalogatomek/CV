@@ -1,5 +1,12 @@
 .rating {
-    
+    width: 100%;
+}
+
+.rating .rating-icons {
+    display: inline-block;
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
 }
 
 .rating .rating-icon {
@@ -7,8 +14,8 @@
     font-size: 2rem;
 }
 
-.rating h3 {
+.rating .rating-name h3 {
     display: inline-block;
-    margin-left: 1rem;
     text-transform : none;
+    width: 100%;
 }
