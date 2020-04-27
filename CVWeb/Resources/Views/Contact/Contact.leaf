@@ -1,0 +1,7 @@
+<section class="section-contact" id="Contact">
+    <div class="container d-flex align-items-center flex-column">
+        <h2 class="section-contact-heading mb-0">Contact</h2>
+        #embed("Components/Divider/DividerLight")
+        #embed("Components/SocialIcons/SocialIcons")
+    </div>
+</section>

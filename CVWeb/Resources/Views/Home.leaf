@@ -3,6 +3,7 @@
     #embed("Experience/Experience")
     #embed("Education/Education")
     #embed("Skills/Skills")
+    #embed("Contact/Contact")
 }
 
 #embed("Base")

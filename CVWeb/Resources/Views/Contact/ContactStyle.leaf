@@ -1,0 +1,11 @@
+
+.section-contact {
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+    background: var(--secondary);
+}
+
+.section-contact .section-contact-heading {
+    text-align: center;
+    color: var(--text-light);
+}

@@ -22,5 +22,6 @@
 #embed("NavigationBar/NavigationBarStyle")
 #embed("Summary/SummaryStyle")
 #embed("Skills/SkillsStyle")
+#embed("Contact/ContactStyle")
 
 </style>

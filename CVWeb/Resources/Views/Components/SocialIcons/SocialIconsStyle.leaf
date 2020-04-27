@@ -2,17 +2,17 @@
     display: inline-block;
     height: 3.5rem;
     width: 3.5rem;
-    background-color: var(--text-primary);
-    color: var(--light);
+    background-color: var(--light);
+    color: var(--secondary);
     border-radius: 100%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 2rem;
     line-height: 3.5rem;
     margin-top: 1.75rem;
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .social-icons a:hover {
-    background-color: var(--text-secondary);
+    color: var(--primary);
 }
