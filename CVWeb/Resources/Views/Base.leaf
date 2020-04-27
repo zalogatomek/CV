@@ -19,7 +19,7 @@
         <!-- Stylesheet -->
         #embed("Stylesheet/Stylesheet")
         
-        <title>Hello World</title>
+        <title>Tomasz Załoga</title>
     </head>
     <body id="BaseBody">
         <!-- Page Content -->
