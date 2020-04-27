@@ -4205,6 +4205,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9AD8E09124575BD800D0ED0B /* cloud.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = cloud.yml; sourceTree = "<group>"; };
 		"CVWeb::App-Tests::Product" /* App_Tests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = App_Tests.xctest; path = "App-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CVWeb::App::Product" /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CVWeb::Run::Product" /* Run */ = {isa = PBXFileReference; lastKnownFileType = text; path = Run; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -4733,7 +4734,6 @@
 		OBJ_73 /* ErrorMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMiddleware.swift; sourceTree = "<group>"; };
 		OBJ_737 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = SOURCE_ROOT; };
 		OBJ_738 /* Public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Public; sourceTree = SOURCE_ROOT; };
-		OBJ_739 /* cloud.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = cloud.yml; sourceTree = "<group>"; };
 		OBJ_74 /* FileMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMiddleware.swift; sourceTree = "<group>"; };
 		OBJ_740 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_741 /* web.Dockerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = web.Dockerfile; sourceTree = "<group>"; };
@@ -6807,7 +6807,7 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -6817,12 +6817,11 @@
 				OBJ_21 /* Dependencies */,
 				OBJ_694 /* Products */,
 				OBJ_738 /* Public */,
-				OBJ_739 /* cloud.yml */,
+				9AD8E09124575BD800D0ED0B /* cloud.yml */,
 				OBJ_740 /* README.md */,
 				OBJ_741 /* web.Dockerfile */,
 				OBJ_742 /* CONTRIBUTING.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_503 /* Core 3.9.2 */ = {
@@ -8903,7 +8902,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_694 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
