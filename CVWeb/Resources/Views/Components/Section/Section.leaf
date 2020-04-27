@@ -1,7 +1,9 @@
-<section class="section" id="#get(sectionId)">
+<section class="section p-3 p-lg-5 d-flex align-items-center" id="#get(sectionId)">
     <div class="container">
         <h2 class="section-heading mb-0">#get(title)</h2>
         #embed("Components/Divider/Divider")
         #get(content)
     </div>
 </section>
+
+<hr class="m-0">

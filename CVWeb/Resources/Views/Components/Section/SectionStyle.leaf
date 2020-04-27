@@ -1,6 +1,8 @@
 .section {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 6rem !important;
+    padding-bottom: 6rem !important;
+    min-height: 100vh;
+    height: 100vh;
 }
 
 .section .section-heading {
@@ -8,8 +10,7 @@
 }
 
 .section .section-item {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 4rem;
 }
 
 .section .section-item .section-date {
