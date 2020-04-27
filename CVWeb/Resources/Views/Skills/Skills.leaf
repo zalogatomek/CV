@@ -10,8 +10,8 @@
                     #embed("Components/Rating/Rating")
                 </div>
                 <div class="col">
-                    #set("value") {twoAndAHalf}
-                    #set("name") {UIKit}
+                    #set("value") {two}
+                    #set("name") {Objective-C}
                     #embed("Components/Rating/Rating")
                 </div>
             </div>
@@ -22,20 +22,32 @@
                     #embed("Components/Rating/Rating")
                 </div>
                 <div class="col">
-                    #set("value") {oneAndAHalf}
-                    #set("name") {SwiftUI}
+                    #set("value") {twoAndAHalf}
+                    #set("name") {UIKit}
                     #embed("Components/Rating/Rating")
                 </div>
             </div>
             <div class="row justify-content-around">
                 <div class="col">
                     #set("value") {oneAndAHalf}
-                    #set("name") {Swift Package Manager}
+                    #set("name") {SwiftUI}
                     #embed("Components/Rating/Rating")
                 </div>
                 <div class="col">
                     #set("value") {one}
                     #set("name") {Vapor}
+                    #embed("Components/Rating/Rating")
+                </div>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col">
+                    #set("value") {twoAndAHalf}
+                    #set("name") {Xcode}
+                    #embed("Components/Rating/Rating")
+                </div>
+                <div class="col">
+                    #set("value") {oneAndAHalf}
+                    #set("name") {Swift Package Manager}
                     #embed("Components/Rating/Rating")
                 </div>
             </div>

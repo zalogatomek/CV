@@ -31,7 +31,7 @@ final class StaticCVRepository: CVRepository {
     }
     
     private var summary: String {
-        "Application development for the iOS platform, starting from iOS7. Knowledge of Objective-C and Swift. Experience both in small, single-person projects and in large scrum teams"
+        "I am a software developer with 7 years of experience, focused on developing applications for the iOS platform for 5 years. I have experience in both one-man and large agile teams. I feel best writing in Swift, but I'm not afraid of Objective-C either. Recently, I have been enthusiastically expanding my knowledge about Vapor - a web framework written in Swift."
     }
     
     // MARK: - Education
@@ -53,7 +53,13 @@ final class StaticCVRepository: CVRepository {
             .set(startDate: date(year: 2018, month: 3, day: 26))
             .set(company: "Sirocco Mobile")
             .build()
-        return [sirocco].compactMap { $0 }
+        let ipix = ExperienceBuilder()
+            .set(role: "Software Developer")
+            .set(startDate: date(year: 2013, month: 9, day: 30))
+            .set(endDate: date(year: 2018, month: 3, day: 16))
+            .set(company: "Ipix S.C.")
+            .build()
+        return [sirocco, ipix].compactMap { $0 }
     }
     
     // MARK: - Skills
@@ -62,10 +68,52 @@ final class StaticCVRepository: CVRepository {
         let swift = SkillBuilder()
             .set(kind: .programmingLanguage)
             .set(name: "Swift")
+            .set(level: 0.9)
+            .build()
+        
+        let objectiveC = SkillBuilder()
+            .set(kind: .programmingLanguage)
+            .set(name: "Objective-C")
+            .set(level: 0.6)
+            .build()
+        
+        let uiKit = SkillBuilder()
+            .set(kind: .framework)
+            .set(name: "UIKit")
             .set(level: 0.8)
             .build()
         
-        return [swift].compactMap { $0 }
+        let iOSSDK = SkillBuilder()
+            .set(kind: .framework)
+            .set(name: "iOS SDK")
+            .set(level: 0.7)
+            .build()
+        
+        let swiftUi = SkillBuilder()
+            .set(kind: .framework)
+            .set(name: "SwiftUI")
+            .set(level: 0.4)
+            .build()
+        
+        let vapor = SkillBuilder()
+            .set(kind: .framework)
+            .set(name: "Vapor")
+            .set(level: 0.3)
+            .build()
+        
+        let xcode = SkillBuilder()
+            .set(kind: .tools)
+            .set(name: "Xcode")
+            .set(level: 0.8)
+            .build()
+        
+        let swiftPackageManager = SkillBuilder()
+            .set(kind: .tools)
+            .set(name: "Swift Package Manager")
+            .set(level: 0.4)
+            .build()
+        
+        return [swift, objectiveC, uiKit, iOSSDK, swiftUi, vapor, xcode, swiftPackageManager].compactMap { $0 }
     }
     
     // MARK: - Utils

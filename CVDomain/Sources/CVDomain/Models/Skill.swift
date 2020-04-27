@@ -8,7 +8,7 @@ public struct Skill {
     public enum Kind {
         case programmingLanguage
         case tools
-        case frameworks
+        case framework
         case language
     }
     
