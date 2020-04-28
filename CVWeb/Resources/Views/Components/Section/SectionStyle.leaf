@@ -1,8 +1,7 @@
 .section {
-    padding-top: 6rem !important;
-    padding-bottom: 6rem !important;
-    min-height: 100vh;
-    height: 100vh;
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    background-color: white;
 }
 
 .section .section-heading {
@@ -10,11 +9,23 @@
 }
 
 .section .section-item {
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 .section .section-item .section-date {
-    text-align: right;
     color: var(--primary);
     white-space: nowrap;
+}
+
+/* iPad and bigger devices */
+@media (min-width: 768px) {
+    .section  {
+        padding-top: 6rem !important;
+        padding-bottom: 6rem !important;
+        min-height: 100vh;
+    }
+
+    .section .section-item {
+        padding-top: 4rem;
+    }
 }

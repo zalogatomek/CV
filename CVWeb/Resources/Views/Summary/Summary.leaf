@@ -1,12 +1,12 @@
 <header class="masthead">
     <div class="container d-flex align-items-center flex-column">
         <!-- Masthead Avatar Image-->
-        <img class="masthead-avatar mb-5" src="Assets/Images/Avatar.png" alt="" />
+        <img class="masthead-avatar" src="Assets/Images/Avatar.png" alt="" />
         <!-- Masthead Heading-->
-        <h1 class="masthead-heading mb-0">Tomasz Załoga</h1>
+        <h1 class="masthead-heading">Tomasz Załoga</h1>
         <!-- Icon Divider-->
         #embed("Components/Divider/DividerLight")
         <!-- Masthead Subheading-->
-        <p class="masthead-subheading mb-0">I am a software developer with 7 years of experience, focused on developing applications for the iOS platform for 5 years. I have experience in both one-man and large agile teams. I feel best writing in Swift, but I'm not afraid of Objective-C either. Recently, I have been enthusiastically expanding my knowledge about Vapor - a web framework written in Swift.</p>
+        <p class="masthead-subheading">I am a software developer with 7 years of experience, focused on developing applications for the iOS platform for 5 years. I have experience in both one-man and large agile teams. I feel best writing in Swift, but I'm not afraid of Objective-C either. Recently, I have been enthusiastically expanding my knowledge about Vapor - a web framework written in Swift.</p>
     </div>
 </header>

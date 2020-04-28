@@ -4,7 +4,9 @@
         <div class="subheading mb-3">#get(subtitle)</div>
         <p>#get(summary)</p>
     </div>
-    <div class="section-date">
-        <p>#get(dateRange)</p>
+    <div class="container">
+        <div class="section-date text-md-right">
+            <p>#get(dateRange)</p>
+        </div>
     </div>
 </div>

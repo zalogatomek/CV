@@ -15,7 +15,5 @@
 }
 
 .rating .rating-name h3 {
-    display: inline-block;
-    text-transform : none;
-    width: 100%;
+    text-transform: none;
 }

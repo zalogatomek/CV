@@ -1,4 +1,4 @@
-<section class="section p-3 p-lg-5 d-flex align-items-center" id="#get(sectionId)">
+<section class="section d-flex flex-column align-items-center" id="#get(sectionId)">
     <div class="container">
         <h2 class="section-heading mb-0">#get(title)</h2>
         #embed("Components/Divider/Divider")
