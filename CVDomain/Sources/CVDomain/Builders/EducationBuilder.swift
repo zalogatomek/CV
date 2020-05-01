@@ -12,6 +12,7 @@ public final class EducationBuilder {
     private var endDate: Date?
     private var schoolName: String?
     private var degree: String?
+    private var summary: String?
     
     // MARK: - Lifecycle
     
@@ -39,12 +40,18 @@ public final class EducationBuilder {
         return self
     }
     
+    public func set(summary: String?) -> Self {
+        self.summary = summary
+        return self
+    }
+    
     public func build() -> Education? {
         return Education(
             dateRange: DateRange(
                 startDate: startDate,
                 endDate: endDate),
             schoolName: Name(schoolName),
-            degree: Education.Degree(degree))
+            degree: Education.Degree(degree),
+            summary: summary)
     }
 }

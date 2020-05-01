@@ -38,9 +38,11 @@ final class StaticCVRepository: CVRepository {
     
     private func education() -> [Education] {
         let study = EducationBuilder()
-            .set(startDate: date(year: 2005, month: 9))
-            .set(endDate: date(year: 2008, month: 6))
+            .set(startDate: date(year: 2008, month: 10))
+            .set(endDate: date(year: 2012, month: 2))
             .set(schoolName: "Silesian University of Technology")
+            .set(degree: "Bachelor of Engineering")
+            .set(summary: "Computer Science")
             .build()
         return [study].compactMap { $0 }
     }
@@ -52,14 +54,24 @@ final class StaticCVRepository: CVRepository {
             .set(role: "iOS Developer")
             .set(startDate: date(year: 2018, month: 3, day: 26))
             .set(company: "Sirocco Mobile")
+            .set(summary: siroccoSummary)
             .build()
         let ipix = ExperienceBuilder()
             .set(role: "Software Developer")
             .set(startDate: date(year: 2013, month: 9, day: 30))
             .set(endDate: date(year: 2018, month: 3, day: 16))
             .set(company: "Ipix S.C.")
+            .set(summary: ipixSummary)
             .build()
         return [sirocco, ipix].compactMap { $0 }
+    }
+    
+    var siroccoSummary: String {
+        ""
+    }
+    
+    var ipixSummary: String {
+        ""
     }
     
     // MARK: - Skills
@@ -113,7 +125,19 @@ final class StaticCVRepository: CVRepository {
             .set(level: 0.4)
             .build()
         
-        return [swift, objectiveC, uiKit, iOSSDK, swiftUi, vapor, xcode, swiftPackageManager].compactMap { $0 }
+        let polish = SkillBuilder()
+            .set(kind: .language)
+            .set(name: "Polish")
+            .set(level: 1.0)
+            .build()
+        
+        let english = SkillBuilder()
+            .set(kind: .language)
+            .set(name: "English")
+            .set(level: 0.6)
+            .build()
+        
+        return [swift, objectiveC, uiKit, iOSSDK, swiftUi, vapor, xcode, swiftPackageManager, polish, english].compactMap { $0 }
     }
     
     // MARK: - Utils

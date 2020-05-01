@@ -17,10 +17,12 @@ public struct Education {
     public let dateRange: DateRange
     public let schoolName: Name
     public let degree: Degree?
+    public let summary: String?
     
     public init?(dateRange: DateRange?,
                  schoolName: Name?,
-                 degree: Degree?)
+                 degree: Degree?,
+                 summary: String?)
     {
         guard let dateRange = dateRange,
             let schoolName = schoolName
@@ -29,5 +31,6 @@ public struct Education {
         self.dateRange = dateRange
         self.schoolName = schoolName
         self.degree = degree
+        self.summary = summary
     }
 }
