@@ -44,6 +44,16 @@
                     #set("name") {Swift Package Manager}
                     #embed("Components/Rating/Rating")
                 </div>
+                <div class="col-md-6">
+                    #set("value") {three}
+                    #set("name") {Polish}
+                    #embed("Components/Rating/Rating")
+                </div>
+                <div class="col-md-6">
+                    #set("value") {two}
+                    #set("name") {English}
+                    #embed("Components/Rating/Rating")
+                </div>
             </div>
         </div>
     </div>

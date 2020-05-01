@@ -4,13 +4,13 @@
     #set("title") {iOS Developer}
     #set("subtitle") {Sirocco Mobile}
     #set("dateRange") {March 2018 - Present}
-    #set("summary") {Summary goes here}
+    #set("summary") {From the very beginning, my adventure with Sirocco was related to work on the iOS application for Toyota and Lexus. Working in a large scrum team, I was SPOC (Single Point of Contact) for over half a year, being the contact person between the client and the development team.}
     #embed("Components/Section/SectionItem")
 
     #set("title") {Software Developer}
     #set("subtitle") {Ipix S.C.}
     #set("dateRange") {September 2013 - March 2018}
-    #set("summary") {Summary goes here}
+    #set("summary") {My first job was related to gaining experience in several technologies for several clients. I participated in the development of the desktop application in C++ for Polkomtel (Mobile phone network operator), I wrote database functions in SQL for DPD, I also created NCL (NCAR Command Language) scripts for IMGW (Polish Meteorological Institute).\nHowever, I gained the most experience (and satisfaction) by creating small internal iOS applications and associated my career with this technology.}
     #embed("Components/Section/SectionItem")
 }
 

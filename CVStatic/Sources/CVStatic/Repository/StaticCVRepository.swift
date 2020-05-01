@@ -67,11 +67,11 @@ final class StaticCVRepository: CVRepository {
     }
     
     var siroccoSummary: String {
-        ""
+        "From the very beginning, my adventure with Sirocco was related to work on the iOS application for Toyota and Lexus. Working in a large scrum team, I was SPOC (Single Point of Contact) for over half a year, being the contact person between the client and the development team."
     }
     
     var ipixSummary: String {
-        ""
+        "My first job was related to gaining experience in several technologies for several clients. I participated in the development of the desktop application in C++ for Polkomtel (Mobile phone network operator), I wrote database functions in SQL for DPD, I also created NCL (NCAR Command Language) scripts for IMGW (Polish Meteorological Institute).\nHowever, I gained the most experience (and satisfaction) by creating small internal iOS applications and associated my career with this technology."
     }
     
     // MARK: - Skills
