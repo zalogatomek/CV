@@ -22,7 +22,6 @@
     .section  {
         padding-top: 6rem !important;
         padding-bottom: 6rem !important;
-        min-height: 100vh;
     }
 
     .section .section-item {

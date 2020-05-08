@@ -2,20 +2,21 @@
     display: inline-block;
     height: 3.5rem;
     width: 3.5rem;
-    background-color: var(--light);
-    color: var(--secondary);
+    background-color: var(--secondary);
+    color: var(--light);
+    border: 0.125rem solid var(--light);
     border-radius: 100%;
     text-align: center;
-    font-size: 2rem;
-    line-height: 3.5rem;
-    margin-top: 1.75rem;
+    font-size: 1.75rem;
+    line-height: 3.25rem;
+    margin-top: 1.5rem;
     margin-left: 1rem;
     margin-right: 1rem;
 }
 
 .social-icons a:hover {
-    background-color: var(--primary);
-    color: var(--light);
+    background-color: var(--light);
+    color: var(--secondary);
 }
 
 /* iPad and bigger devices */
