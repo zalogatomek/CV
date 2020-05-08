@@ -21,6 +21,14 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		9A619A892465F4A3007B6166 /* configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A506F422465F1940006EA4E /* configure.swift */; };
+		9A619A8A2465F4A5007B6166 /* boot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A506F432465F1940006EA4E /* boot.swift */; };
+		9A619A8B2465F4A8007B6166 /* app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A506F442465F1940006EA4E /* app.swift */; };
+		9A619A8C2465F4AB007B6166 /* routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A506F452465F1940006EA4E /* routes.swift */; };
+		9A619A8D2465F4BB007B6166 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A506F472465F1940006EA4E /* HomeController.swift */; };
+		9A619A8E2465F4C5007B6166 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A506F4A2465F1940006EA4E /* main.swift */; };
+		9A619A8F2465F50D007B6166 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A506F4F2465F1AE0006EA4E /* AppTests.swift */; };
+		9A619A902465F511007B6166 /* LinuxMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A506F4C2465F1AE0006EA4E /* LinuxMain.swift */; };
 		OBJ_1000 /* ByteBuffer+binaryFloatingPointOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_525 /* ByteBuffer+binaryFloatingPointOperations.swift */; };
 		OBJ_1001 /* ByteBuffer+peek.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_526 /* ByteBuffer+peek.swift */; };
 		OBJ_1002 /* ByteBuffer+require.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_527 /* ByteBuffer+require.swift */; };
@@ -556,7 +564,6 @@
 		OBJ_1939 /* CNIOLinux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-nio::CNIOLinux::Product" /* CNIOLinux.framework */; };
 		OBJ_1940 /* Debugging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Core::Debugging::Product" /* Debugging.framework */; };
 		OBJ_1960 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_245 /* Package.swift */; };
-		OBJ_1966 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* main.swift */; };
 		OBJ_1968 /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "CVWeb::App::Product" /* App.framework */; };
 		OBJ_1969 /* Leaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Leaf::Leaf::Product" /* Leaf.framework */; };
 		OBJ_1970 /* Vapor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Vapor::Vapor::Product" /* Vapor.framework */; };
@@ -889,11 +896,6 @@
 		OBJ_2513 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_141 /* Package.swift */; };
 		OBJ_2519 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_319 /* Package.swift */; };
 		OBJ_2525 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_693 /* Package.swift */; };
-		OBJ_748 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* HomeController.swift */; };
-		OBJ_749 /* app.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* app.swift */; };
-		OBJ_750 /* boot.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* boot.swift */; };
-		OBJ_751 /* configure.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_14 /* configure.swift */; };
-		OBJ_752 /* routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_15 /* routes.swift */; };
 		OBJ_754 /* Leaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Leaf::Leaf::Product" /* Leaf.framework */; };
 		OBJ_755 /* Vapor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Vapor::Vapor::Product" /* Vapor.framework */; };
 		OBJ_756 /* WebSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "WebSocket::WebSocket::Product" /* WebSocket.framework */; };
@@ -933,7 +935,6 @@
 		OBJ_790 /* CNIOAtomics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-nio::CNIOAtomics::Product" /* CNIOAtomics.framework */; };
 		OBJ_791 /* CNIODarwin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-nio::CNIODarwin::Product" /* CNIODarwin.framework */; };
 		OBJ_792 /* CNIOLinux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "swift-nio::CNIOLinux::Product" /* CNIOLinux.framework */; };
-		OBJ_876 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* AppTests.swift */; };
 		OBJ_878 /* App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "CVWeb::App::Product" /* App.framework */; };
 		OBJ_879 /* Leaf.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Leaf::Leaf::Product" /* Leaf.framework */; };
 		OBJ_880 /* Vapor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Vapor::Vapor::Product" /* Vapor.framework */; };
@@ -4205,10 +4206,47 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9AD8E09124575BD800D0ED0B /* cloud.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = cloud.yml; sourceTree = "<group>"; };
-		"CVWeb::App-Tests::Product" /* App_Tests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; name = App_Tests.xctest; path = "App-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A506F422465F1940006EA4E /* configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = configure.swift; sourceTree = "<group>"; };
+		9A506F432465F1940006EA4E /* boot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boot.swift; sourceTree = "<group>"; };
+		9A506F442465F1940006EA4E /* app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app.swift; sourceTree = "<group>"; };
+		9A506F452465F1940006EA4E /* routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = routes.swift; sourceTree = "<group>"; };
+		9A506F472465F1940006EA4E /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		9A506F4A2465F1940006EA4E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		9A506F4C2465F1AE0006EA4E /* LinuxMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinuxMain.swift; sourceTree = "<group>"; };
+		9A506F4F2465F1AE0006EA4E /* AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTests.swift; sourceTree = "<group>"; };
+		9A506F522465F20F0006EA4E /* Experience.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = Experience.leaf; sourceTree = "<group>"; };
+		9A506F542465F20F0006EA4E /* Contact.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = Contact.leaf; sourceTree = "<group>"; };
+		9A506F552465F20F0006EA4E /* ContactStyle.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = ContactStyle.leaf; sourceTree = "<group>"; };
+		9A506F562465F20F0006EA4E /* Home.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = Home.leaf; sourceTree = "<group>"; };
+		9A506F582465F20F0006EA4E /* Fonts.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = Fonts.leaf; sourceTree = "<group>"; };
+		9A506F592465F20F0006EA4E /* Stylesheet.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = Stylesheet.leaf; sourceTree = "<group>"; };
+		9A506F5B2465F20F0006EA4E /* Education.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = Education.leaf; sourceTree = "<group>"; };
+		9A506F5C2465F20F0006EA4E /* Base.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = Base.leaf; sourceTree = "<group>"; };
+		9A506F5E2465F20F0006EA4E /* NavigationBar.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = NavigationBar.leaf; sourceTree = "<group>"; };
+		9A506F5F2465F20F0006EA4E /* NavigationBarStyle.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = NavigationBarStyle.leaf; sourceTree = "<group>"; };
+		9A506F622465F20F0006EA4E /* SectionItem.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = SectionItem.leaf; sourceTree = "<group>"; };
+		9A506F632465F20F0006EA4E /* SectionStyle.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = SectionStyle.leaf; sourceTree = "<group>"; };
+		9A506F642465F20F0006EA4E /* Section.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = Section.leaf; sourceTree = "<group>"; };
+		9A506F662465F20F0006EA4E /* RatingStyle.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = RatingStyle.leaf; sourceTree = "<group>"; };
+		9A506F672465F20F0006EA4E /* RatingIcon.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = RatingIcon.leaf; sourceTree = "<group>"; };
+		9A506F682465F20F0006EA4E /* Rating.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = Rating.leaf; sourceTree = "<group>"; };
+		9A506F6A2465F20F0006EA4E /* SocialIconsStyle.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = SocialIconsStyle.leaf; sourceTree = "<group>"; };
+		9A506F6B2465F20F0006EA4E /* SocialIcons.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = SocialIcons.leaf; sourceTree = "<group>"; };
+		9A506F6D2465F20F0006EA4E /* DividerLight.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = DividerLight.leaf; sourceTree = "<group>"; };
+		9A506F6E2465F20F0006EA4E /* DividerContent.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = DividerContent.leaf; sourceTree = "<group>"; };
+		9A506F6F2465F20F0006EA4E /* Divider.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = Divider.leaf; sourceTree = "<group>"; };
+		9A506F702465F20F0006EA4E /* DividerStyle.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = DividerStyle.leaf; sourceTree = "<group>"; };
+		9A506F722465F20F0006EA4E /* SkillsStyle.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = SkillsStyle.leaf; sourceTree = "<group>"; };
+		9A506F732465F20F0006EA4E /* Skills.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = Skills.leaf; sourceTree = "<group>"; };
+		9A506F752465F20F0006EA4E /* Summary.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = Summary.leaf; sourceTree = "<group>"; };
+		9A506F762465F20F0006EA4E /* SummaryStyle.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = SummaryStyle.leaf; sourceTree = "<group>"; };
+		9A506F7B2465F2D40006EA4E /* resume.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = resume.js; sourceTree = "<group>"; };
+		9A506F7C2465F2D40006EA4E /* jqueryeasing.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jqueryeasing.js; sourceTree = "<group>"; };
+		9A506F7D2465F2D40006EA4E /* jquery.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
+		9A506F802465F2D40006EA4E /* Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avatar.png; sourceTree = "<group>"; };
+		"CVWeb::App-Tests::Product" /* App-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = "App-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CVWeb::App::Product" /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"CVWeb::Run::Product" /* Run */ = {isa = PBXFileReference; lastKnownFileType = text; path = Run; sourceTree = BUILT_PRODUCTS_DIR; };
+		"CVWeb::Run::Product" /* Run */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Run; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Command::Product" /* Command.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Command.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Console::Product" /* Console.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Console.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Console::Logging::Product" /* Logging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Logging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -4226,7 +4264,6 @@
 		"HTTP::HTTP::Product" /* HTTP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HTTP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Leaf::Leaf::Product" /* Leaf.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Leaf.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Multipart::Multipart::Product" /* Multipart.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Multipart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_10 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		OBJ_101 /* NIOServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOServer.swift; sourceTree = "<group>"; };
 		OBJ_102 /* NIOServerConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOServerConfig.swift; sourceTree = "<group>"; };
 		OBJ_103 /* RunningServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningServer.swift; sourceTree = "<group>"; };
@@ -4243,7 +4280,6 @@
 		OBJ_116 /* Sessions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sessions.swift; sourceTree = "<group>"; };
 		OBJ_117 /* SessionsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsConfig.swift; sourceTree = "<group>"; };
 		OBJ_118 /* SessionsMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionsMiddleware.swift; sourceTree = "<group>"; };
-		OBJ_12 /* app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app.swift; sourceTree = "<group>"; };
 		OBJ_120 /* AnyResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyResponse.swift; sourceTree = "<group>"; };
 		OBJ_121 /* Exports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exports.swift; sourceTree = "<group>"; };
 		OBJ_122 /* FileIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIO.swift; sourceTree = "<group>"; };
@@ -4252,7 +4288,6 @@
 		OBJ_127 /* NIOWebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOWebSocketClient.swift; sourceTree = "<group>"; };
 		OBJ_128 /* NIOWebSocketServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NIOWebSocketServer.swift; sourceTree = "<group>"; };
 		OBJ_129 /* WebSocketClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketClient.swift; sourceTree = "<group>"; };
-		OBJ_13 /* boot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = boot.swift; sourceTree = "<group>"; };
 		OBJ_130 /* WebSocketResponder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketResponder.swift; sourceTree = "<group>"; };
 		OBJ_131 /* WebSocketServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketServer.swift; sourceTree = "<group>"; };
 		OBJ_132 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/omek/Library/Mobile Documents/com~apple~CloudDocs/Developer/Własne/CV/CVWeb/.build/checkouts/vapor/Package.swift"; sourceTree = "<group>"; };
@@ -4261,7 +4296,6 @@
 		OBJ_137 /* WebSocket+Server.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebSocket+Server.swift"; sourceTree = "<group>"; };
 		OBJ_138 /* WebSocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocket.swift; sourceTree = "<group>"; };
 		OBJ_139 /* WebSocketFrameSequence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketFrameSequence.swift; sourceTree = "<group>"; };
-		OBJ_14 /* configure.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = configure.swift; sourceTree = "<group>"; };
 		OBJ_140 /* WebSocketHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketHandler.swift; sourceTree = "<group>"; };
 		OBJ_141 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/omek/Library/Mobile Documents/com~apple~CloudDocs/Developer/Własne/CV/CVWeb/.build/checkouts/websocket/Package.swift"; sourceTree = "<group>"; };
 		OBJ_144 /* Exports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exports.swift; sourceTree = "<group>"; };
@@ -4270,7 +4304,6 @@
 		OBJ_147 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 		OBJ_148 /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		OBJ_149 /* ValidatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidatorType.swift; sourceTree = "<group>"; };
-		OBJ_15 /* routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = routes.swift; sourceTree = "<group>"; };
 		OBJ_151 /* AndValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AndValidator.swift; sourceTree = "<group>"; };
 		OBJ_152 /* CharacterSetValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterSetValidator.swift; sourceTree = "<group>"; };
 		OBJ_153 /* CountValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountValidator.swift; sourceTree = "<group>"; };
@@ -4286,7 +4319,6 @@
 		OBJ_163 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/omek/Library/Mobile Documents/com~apple~CloudDocs/Developer/Własne/CV/CVWeb/.build/checkouts/validation/Package.swift"; sourceTree = "<group>"; };
 		OBJ_167 /* URLEncodedFormDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodedFormDecoder.swift; sourceTree = "<group>"; };
 		OBJ_168 /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
-		OBJ_17 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		OBJ_170 /* URLEncodedFormData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodedFormData.swift; sourceTree = "<group>"; };
 		OBJ_171 /* URLEncodedFormDataConvertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodedFormDataConvertible.swift; sourceTree = "<group>"; };
 		OBJ_172 /* URLEncodedFormParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLEncodedFormParser.swift; sourceTree = "<group>"; };
@@ -4312,7 +4344,6 @@
 		OBJ_197 /* TemplateDataRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateDataRepresentable.swift; sourceTree = "<group>"; };
 		OBJ_198 /* TemplateDataStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateDataStorage.swift; sourceTree = "<group>"; };
 		OBJ_199 /* Deprecated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deprecated.swift; sourceTree = "<group>"; };
-		OBJ_20 /* AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTests.swift; sourceTree = "<group>"; };
 		OBJ_201 /* ASTCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ASTCache.swift; sourceTree = "<group>"; };
 		OBJ_202 /* PlaintextRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaintextRenderer.swift; sourceTree = "<group>"; };
 		OBJ_203 /* TemplateByteScanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemplateByteScanner.swift; sourceTree = "<group>"; };
@@ -4732,12 +4763,8 @@
 		OBJ_71 /* CORSMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CORSMiddleware.swift; sourceTree = "<group>"; };
 		OBJ_72 /* DateMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateMiddleware.swift; sourceTree = "<group>"; };
 		OBJ_73 /* ErrorMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorMiddleware.swift; sourceTree = "<group>"; };
-		OBJ_737 /* Resources */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Resources; sourceTree = SOURCE_ROOT; };
-		OBJ_738 /* Public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Public; sourceTree = SOURCE_ROOT; };
 		OBJ_74 /* FileMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileMiddleware.swift; sourceTree = "<group>"; };
 		OBJ_740 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		OBJ_741 /* web.Dockerfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = web.Dockerfile; sourceTree = "<group>"; };
-		OBJ_742 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
 		OBJ_75 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
 		OBJ_76 /* MiddlewareConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddlewareConfig.swift; sourceTree = "<group>"; };
 		OBJ_78 /* HTTPMethod+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPMethod+String.swift"; sourceTree = "<group>"; };
@@ -5538,6 +5565,258 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A506F3D2465F1940006EA4E /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F3E2465F1940006EA4E /* App */,
+				9A506F492465F1940006EA4E /* Run */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		9A506F3E2465F1940006EA4E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F412465F1940006EA4E /* Main */,
+				9A506F3F2465F1940006EA4E /* Models */,
+				9A506F462465F1940006EA4E /* Controllers */,
+				9A506F502465F20F0006EA4E /* Views */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		9A506F3F2465F1940006EA4E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9A506F412465F1940006EA4E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F442465F1940006EA4E /* app.swift */,
+				9A506F432465F1940006EA4E /* boot.swift */,
+				9A506F422465F1940006EA4E /* configure.swift */,
+				9A506F452465F1940006EA4E /* routes.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		9A506F462465F1940006EA4E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F472465F1940006EA4E /* HomeController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9A506F492465F1940006EA4E /* Run */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F4A2465F1940006EA4E /* main.swift */,
+			);
+			path = Run;
+			sourceTree = "<group>";
+		};
+		9A506F4B2465F1AE0006EA4E /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F4E2465F1AE0006EA4E /* App-Tests */,
+				9A506F4C2465F1AE0006EA4E /* LinuxMain.swift */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		9A506F4E2465F1AE0006EA4E /* App-Tests */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F4F2465F1AE0006EA4E /* AppTests.swift */,
+			);
+			path = "App-Tests";
+			sourceTree = "<group>";
+		};
+		9A506F502465F20F0006EA4E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F5C2465F20F0006EA4E /* Base.leaf */,
+				9A506F562465F20F0006EA4E /* Home.leaf */,
+				9A506F5D2465F20F0006EA4E /* NavigationBar */,
+				9A506F742465F20F0006EA4E /* Summary */,
+				9A506F512465F20F0006EA4E /* Experience */,
+				9A506F5A2465F20F0006EA4E /* Education */,
+				9A506F712465F20F0006EA4E /* Skills */,
+				9A506F532465F20F0006EA4E /* Contact */,
+				9A506F572465F20F0006EA4E /* Stylesheet */,
+				9A506F602465F20F0006EA4E /* Components */,
+			);
+			name = Views;
+			path = Resources/Views;
+			sourceTree = SOURCE_ROOT;
+		};
+		9A506F512465F20F0006EA4E /* Experience */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F522465F20F0006EA4E /* Experience.leaf */,
+			);
+			path = Experience;
+			sourceTree = "<group>";
+		};
+		9A506F532465F20F0006EA4E /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F542465F20F0006EA4E /* Contact.leaf */,
+				9A506F552465F20F0006EA4E /* ContactStyle.leaf */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		9A506F572465F20F0006EA4E /* Stylesheet */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F592465F20F0006EA4E /* Stylesheet.leaf */,
+				9A506F582465F20F0006EA4E /* Fonts.leaf */,
+			);
+			path = Stylesheet;
+			sourceTree = "<group>";
+		};
+		9A506F5A2465F20F0006EA4E /* Education */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F5B2465F20F0006EA4E /* Education.leaf */,
+			);
+			path = Education;
+			sourceTree = "<group>";
+		};
+		9A506F5D2465F20F0006EA4E /* NavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F5E2465F20F0006EA4E /* NavigationBar.leaf */,
+				9A506F5F2465F20F0006EA4E /* NavigationBarStyle.leaf */,
+			);
+			path = NavigationBar;
+			sourceTree = "<group>";
+		};
+		9A506F602465F20F0006EA4E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F612465F20F0006EA4E /* Section */,
+				9A506F652465F20F0006EA4E /* Rating */,
+				9A506F692465F20F0006EA4E /* SocialIcons */,
+				9A506F6C2465F20F0006EA4E /* Divider */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		9A506F612465F20F0006EA4E /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F642465F20F0006EA4E /* Section.leaf */,
+				9A506F622465F20F0006EA4E /* SectionItem.leaf */,
+				9A506F632465F20F0006EA4E /* SectionStyle.leaf */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		9A506F652465F20F0006EA4E /* Rating */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F682465F20F0006EA4E /* Rating.leaf */,
+				9A506F672465F20F0006EA4E /* RatingIcon.leaf */,
+				9A506F662465F20F0006EA4E /* RatingStyle.leaf */,
+			);
+			path = Rating;
+			sourceTree = "<group>";
+		};
+		9A506F692465F20F0006EA4E /* SocialIcons */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F6B2465F20F0006EA4E /* SocialIcons.leaf */,
+				9A506F6A2465F20F0006EA4E /* SocialIconsStyle.leaf */,
+			);
+			path = SocialIcons;
+			sourceTree = "<group>";
+		};
+		9A506F6C2465F20F0006EA4E /* Divider */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F6F2465F20F0006EA4E /* Divider.leaf */,
+				9A506F6D2465F20F0006EA4E /* DividerLight.leaf */,
+				9A506F6E2465F20F0006EA4E /* DividerContent.leaf */,
+				9A506F702465F20F0006EA4E /* DividerStyle.leaf */,
+			);
+			path = Divider;
+			sourceTree = "<group>";
+		};
+		9A506F712465F20F0006EA4E /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F732465F20F0006EA4E /* Skills.leaf */,
+				9A506F722465F20F0006EA4E /* SkillsStyle.leaf */,
+			);
+			path = Skills;
+			sourceTree = "<group>";
+		};
+		9A506F742465F20F0006EA4E /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F752465F20F0006EA4E /* Summary.leaf */,
+				9A506F762465F20F0006EA4E /* SummaryStyle.leaf */,
+			);
+			path = Summary;
+			sourceTree = "<group>";
+		};
+		9A506F782465F2D40006EA4E /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F792465F2D40006EA4E /* Scripts */,
+				9A506F7E2465F2D40006EA4E /* Assets */,
+			);
+			path = Public;
+			sourceTree = "<group>";
+		};
+		9A506F792465F2D40006EA4E /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F7A2465F2D40006EA4E /* External */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		9A506F7A2465F2D40006EA4E /* External */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F7D2465F2D40006EA4E /* jquery.js */,
+				9A506F7C2465F2D40006EA4E /* jqueryeasing.js */,
+				9A506F7B2465F2D40006EA4E /* resume.js */,
+			);
+			path = External;
+			sourceTree = "<group>";
+		};
+		9A506F7E2465F2D40006EA4E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F7F2465F2D40006EA4E /* Images */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		9A506F7F2465F2D40006EA4E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F802465F2D40006EA4E /* Avatar.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		9A619A912465F594007B6166 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A506F782465F2D40006EA4E /* Public */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		OBJ_100 /* Server */ = {
 			isa = PBXGroup;
 			children = (
@@ -5573,17 +5852,6 @@
 				OBJ_118 /* SessionsMiddleware.swift */,
 			);
 			path = Sessions;
-			sourceTree = "<group>";
-		};
-		OBJ_11 /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_12 /* app.swift */,
-				OBJ_13 /* boot.swift */,
-				OBJ_14 /* configure.swift */,
-				OBJ_15 /* routes.swift */,
-			);
-			path = Main;
 			sourceTree = "<group>";
 		};
 		OBJ_119 /* Utilities */ = {
@@ -5683,15 +5951,6 @@
 			path = Validators;
 			sourceTree = "<group>";
 		};
-		OBJ_16 /* Run */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_17 /* main.swift */,
-			);
-			name = Run;
-			path = Sources/Run;
-			sourceTree = SOURCE_ROOT;
-		};
 		OBJ_164 /* URLEncodedForm 1.0.6 */ = {
 			isa = PBXGroup;
 			children = (
@@ -5766,14 +6025,6 @@
 			path = ".build/checkouts/template-kit/Sources/TemplateKit";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_18 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_19 /* App-Tests */,
-			);
-			name = Tests;
-			sourceTree = SOURCE_ROOT;
-		};
 		OBJ_180 /* AST */ = {
 			isa = PBXGroup;
 			children = (
@@ -5793,15 +6044,6 @@
 			);
 			path = AST;
 			sourceTree = "<group>";
-		};
-		OBJ_19 /* App-Tests */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_20 /* AppTests.swift */,
-			);
-			name = "App-Tests";
-			path = "Tests/App-Tests";
-			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_194 /* Data */ = {
 			isa = PBXGroup;
@@ -6811,16 +7053,12 @@
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
-				OBJ_737 /* Resources */,
-				OBJ_7 /* Sources */,
-				OBJ_18 /* Tests */,
+				9A619A912465F594007B6166 /* Resources */,
+				9A506F3D2465F1940006EA4E /* Sources */,
+				9A506F4B2465F1AE0006EA4E /* Tests */,
 				OBJ_21 /* Dependencies */,
 				OBJ_694 /* Products */,
-				OBJ_738 /* Public */,
-				9AD8E09124575BD800D0ED0B /* cloud.yml */,
 				OBJ_740 /* README.md */,
-				OBJ_741 /* web.Dockerfile */,
-				OBJ_742 /* CONTRIBUTING.md */,
 			);
 			sourceTree = "<group>";
 		};
@@ -7340,7 +7578,7 @@
 				"Leaf::Leaf::Product" /* Leaf.framework */,
 				"Core::Async::Product" /* Async.framework */,
 				"Crypto::Random::Product" /* Random.framework */,
-				"CVWeb::App-Tests::Product" /* App_Tests.xctest */,
+				"CVWeb::App-Tests::Product" /* App-Tests.xctest */,
 				"Crypto::CCryptoOpenSSL::Product" /* CCryptoOpenSSL.framework */,
 				"DatabaseKit::DatabaseKit::Product" /* DatabaseKit.framework */,
 				"swift-nio::CNIOHTTPParser::Product" /* CNIOHTTPParser.framework */,
@@ -7376,15 +7614,6 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_7 /* Sources */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_8 /* App */,
-				OBJ_16 /* Run */,
-			);
-			name = Sources;
-			sourceTree = SOURCE_ROOT;
-		};
 		OBJ_70 /* Middleware */ = {
 			isa = PBXGroup;
 			children = (
@@ -7407,16 +7636,6 @@
 			);
 			path = Request;
 			sourceTree = "<group>";
-		};
-		OBJ_8 /* App */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_9 /* Controllers */,
-				OBJ_11 /* Main */,
-			);
-			name = App;
-			path = Sources/App;
-			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_81 /* Response */ = {
 			isa = PBXGroup;
@@ -7447,14 +7666,6 @@
 				OBJ_99 /* Router.swift */,
 			);
 			path = Routing;
-			sourceTree = "<group>";
-		};
-		OBJ_9 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_10 /* HomeController.swift */,
-			);
-			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -7622,7 +7833,7 @@
 			);
 			name = "App-Tests";
 			productName = App_Tests;
-			productReference = "CVWeb::App-Tests::Product" /* App_Tests.xctest */;
+			productReference = "CVWeb::App-Tests::Product" /* App-Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		"CVWeb::Run" /* Run */ = {
@@ -8893,7 +9104,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftMigration = 9999;
-				LastUpgradeCheck = 9999;
+				LastUpgradeCheck = 1140;
 			};
 			buildConfigurationList = OBJ_2 /* Build configuration list for PBXProject "CVWeb" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -9560,7 +9771,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_1966 /* main.swift in Sources */,
+				9A619A8E2465F4C5007B6166 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -9842,11 +10053,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_748 /* HomeController.swift in Sources */,
-				OBJ_749 /* app.swift in Sources */,
-				OBJ_750 /* boot.swift in Sources */,
-				OBJ_751 /* configure.swift in Sources */,
-				OBJ_752 /* routes.swift in Sources */,
+				9A619A892465F4A3007B6166 /* configure.swift in Sources */,
+				9A619A8C2465F4AB007B6166 /* routes.swift in Sources */,
+				9A619A8B2465F4A8007B6166 /* app.swift in Sources */,
+				9A619A8A2465F4A5007B6166 /* boot.swift in Sources */,
+				9A619A8D2465F4BB007B6166 /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -9854,7 +10065,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_876 /* AppTests.swift in Sources */,
+				9A619A8F2465F50D007B6166 /* AppTests.swift in Sources */,
+				9A619A902465F511007B6166 /* LinuxMain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -14663,6 +14875,7 @@
 		OBJ_1963 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -14712,6 +14925,7 @@
 		OBJ_1964 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -15410,17 +15624,43 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
 				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
@@ -15438,15 +15678,40 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_SWIFT_FLAGS = "$(inherited) -DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -15566,8 +15831,8 @@
 		OBJ_873 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
@@ -15615,8 +15880,8 @@
 		OBJ_874 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
