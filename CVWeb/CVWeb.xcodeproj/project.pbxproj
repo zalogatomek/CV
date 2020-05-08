@@ -4244,6 +4244,7 @@
 		9A506F7C2465F2D40006EA4E /* jqueryeasing.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jqueryeasing.js; sourceTree = "<group>"; };
 		9A506F7D2465F2D40006EA4E /* jquery.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
 		9A506F802465F2D40006EA4E /* Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avatar.png; sourceTree = "<group>"; };
+		9A619A932465F65F007B6166 /* DeployHeroku.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = DeployHeroku.sh; sourceTree = "<group>"; };
 		"CVWeb::App-Tests::Product" /* App-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = "App-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CVWeb::App::Product" /* App.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"CVWeb::Run::Product" /* Run */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = Run; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -5817,6 +5818,14 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
+		9A619AC12465F986007B6166 /* Deploy */ = {
+			isa = PBXGroup;
+			children = (
+				9A619A932465F65F007B6166 /* DeployHeroku.sh */,
+			);
+			name = Deploy;
+			sourceTree = "<group>";
+		};
 		OBJ_100 /* Server */ = {
 			isa = PBXGroup;
 			children = (
@@ -7056,6 +7065,7 @@
 				9A619A912465F594007B6166 /* Resources */,
 				9A506F3D2465F1940006EA4E /* Sources */,
 				9A506F4B2465F1AE0006EA4E /* Tests */,
+				9A619AC12465F986007B6166 /* Deploy */,
 				OBJ_21 /* Dependencies */,
 				OBJ_694 /* Products */,
 				OBJ_740 /* README.md */,
