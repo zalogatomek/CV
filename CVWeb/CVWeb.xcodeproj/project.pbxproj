@@ -5569,8 +5569,8 @@
 		9A506F3D2465F1940006EA4E /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				9A506F3E2465F1940006EA4E /* App */,
 				9A506F492465F1940006EA4E /* Run */,
+				9A506F3E2465F1940006EA4E /* App */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
