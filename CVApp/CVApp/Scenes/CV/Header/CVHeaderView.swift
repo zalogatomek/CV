@@ -9,7 +9,7 @@ struct CVHeaderView: View {
     let viewModel: CVHeaderViewModel
     
     var body: some View {
-        VStack(spacing: 8.0) {
+        VStack(spacing: .small) {
             HStack(alignment: .top) {
                 IfLet(viewModel.imageName) { imageName in
                     CircleImage(imageName)

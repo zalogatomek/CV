@@ -35,7 +35,7 @@ struct CVExperienceView: View {
     let viewModel: CVExperienceViewModel
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 8.0) {
+        VStack(alignment: .leading, spacing: .small) {
             Text(viewModel.title)
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .font(.headline)
