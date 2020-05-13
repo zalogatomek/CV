@@ -9,8 +9,8 @@ extension Color {
     
     // MARK: - App colors
     
-    static var primary: Color { Color(hex: CVDesign.Colors.primary.hex) }
-    static var secondary: Color { Color(hex: CVDesign.Colors.secondary.hex) }
+    static var accentPrimary: Color { Color(hex: CVDesign.Colors.primary.hex) }
+    static var accentSecondary: Color { Color(hex: CVDesign.Colors.secondary.hex) }
     static var light: Color { Color(hex: CVDesign.Colors.light.hex) }
     
     // MARK: - Text colors
@@ -19,3 +19,5 @@ extension Color {
     static var textSecondary: Color { Color(hex: CVDesign.Colors.textSecondary.hex) }
     static var textLight: Color { Color(hex: CVDesign.Colors.textLight.hex) }
 }
+
+

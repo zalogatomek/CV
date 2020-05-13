@@ -5,5 +5,5 @@
 import Foundation
 
 extension String {
-    var hex: Int { Int(self, radix: 16) ?? 0 }
+    var hex: Int { Int(self.filter{ $0.isHexDigit }, radix: 16) ?? 0 }
 }
