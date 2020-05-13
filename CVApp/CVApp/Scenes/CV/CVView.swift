@@ -10,7 +10,7 @@ struct CVView: View {
     
     var body: some View {
         Form {
-            CVHeaderView(viewModel: viewModel.header!)
+            CVSummaryView(viewModel: viewModel.header!)
             
             Section(header: Text("WORK EXPERIENCE")) {
                 ForEach(viewModel.experience, id: \.title) { viewModel in

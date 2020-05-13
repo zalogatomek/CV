@@ -5,7 +5,7 @@
 import Foundation
 import CVDomain
 
-struct CVHeaderViewModel {
+struct CVSummaryViewModel {
     
     // MARK: - Properties
     

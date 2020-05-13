@@ -5,8 +5,8 @@
 import SwiftUI
 import CVDomain
 
-struct CVHeaderView: View {
-    let viewModel: CVHeaderViewModel
+struct CVSummaryView: View {
+    let viewModel: CVSummaryViewModel
     
     var body: some View {
         VStack(spacing: .small) {
@@ -29,9 +29,9 @@ struct CVHeaderView: View {
     }
 }
 
-struct CVHeaderView_Previews: PreviewProvider {
+struct CVSummaryView_Previews: PreviewProvider {
     static var previews: some View {
-        CVHeaderView(viewModel: DependencyPreviewContainer.createCvViewModel().header!)
+        CVSummaryView(viewModel: DependencyPreviewContainer.createCvViewModel().header!)
             .frame(width: 300.0, height: nil)
             .previewLayout(.sizeThatFits)
     }

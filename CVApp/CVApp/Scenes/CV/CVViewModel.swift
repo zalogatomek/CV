@@ -27,9 +27,9 @@ class CVViewModel {
     
     // MARK: - Output
     
-    var header: CVHeaderViewModel? {
+    var header: CVSummaryViewModel? {
         guard let cv = cv else { return nil }
-        return CVHeaderViewModel(userData: cv.userData)
+        return CVSummaryViewModel(userData: cv.userData)
     }
     
     var experience: [CVExperienceViewModel] {
