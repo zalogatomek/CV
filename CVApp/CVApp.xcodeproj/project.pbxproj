@@ -19,6 +19,11 @@
 		9A4D606D2439EA11005F7F96 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D606C2439EA11005F7F96 /* CircleImage.swift */; };
 		9A4D60712439F383005F7F96 /* CVHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D60702439F383005F7F96 /* CVHeaderViewModel.swift */; };
 		9A4D60742439F49B005F7F96 /* CVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D60732439F49B005F7F96 /* CVViewModel.swift */; };
+		9A59080E246C863D0080BE24 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A59080D246C863D0080BE24 /* Theme.swift */; };
+		9A590810246C86870080BE24 /* Theme+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A59080F246C86870080BE24 /* Theme+Colors.swift */; };
+		9A590813246C86A80080BE24 /* CVDesign in Frameworks */ = {isa = PBXBuildFile; productRef = 9A590812246C86A80080BE24 /* CVDesign */; };
+		9A590815246C87AE0080BE24 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A590814246C87AE0080BE24 /* Color+Hex.swift */; };
+		9A590817246C89A20080BE24 /* String+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A590816246C89A20080BE24 /* String+Hex.swift */; };
 		9A5CCF8424263251009006CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8324263251009006CD /* AppDelegate.swift */; };
 		9A5CCF8624263251009006CD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8524263251009006CD /* SceneDelegate.swift */; };
 		9A5CCF8824263251009006CD /* CVView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8724263251009006CD /* CVView.swift */; };
@@ -53,6 +58,11 @@
 		9A4D606C2439EA11005F7F96 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		9A4D60702439F383005F7F96 /* CVHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVHeaderViewModel.swift; sourceTree = "<group>"; };
 		9A4D60732439F49B005F7F96 /* CVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVViewModel.swift; sourceTree = "<group>"; };
+		9A59080D246C863D0080BE24 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		9A59080F246C86870080BE24 /* Theme+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Theme+Colors.swift"; sourceTree = "<group>"; };
+		9A590811246C86A00080BE24 /* CVDesign */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CVDesign; path = ../CVDesign; sourceTree = "<group>"; };
+		9A590814246C87AE0080BE24 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
+		9A590816246C89A20080BE24 /* String+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Hex.swift"; sourceTree = "<group>"; };
 		9A5CCF8024263251009006CD /* CVApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CVApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5CCF8324263251009006CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A5CCF8524263251009006CD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +85,7 @@
 			files = (
 				9A4BD2B724389FD80049BE17 /* CVDomain in Frameworks */,
 				9A4BD2B924389FDB0049BE17 /* CVStatic in Frameworks */,
+				9A590813246C86A80080BE24 /* CVDesign in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,7 +130,9 @@
 		9A46E351243BBE53004A472E /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9A590814246C87AE0080BE24 /* Color+Hex.swift */,
 				9A46E352243BBE73004A472E /* RangeDateFormatter.swift */,
+				9A590816246C89A20080BE24 /* String+Hex.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -154,6 +167,24 @@
 			path = CV;
 			sourceTree = "<group>";
 		};
+		9A59080B246C86140080BE24 /* Design */ = {
+			isa = PBXGroup;
+			children = (
+				9A59080C246C86250080BE24 /* Theme */,
+				9A717D5B2438957D00AB3AD4 /* Views */,
+			);
+			path = Design;
+			sourceTree = "<group>";
+		};
+		9A59080C246C86250080BE24 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				9A59080D246C863D0080BE24 /* Theme.swift */,
+				9A59080F246C86870080BE24 /* Theme+Colors.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 		9A5CCF7724263251009006CD = {
 			isa = PBXGroup;
 			children = (
@@ -180,7 +211,7 @@
 				9A5CCFA824263291009006CD /* Resources */,
 				9A5CCFA52426326E009006CD /* Main */,
 				9A5CCFA624263279009006CD /* Scenes */,
-				9A717D5B2438957D00AB3AD4 /* Views */,
+				9A59080B246C86140080BE24 /* Design */,
 				9A46E351243BBE53004A472E /* Utils */,
 			);
 			path = CVApp;
@@ -276,6 +307,7 @@
 		9AAAC643242639E900BAD4EC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A590811246C86A00080BE24 /* CVDesign */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -300,6 +332,7 @@
 			packageProductDependencies = (
 				9A4BD2B624389FD80049BE17 /* CVDomain */,
 				9A4BD2B824389FDB0049BE17 /* CVStatic */,
+				9A590812246C86A80080BE24 /* CVDesign */,
 			);
 			productName = "CV App";
 			productReference = 9A5CCF8024263251009006CD /* CVApp.app */;
@@ -407,7 +440,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A46E346243BB6FC004A472E /* DependencyContainer+CV.swift in Sources */,
+				9A59080E246C863D0080BE24 /* Theme.swift in Sources */,
 				9A5D5062243F98F300A17400 /* IfLet.swift in Sources */,
+				9A590810246C86870080BE24 /* Theme+Colors.swift in Sources */,
 				9A5CCF8424263251009006CD /* AppDelegate.swift in Sources */,
 				9A46E34D243BBA2B004A472E /* CVSceneFactory.swift in Sources */,
 				9A5CCF8624263251009006CD /* SceneDelegate.swift in Sources */,
@@ -416,11 +451,13 @@
 				9A717D5E243895B700AB3AD4 /* CVHeaderView.swift in Sources */,
 				9A5CCF8824263251009006CD /* CVView.swift in Sources */,
 				9A4D60712439F383005F7F96 /* CVHeaderViewModel.swift in Sources */,
+				9A590817246C89A20080BE24 /* String+Hex.swift in Sources */,
 				9A4D606D2439EA11005F7F96 /* CircleImage.swift in Sources */,
 				9A46E344243BB699004A472E /* DependencyContainer.swift in Sources */,
 				9A46E349243BB9DB004A472E /* DependencyPreviewContainer.swift in Sources */,
 				9A4D60742439F49B005F7F96 /* CVViewModel.swift in Sources */,
 				9A46E350243BBCC9004A472E /* CVExperienceView.swift in Sources */,
+				9A590815246C87AE0080BE24 /* Color+Hex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,6 +731,10 @@
 		9A4BD2B824389FDB0049BE17 /* CVStatic */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CVStatic;
+		};
+		9A590812246C86A80080BE24 /* CVDesign */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CVDesign;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -6,23 +6,23 @@ import Foundation
 
 extension CVDesign {
     
-    struct Colors {
+    public struct Colors {
         
         // MARK: - Basic colors
         
-        var black: String = "#000000"
-        var white: String = "#FFFFFF"
+        public static var black: String = "#000000"
+        public static var white: String = "#FFFFFF"
         
         // MARK: - App colors
         
-        var primary: String = "#1089FF"
-        var secondary: String = "#23374D"
-        var light: String { white }
+        public static var primary: String = "#1089FF"
+        public static var secondary: String = "#23374D"
+        public static var light: String { white }
         
         // MARK: - Text colors
         
-        var textPrimary: String = "#23374D"
-        var textSecondary: String = "#4B5B6D"
-        var textLight: String { white }
+        public static var textPrimary: String = "#23374D"
+        public static var textSecondary: String = "#4B5B6D"
+        public static var textLight: String { white }
     }
 }

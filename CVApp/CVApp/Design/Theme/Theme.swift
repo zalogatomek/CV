@@ -2,5 +2,6 @@
 //  Created by Tomasz Załoga on 13/05/2020.
 //
 
-// Just a namespace
-public struct CVDesign { }
+import SwiftUI
+
+struct Theme { }
