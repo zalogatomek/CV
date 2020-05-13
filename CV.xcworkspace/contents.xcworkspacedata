@@ -13,4 +13,7 @@
    <FileRef
       location = "group:CVStatic">
    </FileRef>
+   <FileRef
+      location = "group:CVDesign">
+   </FileRef>
 </Workspace>
