@@ -4240,9 +4240,7 @@
 		9A506F732465F20F0006EA4E /* Skills.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = Skills.leaf; sourceTree = "<group>"; };
 		9A506F752465F20F0006EA4E /* Summary.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = Summary.leaf; sourceTree = "<group>"; };
 		9A506F762465F20F0006EA4E /* SummaryStyle.leaf */ = {isa = PBXFileReference; lastKnownFileType = text; path = SummaryStyle.leaf; sourceTree = "<group>"; };
-		9A506F7B2465F2D40006EA4E /* resume.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = resume.js; sourceTree = "<group>"; };
-		9A506F7C2465F2D40006EA4E /* jqueryeasing.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jqueryeasing.js; sourceTree = "<group>"; };
-		9A506F7D2465F2D40006EA4E /* jquery.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = jquery.js; sourceTree = "<group>"; };
+		9A506F7B2465F2D40006EA4E /* scripts.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = scripts.js; sourceTree = "<group>"; };
 		9A506F802465F2D40006EA4E /* Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avatar.png; sourceTree = "<group>"; };
 		9A619A932465F65F007B6166 /* DeployHeroku.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = DeployHeroku.sh; sourceTree = "<group>"; };
 		"CVWeb::App-Tests::Product" /* App-Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = "App-Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -5779,19 +5777,9 @@
 		9A506F792465F2D40006EA4E /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
-				9A506F7A2465F2D40006EA4E /* External */,
+				9A506F7B2465F2D40006EA4E /* scripts.js */,
 			);
 			path = Scripts;
-			sourceTree = "<group>";
-		};
-		9A506F7A2465F2D40006EA4E /* External */ = {
-			isa = PBXGroup;
-			children = (
-				9A506F7D2465F2D40006EA4E /* jquery.js */,
-				9A506F7C2465F2D40006EA4E /* jqueryeasing.js */,
-				9A506F7B2465F2D40006EA4E /* resume.js */,
-			);
-			path = External;
 			sourceTree = "<group>";
 		};
 		9A506F7E2465F2D40006EA4E /* Assets */ = {
