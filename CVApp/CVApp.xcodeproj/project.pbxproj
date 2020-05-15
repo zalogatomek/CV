@@ -22,6 +22,7 @@
 		9A4FE4E1246F2EA60012A6BF /* Font+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4FE4E0246F2EA60012A6BF /* Font+Theme.swift */; };
 		9A4FE4E5246F329E0012A6BF /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A4FE4E4246F321E0012A6BF /* Montserrat-Regular.ttf */; };
 		9A4FE4E6246F32A10012A6BF /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A4FE4E3246F321E0012A6BF /* Montserrat-Bold.ttf */; };
+		9A4FE4E8246F358B0012A6BF /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4FE4E7246F358B0012A6BF /* SectionHeader.swift */; };
 		9A590810246C86870080BE24 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A59080F246C86870080BE24 /* Color+Theme.swift */; };
 		9A590813246C86A80080BE24 /* CVDesign in Frameworks */ = {isa = PBXBuildFile; productRef = 9A590812246C86A80080BE24 /* CVDesign */; };
 		9A590815246C87AE0080BE24 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A590814246C87AE0080BE24 /* Color+Hex.swift */; };
@@ -64,6 +65,7 @@
 		9A4FE4E0246F2EA60012A6BF /* Font+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Theme.swift"; sourceTree = "<group>"; };
 		9A4FE4E3246F321E0012A6BF /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		9A4FE4E4246F321E0012A6BF /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		9A4FE4E7246F358B0012A6BF /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		9A59080F246C86870080BE24 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
 		9A590811246C86A00080BE24 /* CVDesign */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CVDesign; path = ../CVDesign; sourceTree = "<group>"; };
 		9A590814246C87AE0080BE24 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 			children = (
 				9A4D606C2439EA11005F7F96 /* CircleImage.swift */,
 				9A5D5061243F98F300A17400 /* IfLet.swift */,
+				9A4FE4E7246F358B0012A6BF /* SectionHeader.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -475,6 +478,7 @@
 				9A46E344243BB699004A472E /* DependencyContainer.swift in Sources */,
 				9A46E349243BB9DB004A472E /* DependencyPreviewContainer.swift in Sources */,
 				9A4FE4E1246F2EA60012A6BF /* Font+Theme.swift in Sources */,
+				9A4FE4E8246F358B0012A6BF /* SectionHeader.swift in Sources */,
 				9A4D60742439F49B005F7F96 /* CVViewModel.swift in Sources */,
 				9A46E350243BBCC9004A472E /* CVExperienceView.swift in Sources */,
 				9A590815246C87AE0080BE24 /* Color+Hex.swift in Sources */,

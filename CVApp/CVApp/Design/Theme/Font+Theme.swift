@@ -31,7 +31,7 @@ extension Font {
 struct Fonts_Previews: PreviewProvider {
     static var previews: some View {
         VStack(spacing: .wide) {
-            Text("Header")
+            Text("HEADER")
                 .font(.header)
             Text("Paragraph Bold")
                 .font(.paragraphBold)
@@ -40,5 +40,6 @@ struct Fonts_Previews: PreviewProvider {
             Text("Detials")
                 .font(.detail)
         }
+        .previewLayout(.fixed(width: 300, height: 200))
     }
 }
