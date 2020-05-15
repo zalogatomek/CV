@@ -10,10 +10,8 @@ struct CVView: View {
     
     var body: some View {
         Form {
-            ZStack {
-                Color.accentSecondary.edgesIgnoringSafeArea(.all)
-                CVSummaryView(viewModel: viewModel.header!)
-            }
+            CVSummaryView(viewModel: viewModel.header!)
+                .listRowBackground(Color.accentPrimary)
             
             Section(header: Text("WORK EXPERIENCE")) {
                 ForEach(viewModel.experience, id: \.title) { viewModel in

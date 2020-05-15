@@ -19,6 +19,9 @@
 		9A4D606D2439EA11005F7F96 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D606C2439EA11005F7F96 /* CircleImage.swift */; };
 		9A4D60712439F383005F7F96 /* CVSummaryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D60702439F383005F7F96 /* CVSummaryViewModel.swift */; };
 		9A4D60742439F49B005F7F96 /* CVViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4D60732439F49B005F7F96 /* CVViewModel.swift */; };
+		9A4FE4E1246F2EA60012A6BF /* Font+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4FE4E0246F2EA60012A6BF /* Font+Theme.swift */; };
+		9A4FE4E5246F329E0012A6BF /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A4FE4E4246F321E0012A6BF /* Montserrat-Regular.ttf */; };
+		9A4FE4E6246F32A10012A6BF /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A4FE4E3246F321E0012A6BF /* Montserrat-Bold.ttf */; };
 		9A590810246C86870080BE24 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A59080F246C86870080BE24 /* Color+Theme.swift */; };
 		9A590813246C86A80080BE24 /* CVDesign in Frameworks */ = {isa = PBXBuildFile; productRef = 9A590812246C86A80080BE24 /* CVDesign */; };
 		9A590815246C87AE0080BE24 /* Color+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A590814246C87AE0080BE24 /* Color+Hex.swift */; };
@@ -58,6 +61,9 @@
 		9A4D606C2439EA11005F7F96 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
 		9A4D60702439F383005F7F96 /* CVSummaryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSummaryViewModel.swift; sourceTree = "<group>"; };
 		9A4D60732439F49B005F7F96 /* CVViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVViewModel.swift; sourceTree = "<group>"; };
+		9A4FE4E0246F2EA60012A6BF /* Font+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Theme.swift"; sourceTree = "<group>"; };
+		9A4FE4E3246F321E0012A6BF /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		9A4FE4E4246F321E0012A6BF /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		9A59080F246C86870080BE24 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
 		9A590811246C86A00080BE24 /* CVDesign */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CVDesign; path = ../CVDesign; sourceTree = "<group>"; };
 		9A590814246C87AE0080BE24 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
@@ -167,6 +173,15 @@
 			path = CV;
 			sourceTree = "<group>";
 		};
+		9A4FE4E2246F31F10012A6BF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9A4FE4E4246F321E0012A6BF /* Montserrat-Regular.ttf */,
+				9A4FE4E3246F321E0012A6BF /* Montserrat-Bold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		9A59080B246C86140080BE24 /* Design */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +194,7 @@
 		9A59080C246C86250080BE24 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				9A4FE4E0246F2EA60012A6BF /* Font+Theme.swift */,
 				9A59080F246C86870080BE24 /* Color+Theme.swift */,
 				9A590819246C8A6C0080BE24 /* CGFloat+Spacing.swift */,
 			);
@@ -259,6 +275,7 @@
 				9A5CCFA92426329A009006CD /* Launch */,
 				9A5CCFAE242633C8009006CD /* Assets */,
 				9A5CCFAD242633BC009006CD /* Preview */,
+				9A4FE4E2246F31F10012A6BF /* Fonts */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -398,6 +415,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A4FE4E6246F32A10012A6BF /* Montserrat-Bold.ttf in Resources */,
+				9A4FE4E5246F329E0012A6BF /* Montserrat-Regular.ttf in Resources */,
 				9A5CCF9024263253009006CD /* LaunchScreen.storyboard in Resources */,
 				9A5CCF8D24263253009006CD /* Preview Assets.xcassets in Resources */,
 				9A5CCF8A24263253009006CD /* Assets.xcassets in Resources */,
@@ -455,6 +474,7 @@
 				9A4D606D2439EA11005F7F96 /* CircleImage.swift in Sources */,
 				9A46E344243BB699004A472E /* DependencyContainer.swift in Sources */,
 				9A46E349243BB9DB004A472E /* DependencyPreviewContainer.swift in Sources */,
+				9A4FE4E1246F2EA60012A6BF /* Font+Theme.swift in Sources */,
 				9A4D60742439F49B005F7F96 /* CVViewModel.swift in Sources */,
 				9A46E350243BBCC9004A472E /* CVExperienceView.swift in Sources */,
 				9A590815246C87AE0080BE24 /* Color+Hex.swift in Sources */,

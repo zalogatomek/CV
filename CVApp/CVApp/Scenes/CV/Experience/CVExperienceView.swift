@@ -38,12 +38,12 @@ struct CVExperienceView: View {
         VStack(alignment: .leading, spacing: .small) {
             Text(viewModel.title)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .font(.headline)
+                .font(.paragraphBold)
             
             Text(viewModel.date)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .font(.body)
-                .foregroundColor(.gray)
+                .font(.paragraph)
+                .foregroundColor(.textSecondary)
         }
     }
 }

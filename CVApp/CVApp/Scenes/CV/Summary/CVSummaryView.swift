@@ -15,15 +15,15 @@ struct CVSummaryView: View {
                     .frame(width: 120.0, height: 120.0)
             }
             
-            Text(viewModel.name)
+            Text(viewModel.name.uppercased())
                 .frame(maxWidth: .infinity, alignment: .center)
-                .font(.headline)
+                .font(.header)
                 .foregroundColor(.textLight)
             
             Text(viewModel.summary ?? "")
                 .frame(maxWidth: .infinity, alignment: .center)
                 .multilineTextAlignment(.center)
-                .font(.body)
+                .font(.paragraph)
                 .foregroundColor(.textLight)
         }
         .background(Color.accentPrimary)
