@@ -5,7 +5,7 @@
 import Foundation
 import CVDomain
 
-class CVViewModel {
+final class CVViewModel {
     
     // MARK: - Properties
     
@@ -27,14 +27,8 @@ class CVViewModel {
     
     // MARK: - Output
     
-    var header: CVSummaryViewModel? {
-        guard let cv = cv else { return nil }
-        return CVSummaryViewModel(userData: cv.userData)
-    }
-    
-    var experience: [CVExperienceViewModel] {
+    var items: [CVViewItem] {
         guard let cv = cv else { return [] }
-        return cv.workExperience.map{ CVExperienceViewModel(experience: $0) }
+        return CVViewItemFactory.create(with: cv)
     }
-    
 }

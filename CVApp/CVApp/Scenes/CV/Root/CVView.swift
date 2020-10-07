@@ -21,14 +21,14 @@ struct CVView: View {
     // MARK: - Body
     
     var body: some View {
-        Form {
-            CVSummaryView(viewModel: viewModel.header!)
-                .listRowBackground(Color.accentPrimary)
-            
-            Section(header: sectionHeader("WORK EXPERIENCE")) {
-                ForEach(viewModel.experience, id: \.title) { viewModel in
-                    CVExperienceView(viewModel: viewModel)
-                }
+        List(viewModel.items) { item -> AnyView in
+            switch item {
+            case .header:
+                return AnyView(Text("Header"))
+            case .summary(let viewModel):
+                return AnyView(CVSummaryView(viewModel: viewModel))
+            case .experience(let viewModel):
+                return AnyView(CVExperienceView(viewModel: viewModel))
             }
         }
         .background(Color.white)

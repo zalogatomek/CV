@@ -5,7 +5,7 @@
 import Foundation
 import CVDomain
 
-class CVExperienceViewModel {
+final class CVExperienceViewModel {
     
     // MARK: - Properties
     

@@ -3,6 +3,8 @@
 //
 
 import Foundation
+import CVDomain
+import CVStatic
 
 extension DependencyPreviewContainer: CVSceneFactory {
     
@@ -14,5 +16,9 @@ extension DependencyPreviewContainer: CVSceneFactory {
     
     static func createCvViewModel() -> CVViewModel {
         return DependencyContainer.createCvViewModel()
+    }
+    
+    static func createCV() -> CV {
+        return CVStaticFactory.createCvUseCase().cv()!
     }
 }

@@ -32,8 +32,13 @@ struct CVSummaryView: View {
 
 struct CVSummaryView_Previews: PreviewProvider {
     static var previews: some View {
-        CVSummaryView(viewModel: DependencyPreviewContainer.createCvViewModel().header!)
+        CVSummaryView(viewModel: previewViewModel)
             .frame(width: 300.0, height: nil)
             .previewLayout(.sizeThatFits)
+    }
+    
+    private static var previewViewModel: CVSummaryViewModel {
+        let userData = DependencyPreviewContainer.createCV().userData
+        return CVSummaryViewModel(userData: userData)
     }
 }

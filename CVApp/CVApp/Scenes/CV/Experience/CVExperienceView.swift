@@ -30,8 +30,13 @@ struct CVExperienceView: View {
 
 struct CVExperienceView_Previews: PreviewProvider {
     static var previews: some View {
-        CVExperienceView(viewModel: DependencyPreviewContainer.createCvViewModel().experience.first!)
+        CVExperienceView(viewModel: previewViewModel)
             .frame(width: 300.0, height: nil)
             .previewLayout(.sizeThatFits)
+    }
+    
+    private static var previewViewModel: CVExperienceViewModel {
+        let experience = DependencyPreviewContainer.createCV().workExperience.first!
+        return CVExperienceViewModel(experience: experience)
     }
 }
