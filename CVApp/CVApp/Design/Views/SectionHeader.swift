@@ -13,7 +13,7 @@ struct SectionHeader: View {
     // MARK: - Lifecycle
     
     init(_ text: String) {
-        self.text = text
+        self.text = text.uppercased()
     }
     
     // MARK: - View
@@ -23,12 +23,13 @@ struct SectionHeader: View {
             .multilineTextAlignment(.center)
             .font(.paragraphBold)
             .frame(maxWidth: .infinity, alignment: .center)
+            .foregroundColor(Color.accentSecondary)
     }
 }
 
 struct SectionHeader_Previews: PreviewProvider {
     static var previews: some View {
-        SectionHeader("SECTION HEADER")
+        SectionHeader("Section header")
             .previewLayout(.fixed(width: 200, height: 200))
     }
 }

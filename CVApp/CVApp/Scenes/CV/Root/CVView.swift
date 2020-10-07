@@ -15,28 +15,28 @@ struct CVView: View {
     
     init(viewModel: CVViewModel) {
         self.viewModel = viewModel
-        UITableView.appearance().backgroundColor = .clear
     }
     
     // MARK: - Body
     
     var body: some View {
-        List(viewModel.items) { item -> AnyView in
-            switch item {
-            case .header:
-                return AnyView(Text("Header"))
-            case .summary(let viewModel):
-                return AnyView(CVSummaryView(viewModel: viewModel))
-            case .experience(let viewModel):
-                return AnyView(CVExperienceView(viewModel: viewModel))
+        ScrollView {
+            LazyVStack(spacing: .wide) {
+                ForEach(viewModel.items) { item -> AnyView in
+                    switch item {
+                    case .header(let title):
+                        return AnyView(SectionHeader(title))
+                    case .summary(let viewModel):
+                        return AnyView(CVSummaryView(viewModel: viewModel))
+                    case .experience(let viewModel):
+                        return AnyView(CardView(CVExperienceView(viewModel: viewModel)))
+                    }
+                }
             }
+            .padding(.wide)
         }
-        .background(Color.white)
-    }
-    
-    func sectionHeader(_ text: String) -> some View {
-        return SectionHeader(text)
-            .foregroundColor(Color.accentSecondary)
+        .background(Color.init(white: 0.95))
+        .edgesIgnoringSafeArea(.horizontal)
     }
 }
 
