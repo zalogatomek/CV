@@ -7,8 +7,8 @@ import Foundation
 enum CVViewItem: Identifiable {
     case header(title: String)
     case summary(viewModel: CVSummaryViewModel)
-    case education(viewModel: CVEducationViewModel)
     case experience(viewModel: CVExperienceViewModel)
+    case education(viewModel: CVEducationViewModel)
     
     var id: String {
         switch self {
@@ -16,10 +16,10 @@ enum CVViewItem: Identifiable {
             return "header_\(title)"
         case .summary:
             return "summary"
-        case .education(let viewModel):
-            return "education_\(viewModel.title)"
         case .experience(let viewModel):
             return "experience_\(viewModel.title)"
+        case .education(let viewModel):
+            return "education_\(viewModel.title)"
         }
     }
 }

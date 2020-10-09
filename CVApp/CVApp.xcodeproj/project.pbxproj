@@ -191,8 +191,8 @@
 			children = (
 				9A575B74252E4E5D00DE722B /* Root */,
 				9A4D606F2439F36A005F7F96 /* Summary */,
-				9A09025A2530F0350011E478 /* Education */,
 				9A46E34E243BBCA7004A472E /* Experience */,
+				9A09025A2530F0350011E478 /* Education */,
 			);
 			path = CV;
 			sourceTree = "<group>";

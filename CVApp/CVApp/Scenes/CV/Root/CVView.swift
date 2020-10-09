@@ -29,10 +29,10 @@ struct CVView: View {
                             return header(with: title)
                         case .summary(let viewModel):
                             return summaryView(with: viewModel, geometry: geometry)
-                        case .education(let viewModel):
-                            return educationView(with: viewModel)
                         case .experience(let viewModel):
                             return experienceView(with: viewModel)
+                        case .education(let viewModel):
+                            return educationView(with: viewModel)
                         }
                     }
                 }
@@ -64,17 +64,17 @@ struct CVView: View {
         return AnyView(containerView)
     }
     
-    private func educationView(with viewModel: CVEducationViewModel) -> AnyView {
-        let educationView = CVEducationView(viewModel: viewModel)
-        let cardView = CardView(educationView)
+    private func experienceView(with viewModel: CVExperienceViewModel) -> AnyView {
+        let experienceView = CVExperienceView(viewModel: viewModel)
+        let cardView = CardView(experienceView)
             .padding(.horizontal, .wide)
             
         return AnyView(cardView)
     }
     
-    private func experienceView(with viewModel: CVExperienceViewModel) -> AnyView {
-        let experienceView = CVExperienceView(viewModel: viewModel)
-        let cardView = CardView(experienceView)
+    private func educationView(with viewModel: CVEducationViewModel) -> AnyView {
+        let educationView = CVEducationView(viewModel: viewModel)
+        let cardView = CardView(educationView)
             .padding(.horizontal, .wide)
             
         return AnyView(cardView)
