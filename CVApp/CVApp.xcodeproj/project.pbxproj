@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9A09025C2530F04C0011E478 /* CVEducationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A09025B2530F04C0011E478 /* CVEducationViewModel.swift */; };
 		9A0902622530F0570011E478 /* CVEducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0902612530F0570011E478 /* CVEducationView.swift */; };
+		9A0902662530F5BD0011E478 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0902652530F5BD0011E478 /* ContainerView.swift */; };
 		9A46E344243BB699004A472E /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E343243BB699004A472E /* DependencyContainer.swift */; };
 		9A46E346243BB6FC004A472E /* DependencyContainer+CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E345243BB6FC004A472E /* DependencyContainer+CV.swift */; };
 		9A46E349243BB9DB004A472E /* DependencyPreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E348243BB9DB004A472E /* DependencyPreviewContainer.swift */; };
@@ -57,6 +58,7 @@
 /* Begin PBXFileReference section */
 		9A09025B2530F04C0011E478 /* CVEducationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationViewModel.swift; sourceTree = "<group>"; };
 		9A0902612530F0570011E478 /* CVEducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationView.swift; sourceTree = "<group>"; };
+		9A0902652530F5BD0011E478 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		9A46E343243BB699004A472E /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		9A46E345243BB6FC004A472E /* DependencyContainer+CV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DependencyContainer+CV.swift"; sourceTree = "<group>"; };
 		9A46E348243BB9DB004A472E /* DependencyPreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyPreviewContainer.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 			children = (
 				9AED6B33252E5FE6000D4808 /* CardView.swift */,
 				9A4D606C2439EA11005F7F96 /* CircleImage.swift */,
+				9A0902652530F5BD0011E478 /* ContainerView.swift */,
 				9A4FE4E7246F358B0012A6BF /* SectionHeader.swift */,
 			);
 			path = Views;
@@ -512,6 +515,7 @@
 				9A4D606D2439EA11005F7F96 /* CircleImage.swift in Sources */,
 				9A46E344243BB699004A472E /* DependencyContainer.swift in Sources */,
 				9A575B76252E4E7B00DE722B /* CVViewItem.swift in Sources */,
+				9A0902662530F5BD0011E478 /* ContainerView.swift in Sources */,
 				9A46E349243BB9DB004A472E /* DependencyPreviewContainer.swift in Sources */,
 				9A4FE4E1246F2EA60012A6BF /* Font+Theme.swift in Sources */,
 				9A4FE4E8246F358B0012A6BF /* SectionHeader.swift in Sources */,

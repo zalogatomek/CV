@@ -10,12 +10,12 @@ extension Font {
     
     static var header: Font {
         let size = UIFont.preferredFont(forTextStyle: .title1).pointSize
-        return Font.custom(fontName, size: size).bold()
+        return Font.custom(fontName, fixedSize: size).bold()
     }
     
     static var paragraph: Font {
         let size = UIFont.preferredFont(forTextStyle: .body).pointSize
-        return Font.custom(fontName, size: size)
+        return Font.custom(fontName, fixedSize: size)
     }
     
     static var paragraphBold: Font {
@@ -24,7 +24,7 @@ extension Font {
     
     static var detail: Font {
         let size = UIFont.preferredFont(forTextStyle: .caption1).pointSize
-        return Font.custom(fontName, size: size)
+        return Font.custom(fontName, fixedSize: size)
     }
 }
 

@@ -20,26 +20,64 @@ struct CVView: View {
     // MARK: - Body
     
     var body: some View {
-        ScrollView {
-            LazyVStack(spacing: .wide) {
-                ForEach(viewModel.items) { item -> AnyView in
-                    switch item {
-                    case .header(let title):
-                        return AnyView(SectionHeader(title))
-                    case .summary(let viewModel):
-                        return AnyView(CVSummaryView(viewModel: viewModel))
-                    case .education(viewModel: let viewModel):
-                        return AnyView(CardView(CVEducationView(viewModel: viewModel)))
-                    case .experience(let viewModel):
-                        return AnyView(CardView(CVExperienceView(viewModel: viewModel)))
-
+        GeometryReader { geometry in
+            ScrollView {
+                LazyVStack(spacing: .wide) {
+                    ForEach(viewModel.items) { item -> AnyView in
+                        switch item {
+                        case .header(let title):
+                            return header(with: title)
+                        case .summary(let viewModel):
+                            return summaryView(with: viewModel, geometry: geometry)
+                        case .education(let viewModel):
+                            return educationView(with: viewModel)
+                        case .experience(let viewModel):
+                            return experienceView(with: viewModel)
+                        }
                     }
                 }
+                .padding(.bottom, geometry.safeAreaInsets.bottom + .wide)
             }
-            .padding(.wide)
+            .background(Color(white: 0.95))
+            .edgesIgnoringSafeArea(.all)
         }
-        .background(Color.init(white: 0.95))
-        .edgesIgnoringSafeArea(.horizontal)
+    }
+    
+    // MARK: - Subviews
+    
+    private func header(with title: String) -> AnyView {
+        let header = SectionHeader(title)
+            .padding(.horizontal, .wide)
+        
+        return AnyView(header)
+    }
+    
+    private func summaryView(
+        with viewModel: CVSummaryViewModel,
+        geometry: GeometryProxy
+    ) -> AnyView {
+        let summaryView = CVSummaryView(viewModel: viewModel)
+            .padding(.top, geometry.safeAreaInsets.top)
+        let containerView = ContainerView(summaryView)
+            .background(Color.accentPrimary)
+            
+        return AnyView(containerView)
+    }
+    
+    private func educationView(with viewModel: CVEducationViewModel) -> AnyView {
+        let educationView = CVEducationView(viewModel: viewModel)
+        let cardView = CardView(educationView)
+            .padding(.horizontal, .wide)
+            
+        return AnyView(cardView)
+    }
+    
+    private func experienceView(with viewModel: CVExperienceViewModel) -> AnyView {
+        let experienceView = CVExperienceView(viewModel: viewModel)
+        let cardView = CardView(experienceView)
+            .padding(.horizontal, .wide)
+            
+        return AnyView(cardView)
     }
 }
 

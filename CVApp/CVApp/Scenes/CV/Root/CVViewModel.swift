@@ -27,6 +27,15 @@ final class CVViewModel {
     
     // MARK: - Output
     
+    var summaryViewModel: CVSummaryViewModel? {
+        guard case .summary(let viewModel) = items.first(where: {
+            guard case .summary = $0 else { return false }
+            return true
+        }) else { return nil }
+        
+        return viewModel
+    }
+    
     var items: [CVViewItem] {
         guard let cv = cv else { return [] }
         return CVViewItemFactory.create(with: cv)
