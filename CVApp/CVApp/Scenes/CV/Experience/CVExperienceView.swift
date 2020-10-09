@@ -14,7 +14,7 @@ struct CVExperienceView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .font(.paragraphBold)
             
-            IfLet(viewModel.summary) { summary in
+            if let summary = viewModel.summary {
                 Text(summary)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .font(.paragraph)

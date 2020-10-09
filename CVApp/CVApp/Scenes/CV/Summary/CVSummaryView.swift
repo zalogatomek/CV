@@ -10,7 +10,7 @@ struct CVSummaryView: View {
     
     var body: some View {
         VStack(spacing: .wide) {
-            IfLet(viewModel.imageName) { imageName in
+            if let imageName = viewModel.imageName {
                 CircleImage(imageName)
                     .frame(width: 120.0, height: 120.0)
             }

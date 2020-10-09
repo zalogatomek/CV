@@ -38,7 +38,6 @@
 		9A5CCF8D24263253009006CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8C24263253009006CD /* Preview Assets.xcassets */; };
 		9A5CCF9024263253009006CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8E24263253009006CD /* LaunchScreen.storyboard */; };
 		9A5CCF9B24263253009006CD /* CV_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF9A24263253009006CD /* CV_AppTests.swift */; };
-		9A5D5062243F98F300A17400 /* IfLet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5D5061243F98F300A17400 /* IfLet.swift */; };
 		9A717D5E243895B700AB3AD4 /* CVSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A717D5D243895B700AB3AD4 /* CVSummaryView.swift */; };
 		9AED6B34252E5FE6000D4808 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED6B33252E5FE6000D4808 /* CardView.swift */; };
 /* End PBXBuildFile section */
@@ -89,7 +88,6 @@
 		9A5CCF9624263253009006CD /* CVAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5CCF9A24263253009006CD /* CV_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV_AppTests.swift; sourceTree = "<group>"; };
 		9A5CCF9C24263253009006CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9A5D5061243F98F300A17400 /* IfLet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IfLet.swift; sourceTree = "<group>"; };
 		9A717D5D243895B700AB3AD4 /* CVSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSummaryView.swift; sourceTree = "<group>"; };
 		9AED6B33252E5FE6000D4808 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -338,7 +336,6 @@
 			children = (
 				9AED6B33252E5FE6000D4808 /* CardView.swift */,
 				9A4D606C2439EA11005F7F96 /* CircleImage.swift */,
-				9A5D5061243F98F300A17400 /* IfLet.swift */,
 				9A4FE4E7246F358B0012A6BF /* SectionHeader.swift */,
 			);
 			path = Views;
@@ -482,7 +479,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A46E346243BB6FC004A472E /* DependencyContainer+CV.swift in Sources */,
-				9A5D5062243F98F300A17400 /* IfLet.swift in Sources */,
 				9A590810246C86870080BE24 /* Color+Theme.swift in Sources */,
 				9A5CCF8424263251009006CD /* AppDelegate.swift in Sources */,
 				9A46E34D243BBA2B004A472E /* CVSceneFactory.swift in Sources */,
