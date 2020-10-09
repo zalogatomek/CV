@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A09025C2530F04C0011E478 /* CVEducationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A09025B2530F04C0011E478 /* CVEducationViewModel.swift */; };
+		9A0902622530F0570011E478 /* CVEducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0902612530F0570011E478 /* CVEducationView.swift */; };
 		9A46E344243BB699004A472E /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E343243BB699004A472E /* DependencyContainer.swift */; };
 		9A46E346243BB6FC004A472E /* DependencyContainer+CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E345243BB6FC004A472E /* DependencyContainer+CV.swift */; };
 		9A46E349243BB9DB004A472E /* DependencyPreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E348243BB9DB004A472E /* DependencyPreviewContainer.swift */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A09025B2530F04C0011E478 /* CVEducationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationViewModel.swift; sourceTree = "<group>"; };
+		9A0902612530F0570011E478 /* CVEducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationView.swift; sourceTree = "<group>"; };
 		9A46E343243BB699004A472E /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		9A46E345243BB6FC004A472E /* DependencyContainer+CV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DependencyContainer+CV.swift"; sourceTree = "<group>"; };
 		9A46E348243BB9DB004A472E /* DependencyPreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyPreviewContainer.swift; sourceTree = "<group>"; };
@@ -113,6 +117,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A09025A2530F0350011E478 /* Education */ = {
+			isa = PBXGroup;
+			children = (
+				9A09025B2530F04C0011E478 /* CVEducationViewModel.swift */,
+				9A0902612530F0570011E478 /* CVEducationView.swift */,
+			);
+			path = Education;
+			sourceTree = "<group>";
+		};
 		9A46E342243BB65C004A472E /* DependencyContainer */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +189,7 @@
 			children = (
 				9A575B74252E4E5D00DE722B /* Root */,
 				9A4D606F2439F36A005F7F96 /* Summary */,
+				9A09025A2530F0350011E478 /* Education */,
 				9A46E34E243BBCA7004A472E /* Experience */,
 			);
 			path = CV;
@@ -481,6 +495,7 @@
 				9A46E346243BB6FC004A472E /* DependencyContainer+CV.swift in Sources */,
 				9A590810246C86870080BE24 /* Color+Theme.swift in Sources */,
 				9A5CCF8424263251009006CD /* AppDelegate.swift in Sources */,
+				9A09025C2530F04C0011E478 /* CVEducationViewModel.swift in Sources */,
 				9A46E34D243BBA2B004A472E /* CVSceneFactory.swift in Sources */,
 				9A575B78252E4ED500DE722B /* CVViewItemFactory.swift in Sources */,
 				9A5CCF8624263251009006CD /* SceneDelegate.swift in Sources */,
@@ -489,6 +504,7 @@
 				9A59081A246C8A6C0080BE24 /* CGFloat+Spacing.swift in Sources */,
 				9A717D5E243895B700AB3AD4 /* CVSummaryView.swift in Sources */,
 				9A5CCF8824263251009006CD /* CVView.swift in Sources */,
+				9A0902622530F0570011E478 /* CVEducationView.swift in Sources */,
 				9A4FE4EA246F3A380012A6BF /* CVExperienceViewModel.swift in Sources */,
 				9A4D60712439F383005F7F96 /* CVSummaryViewModel.swift in Sources */,
 				9AED6B34252E5FE6000D4808 /* CardView.swift in Sources */,

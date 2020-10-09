@@ -28,8 +28,11 @@ struct CVView: View {
                         return AnyView(SectionHeader(title))
                     case .summary(let viewModel):
                         return AnyView(CVSummaryView(viewModel: viewModel))
+                    case .education(viewModel: let viewModel):
+                        return AnyView(CardView(CVEducationView(viewModel: viewModel)))
                     case .experience(let viewModel):
                         return AnyView(CardView(CVExperienceView(viewModel: viewModel)))
+
                     }
                 }
             }

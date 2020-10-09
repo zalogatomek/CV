@@ -31,6 +31,7 @@ final class CVExperienceViewModel {
     var date: String {
         rangeDateFormatter.string(
             from: experience.dateRange.startDate,
-            to: experience.dateRange.endDate)
+            to: experience.dateRange.endDate
+        )
     }
 }

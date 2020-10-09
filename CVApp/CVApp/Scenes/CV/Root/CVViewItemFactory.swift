@@ -10,6 +10,10 @@ struct CVViewItemFactory {
         var items: [CVViewItem] = []
         
         items.append(.summary(viewModel: CVSummaryViewModel(userData: cv.userData)))
+        items.append(.header(title: "Education"))
+        items.append(contentsOf: cv.education.map {
+            .education(viewModel: CVEducationViewModel(education: $0))
+        })
         items.append(.header(title: "Experience"))
         items.append(contentsOf: cv.workExperience.map {
             .experience(viewModel: CVExperienceViewModel(experience: $0))
