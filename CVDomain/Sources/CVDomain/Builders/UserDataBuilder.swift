@@ -15,10 +15,10 @@ public final class UserDataBuilder {
     private var photoName: String?
     private var avatarUrl: String?
     private var avatarName: String?
-    private var email: String?
     private var street: String?
     private var postCode: String?
     private var city: String?
+    private var contactsArray: [(kind: UserData.Contact.Kind, link: String?, imageName: String?)] = []
     private var summary: String?
     
     // MARK: - Lifecycle
@@ -62,11 +62,6 @@ public final class UserDataBuilder {
         return self
     }
     
-    public func set(email: String?) -> Self {
-        self.email = email
-        return self
-    }
-    
     public func set(street: String?) -> Self {
         self.street = street
         return self
@@ -82,6 +77,11 @@ public final class UserDataBuilder {
         return self
     }
     
+    public func set(contactKind: UserData.Contact.Kind, link: String?, imageName: String?) -> Self {
+        contactsArray.append((kind: contactKind, link: link, imageName: imageName))
+        return self
+    }
+    
     public func set(summary: String?) -> Self {
         self.summary = summary
         return self
@@ -94,11 +94,11 @@ public final class UserDataBuilder {
             birthDate: birthDate,
             photo: photo(),
             avatar: avatar(),
-            email: Email(email),
             address: Address(
                 street: street,
                 postCode: postCode,
                 city: city),
+            contacts: contacts(),
             summary: summary)
     }
     
@@ -120,5 +120,16 @@ public final class UserDataBuilder {
             return .asset(named: avatarName)
         }
         return nil
+    }
+    
+    private func contacts() -> [UserData.Contact] {
+        return contactsArray.compactMap { (kind, link, imageName) -> UserData.Contact? in
+            guard let imageName = imageName else { return nil }
+            return UserData.Contact(
+                kind: kind,
+                link: link,
+                image: .asset(named: imageName)
+            )
+        }
     }
 }
