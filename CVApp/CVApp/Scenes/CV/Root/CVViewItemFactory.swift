@@ -25,6 +25,8 @@ struct CVViewItemFactory {
                 items.append(.skills(viewModel: CVSkillsViewModel(skills: skills)))
             }
         }
+        items.append(.header(title: "Contact"))
+        items.append(.contact(viewModel: CVContactViewModel(contacts: cv.userData.contacts)))
         
         return items
     }

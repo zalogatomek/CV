@@ -23,8 +23,6 @@ final class CVViewModel {
         cv = useCase.cv()
     }
     
-    // MARK: - Input
-    
     // MARK: - Output
     
     var summaryViewModel: CVSummaryViewModel? {

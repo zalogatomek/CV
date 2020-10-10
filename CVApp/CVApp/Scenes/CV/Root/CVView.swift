@@ -17,7 +17,7 @@ struct CVView: View {
         self.viewModel = viewModel
     }
     
-    // MARK: - Body
+    // MARK: - View
     
     var body: some View {
         GeometryReader { geometry in
@@ -35,6 +35,8 @@ struct CVView: View {
                             return educationView(with: viewModel)
                         case .skills(let viewModel):
                             return skillsView(with: viewModel)
+                        case .contact(let viewModel):
+                            return contactView(with: viewModel)
                         }
                     }
                 }
@@ -50,6 +52,7 @@ struct CVView: View {
     private func header(with title: String) -> AnyView {
         let header = SectionHeader(title)
             .padding(.horizontal, .wide)
+            .padding(.top, .small)
         
         return AnyView(header)
     }
@@ -88,6 +91,13 @@ struct CVView: View {
             .padding(.horizontal, .wide)
             
         return AnyView(cardView)
+    }
+    
+    private func contactView(with viewModel: CVContactViewModel) -> AnyView {
+        let contactView = CVContactView(viewModel: viewModel)
+            .padding(.horizontal, .wide)
+            
+        return AnyView(contactView)
     }
 }
 

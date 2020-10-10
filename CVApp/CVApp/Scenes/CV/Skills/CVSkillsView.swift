@@ -6,7 +6,12 @@ import SwiftUI
 import CVDomain
 
 struct CVSkillsView: View {
+    
+    // MARK: - Properties
+    
     let viewModel: CVSkillsViewModel
+    
+    // MARK: - View
     
     var body: some View {
         VStack(alignment: .leading, spacing: .small) {

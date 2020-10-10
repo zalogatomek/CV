@@ -6,7 +6,12 @@ import SwiftUI
 import CVDomain
 
 struct CVSummaryView: View {
+    
+    // MARK: - Properties
+    
     let viewModel: CVSummaryViewModel
+    
+    // MARK: - View
     
     var body: some View {
         VStack(spacing: .wide) {
