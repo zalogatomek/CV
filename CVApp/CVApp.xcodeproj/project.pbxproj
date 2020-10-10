@@ -42,6 +42,9 @@
 		9A5CCF9024263253009006CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8E24263253009006CD /* LaunchScreen.storyboard */; };
 		9A5CCF9B24263253009006CD /* CV_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF9A24263253009006CD /* CV_AppTests.swift */; };
 		9A717D5E243895B700AB3AD4 /* CVSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A717D5D243895B700AB3AD4 /* CVSummaryView.swift */; };
+		9ABC52F6253239E700FF128D /* SkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC52F5253239E700FF128D /* SkillsView.swift */; };
+		9ABC52FC253239F500FF128D /* SkillsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC52FB253239F500FF128D /* SkillsViewModel.swift */; };
+		9ABC530225323B8100FF128D /* SkillKind+DisplayName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC530125323B8100FF128D /* SkillKind+DisplayName.swift */; };
 		9AED6B34252E5FE6000D4808 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED6B33252E5FE6000D4808 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +98,9 @@
 		9A5CCF9A24263253009006CD /* CV_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV_AppTests.swift; sourceTree = "<group>"; };
 		9A5CCF9C24263253009006CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A717D5D243895B700AB3AD4 /* CVSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSummaryView.swift; sourceTree = "<group>"; };
+		9ABC52F5253239E700FF128D /* SkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsView.swift; sourceTree = "<group>"; };
+		9ABC52FB253239F500FF128D /* SkillsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkillsViewModel.swift; sourceTree = "<group>"; };
+		9ABC530125323B8100FF128D /* SkillKind+DisplayName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SkillKind+DisplayName.swift"; sourceTree = "<group>"; };
 		9AED6B33252E5FE6000D4808 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,6 +199,7 @@
 				9A4D606F2439F36A005F7F96 /* Summary */,
 				9A46E34E243BBCA7004A472E /* Experience */,
 				9A09025A2530F0350011E478 /* Education */,
+				9ABC52F4253239CE00FF128D /* Skills */,
 			);
 			path = CV;
 			sourceTree = "<group>";
@@ -366,6 +373,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9ABC52F4253239CE00FF128D /* Skills */ = {
+			isa = PBXGroup;
+			children = (
+				9ABC52FB253239F500FF128D /* SkillsViewModel.swift */,
+				9ABC52F5253239E700FF128D /* SkillsView.swift */,
+				9ABC530125323B8100FF128D /* SkillKind+DisplayName.swift */,
+			);
+			path = Skills;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -495,12 +512,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ABC52F6253239E700FF128D /* SkillsView.swift in Sources */,
 				9A46E346243BB6FC004A472E /* DependencyContainer+CV.swift in Sources */,
 				9A590810246C86870080BE24 /* Color+Theme.swift in Sources */,
 				9A5CCF8424263251009006CD /* AppDelegate.swift in Sources */,
 				9A09025C2530F04C0011E478 /* CVEducationViewModel.swift in Sources */,
 				9A46E34D243BBA2B004A472E /* CVSceneFactory.swift in Sources */,
 				9A575B78252E4ED500DE722B /* CVViewItemFactory.swift in Sources */,
+				9ABC52FC253239F500FF128D /* SkillsViewModel.swift in Sources */,
 				9A5CCF8624263251009006CD /* SceneDelegate.swift in Sources */,
 				9A46E353243BBE73004A472E /* RangeDateFormatter.swift in Sources */,
 				9A46E34B243BBA07004A472E /* DependencyPreviewContainer+CV.swift in Sources */,
@@ -510,6 +529,7 @@
 				9A0902622530F0570011E478 /* CVEducationView.swift in Sources */,
 				9A4FE4EA246F3A380012A6BF /* CVExperienceViewModel.swift in Sources */,
 				9A4D60712439F383005F7F96 /* CVSummaryViewModel.swift in Sources */,
+				9ABC530225323B8100FF128D /* SkillKind+DisplayName.swift in Sources */,
 				9AED6B34252E5FE6000D4808 /* CardView.swift in Sources */,
 				9A590817246C89A20080BE24 /* String+Hex.swift in Sources */,
 				9A4D606D2439EA11005F7F96 /* CircleImage.swift in Sources */,

@@ -18,6 +18,13 @@ struct CVViewItemFactory {
         items.append(contentsOf: cv.education.map {
             .education(viewModel: CVEducationViewModel(education: $0))
         })
+        items.append(.header(title: "Skills"))
+        Skill.Kind.allCases.forEach { kind in
+            let skills = cv.skills.filter({ $0.kind == kind })
+            if skills.count > 0 {
+                items.append(.skills(viewModel: CVSkillsViewModel(skills: skills)))
+            }
+        }
         
         return items
     }

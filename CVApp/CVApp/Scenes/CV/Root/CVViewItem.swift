@@ -9,6 +9,7 @@ enum CVViewItem: Identifiable {
     case summary(viewModel: CVSummaryViewModel)
     case experience(viewModel: CVExperienceViewModel)
     case education(viewModel: CVEducationViewModel)
+    case skills(viewModel: CVSkillsViewModel)
     
     var id: String {
         switch self {
@@ -20,6 +21,8 @@ enum CVViewItem: Identifiable {
             return "experience_\(viewModel.title)"
         case .education(let viewModel):
             return "education_\(viewModel.title)"
+        case .skills(let viewModel):
+            return "skills_\(viewModel.title)"
         }
     }
 }

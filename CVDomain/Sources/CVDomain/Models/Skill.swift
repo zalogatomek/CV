@@ -5,7 +5,7 @@
 import Foundation
 
 public struct Skill {
-    public enum Kind {
+    public enum Kind: CaseIterable {
         case programmingLanguage
         case tools
         case framework
