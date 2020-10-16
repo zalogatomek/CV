@@ -27,19 +27,3 @@ extension Font {
         return Font.custom(fontName, fixedSize: size)
     }
 }
-
-struct Fonts_Previews: PreviewProvider {
-    static var previews: some View {
-        VStack(spacing: .wide) {
-            Text("HEADER")
-                .font(.header)
-            Text("Paragraph Bold")
-                .font(.paragraphBold)
-            Text("Paragraph")
-                .font(.paragraph)
-            Text("Detials")
-                .font(.detail)
-        }
-        .previewLayout(.fixed(width: 300, height: 200))
-    }
-}

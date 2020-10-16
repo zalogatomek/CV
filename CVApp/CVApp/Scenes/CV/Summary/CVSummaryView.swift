@@ -22,14 +22,12 @@ struct CVSummaryView: View {
             
             Text(viewModel.name.uppercased())
                 .frame(maxWidth: .infinity, alignment: .center)
-                .font(.header)
-                .foregroundColor(.textLight)
+                .textStyle(.header, .light)
             
             Text(viewModel.summary ?? "")
                 .frame(maxWidth: .infinity, alignment: .center)
                 .multilineTextAlignment(.center)
-                .font(.paragraph)
-                .foregroundColor(.textLight)
+                .textStyle(.paragraph, .light)
         }
         .background(Color.accentPrimary)
     }

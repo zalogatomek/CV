@@ -27,6 +27,7 @@
 		9A4FE4E6246F32A10012A6BF /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9A4FE4E3246F321E0012A6BF /* Montserrat-Bold.ttf */; };
 		9A4FE4E8246F358B0012A6BF /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4FE4E7246F358B0012A6BF /* SectionHeader.swift */; };
 		9A4FE4EA246F3A380012A6BF /* CVExperienceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4FE4E9246F3A380012A6BF /* CVExperienceViewModel.swift */; };
+		9A55713A2539A79600CB2947 /* View+TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5571392539A79600CB2947 /* View+TextStyle.swift */; };
 		9A575B76252E4E7B00DE722B /* CVViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A575B75252E4E7B00DE722B /* CVViewItem.swift */; };
 		9A575B78252E4ED500DE722B /* CVViewItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A575B77252E4ED500DE722B /* CVViewItemFactory.swift */; };
 		9A590810246C86870080BE24 /* Color+Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A59080F246C86870080BE24 /* Color+Theme.swift */; };
@@ -84,6 +85,7 @@
 		9A4FE4E4246F321E0012A6BF /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		9A4FE4E7246F358B0012A6BF /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
 		9A4FE4E9246F3A380012A6BF /* CVExperienceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVExperienceViewModel.swift; sourceTree = "<group>"; };
+		9A5571392539A79600CB2947 /* View+TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+TextStyle.swift"; sourceTree = "<group>"; };
 		9A575B75252E4E7B00DE722B /* CVViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVViewItem.swift; sourceTree = "<group>"; };
 		9A575B77252E4ED500DE722B /* CVViewItemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVViewItemFactory.swift; sourceTree = "<group>"; };
 		9A59080F246C86870080BE24 /* Color+Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Theme.swift"; sourceTree = "<group>"; };
@@ -250,6 +252,7 @@
 				9A4FE4E0246F2EA60012A6BF /* Font+Theme.swift */,
 				9A59080F246C86870080BE24 /* Color+Theme.swift */,
 				9A590819246C8A6C0080BE24 /* CGFloat+Spacing.swift */,
+				9A5571392539A79600CB2947 /* View+TextStyle.swift */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -566,6 +569,7 @@
 				9A46E349243BB9DB004A472E /* DependencyPreviewContainer.swift in Sources */,
 				9A4FE4E1246F2EA60012A6BF /* Font+Theme.swift in Sources */,
 				9A4FE4E8246F358B0012A6BF /* SectionHeader.swift in Sources */,
+				9A55713A2539A79600CB2947 /* View+TextStyle.swift in Sources */,
 				9ABC53072532408B00FF128D /* CVContactViewModel.swift in Sources */,
 				9A4D60742439F49B005F7F96 /* CVViewModel.swift in Sources */,
 				9A46E350243BBCC9004A472E /* CVExperienceView.swift in Sources */,

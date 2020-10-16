@@ -19,5 +19,3 @@ extension Color {
     static var textSecondary: Color { Color(hex: CVDesign.Colors.textSecondary.hex) }
     static var textLight: Color { Color(hex: CVDesign.Colors.textLight.hex) }
 }
-
-

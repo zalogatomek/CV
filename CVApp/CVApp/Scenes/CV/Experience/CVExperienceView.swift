@@ -17,18 +17,17 @@ struct CVExperienceView: View {
         VStack(alignment: .leading, spacing: .small) {
             Text(viewModel.title)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .font(.paragraphBold)
+                .textStyle(.paragraphBold)
             
             if let summary = viewModel.summary {
                 Text(summary)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .font(.paragraph)
+                    .textStyle(.paragraph)
             }
             
             Text(viewModel.date)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .font(.paragraph)
-                .foregroundColor(.textSecondary)
+                .textStyle(.paragraph, .secondary)
         }
     }
 }

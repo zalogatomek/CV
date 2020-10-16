@@ -21,9 +21,8 @@ struct SectionHeader: View {
     var body: some View {
         Text(text)
             .multilineTextAlignment(.center)
-            .font(.paragraphBold)
+            .textStyle(.paragraphBold, .secondary)
             .frame(maxWidth: .infinity, alignment: .center)
-            .foregroundColor(Color.accentSecondary)
     }
 }
 
