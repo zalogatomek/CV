@@ -19,6 +19,6 @@ struct ContainerView<Content: View>: View {
         ZStack {
             content
         }
-        .padding(.wide)
+        .padding(.standard)
     }
 }

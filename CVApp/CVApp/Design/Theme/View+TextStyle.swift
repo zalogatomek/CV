@@ -45,7 +45,7 @@ extension View {
 
 struct TextStyle_Previews: PreviewProvider {
     static var previews: some View {
-        VStack(spacing: .wide) {
+        VStack(spacing: .standard) {
             Text("HEADER")
                 .textStyle(.header)
             Text("Paragraph Bold")

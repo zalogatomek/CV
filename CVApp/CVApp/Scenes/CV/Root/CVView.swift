@@ -22,7 +22,7 @@ struct CVView: View {
     var body: some View {
         GeometryReader { geometry in
             ScrollView {
-                LazyVStack(spacing: .wide) {
+                LazyVStack(spacing: .standard) {
                     ForEach(viewModel.items) { item -> AnyView in
                         switch item {
                         case .header(let title):
@@ -40,7 +40,7 @@ struct CVView: View {
                         }
                     }
                 }
-                .padding(.bottom, geometry.safeAreaInsets.bottom + .wide)
+                .padding(.bottom, geometry.safeAreaInsets.bottom + .standard)
             }
             .background(Color(white: 0.95))
             .edgesIgnoringSafeArea(.all)
@@ -51,7 +51,7 @@ struct CVView: View {
     
     private func header(with title: String) -> AnyView {
         let header = SectionHeader(title)
-            .padding(.horizontal, .wide)
+            .padding(.horizontal, .standard)
             .padding(.top, .small)
         
         return AnyView(header)
@@ -72,7 +72,7 @@ struct CVView: View {
     private func experienceView(with viewModel: CVExperienceViewModel) -> AnyView {
         let experienceView = CVExperienceView(viewModel: viewModel)
         let cardView = CardView(experienceView)
-            .padding(.horizontal, .wide)
+            .padding(.horizontal, .standard)
             
         return AnyView(cardView)
     }
@@ -80,7 +80,7 @@ struct CVView: View {
     private func educationView(with viewModel: CVEducationViewModel) -> AnyView {
         let educationView = CVEducationView(viewModel: viewModel)
         let cardView = CardView(educationView)
-            .padding(.horizontal, .wide)
+            .padding(.horizontal, .standard)
             
         return AnyView(cardView)
     }
@@ -88,14 +88,14 @@ struct CVView: View {
     private func skillsView(with viewModel: CVSkillsViewModel) -> AnyView {
         let skillsView = CVSkillsView(viewModel: viewModel)
         let cardView = CardView(skillsView)
-            .padding(.horizontal, .wide)
+            .padding(.horizontal, .standard)
             
         return AnyView(cardView)
     }
     
     private func contactView(with viewModel: CVContactViewModel) -> AnyView {
         let contactView = CVContactView(viewModel: viewModel)
-            .padding(.horizontal, .wide)
+            .padding(.horizontal, .standard)
             
         return AnyView(contactView)
     }

@@ -19,9 +19,9 @@ struct CardView<Content: View>: View {
         ZStack {
             content
         }
-        .padding(.wide)
+        .padding(.standard)
         .background(Color.white)
-        .cornerRadius(.wide)
+        .cornerRadius(.standard)
     }
 }
 

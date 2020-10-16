@@ -14,7 +14,7 @@ struct CVSummaryView: View {
     // MARK: - View
     
     var body: some View {
-        VStack(spacing: .wide) {
+        VStack(spacing: .standard) {
             if let imageName = viewModel.imageName {
                 CircleImage(imageName)
                     .frame(width: 120.0, height: 120.0)
