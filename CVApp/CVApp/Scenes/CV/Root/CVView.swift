@@ -22,6 +22,7 @@ struct CVView: View {
     var body: some View {
         GeometryReader { geometry in
             ScrollView {
+                topView(parentGeometry: geometry)
                 LazyVStack(spacing: .standard) {
                     ForEach(viewModel.items) { item -> AnyView in
                         switch item {
@@ -49,6 +50,29 @@ struct CVView: View {
     
     // MARK: - Subviews
     
+    private func topView(parentGeometry: GeometryProxy) -> some View {
+        GeometryReader { geometry in
+            let scrollOffset = geometry.frame(in: .global).minY
+            let height = topViewHeight(safeAreaInset: parentGeometry.safeAreaInsets.top,
+                                       scrollOffset: scrollOffset)
+            let offset = topViewOffset(scrollOffset: scrollOffset)
+            Color.accentPrimary
+                .frame(width: nil, height: height)
+                .offset(offset)
+        }
+        .frame(width: nil, height: parentGeometry.safeAreaInsets.top)
+    }
+    
+    private func topViewHeight(safeAreaInset: CGFloat, scrollOffset: CGFloat) -> CGFloat {
+        let offset = scrollOffset >= 0.0 ? scrollOffset : 0.0
+        return safeAreaInset + .standard + offset
+    }
+    
+    private func topViewOffset(scrollOffset: CGFloat) -> CGSize {
+        guard scrollOffset >= 0.0 else { return .zero }
+        return CGSize(width: 0.0, height: -scrollOffset)
+    }
+    
     private func header(with title: String) -> AnyView {
         let header = SectionHeader(title)
             .padding(.horizontal, .standard)
@@ -62,10 +86,10 @@ struct CVView: View {
         geometry: GeometryProxy
     ) -> AnyView {
         let summaryView = CVSummaryView(viewModel: viewModel)
-            .padding(.top, geometry.safeAreaInsets.top)
         let containerView = ContainerView(summaryView)
+            .padding(.top, -.standard)
             .background(Color.accentPrimary)
-            
+
         return AnyView(containerView)
     }
     
