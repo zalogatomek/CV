@@ -23,7 +23,7 @@ struct CVContactView: View {
             ForEach(viewModel.items) { item in
                 CircleButton(item.imageName,
                              action: item.action)
-                    .accent(.light, background: .accentPrimary)
+                    .accent(.light, background: .accentSecondary)
                     .frame(width: buttonSize, height: buttonSize, alignment: .center)
                 Spacer()
             }

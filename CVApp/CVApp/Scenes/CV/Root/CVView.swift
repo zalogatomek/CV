@@ -54,7 +54,6 @@ struct CVView: View {
                             }
                         }
                     }
-                    .padding(.bottom, safeArea.bottom + .standard)
                 }
             }
             .background(Color(white: 0.95))
@@ -145,6 +144,7 @@ struct CVView: View {
     private func contactView(with viewModel: CVContactViewModel) -> AnyView {
         let contactView = CVContactView(viewModel: viewModel)
             .padding(.horizontal, .standard)
+            .padding(.bottom, safeArea.bottom + .standard)
             
         return AnyView(contactView)
     }
