@@ -25,6 +25,10 @@ final class CVViewModel {
     
     // MARK: - Output
     
+    var header: String {
+        return summaryViewModel?.name ?? ""
+    }
+    
     var summaryViewModel: CVSummaryViewModel? {
         guard case .summary(let viewModel) = items.first(where: {
             guard case .summary = $0 else { return false }

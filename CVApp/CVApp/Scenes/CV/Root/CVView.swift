@@ -7,9 +7,16 @@ import CVDomain
 
 struct CVView: View {
     
+    // MARK: - Constants
+    
+    private let headerVisibleOffset: CGFloat = -120.0
+    private let headerTransitionDuration: TimeInterval = 0.3
+    
     // MARK: - Properties
     
     let viewModel: CVViewModel
+    @State var contentOffset: CGFloat = .zero
+    @State var safeArea: EdgeInsets = EdgeInsets()
     
     // MARK: - Lifecycle
     
@@ -20,28 +27,35 @@ struct CVView: View {
     // MARK: - View
     
     var body: some View {
-        GeometryReader { geometry in
-            ScrollView {
-                topView(parentGeometry: geometry)
-                LazyVStack(spacing: .standard) {
-                    ForEach(viewModel.items) { item -> AnyView in
-                        switch item {
-                        case .header(let title):
-                            return header(with: title)
-                        case .summary(let viewModel):
-                            return summaryView(with: viewModel, geometry: geometry)
-                        case .experience(let viewModel):
-                            return experienceView(with: viewModel)
-                        case .education(let viewModel):
-                            return educationView(with: viewModel)
-                        case .skills(let viewModel):
-                            return skillsView(with: viewModel)
-                        case .contact(let viewModel):
-                            return contactView(with: viewModel)
+        ZStack {
+            SafeAreaReader($safeArea)
+            header(with: viewModel.header)
+            
+            ScrollView(showsIndicators: false) {
+                VStack(spacing: .zero) {
+                    ScrollViewContentOffsetReader($contentOffset)
+                    topView()
+                    
+                    LazyVStack(spacing: .standard) {
+                        ForEach(viewModel.items) { item -> AnyView in
+                            switch item {
+                            case .header(let title):
+                                return sectionHeader(with: title)
+                            case .summary(let viewModel):
+                                return summaryView(with: viewModel)
+                            case .experience(let viewModel):
+                                return experienceView(with: viewModel)
+                            case .education(let viewModel):
+                                return educationView(with: viewModel)
+                            case .skills(let viewModel):
+                                return skillsView(with: viewModel)
+                            case .contact(let viewModel):
+                                return contactView(with: viewModel)
+                            }
                         }
                     }
+                    .padding(.bottom, safeArea.bottom + .standard)
                 }
-                .padding(.bottom, geometry.safeAreaInsets.bottom + .standard)
             }
             .background(Color(white: 0.95))
             .edgesIgnoringSafeArea(.all)
@@ -50,41 +64,52 @@ struct CVView: View {
     
     // MARK: - Subviews
     
-    private func topView(parentGeometry: GeometryProxy) -> some View {
-        GeometryReader { geometry in
-            let scrollOffset = geometry.frame(in: .global).minY
-            let height = topViewHeight(safeAreaInset: parentGeometry.safeAreaInsets.top,
-                                       scrollOffset: scrollOffset)
-            let offset = topViewOffset(scrollOffset: scrollOffset)
+    private func topView() -> some View {
+        ZStack {
             Color.accentPrimary
-                .frame(width: nil, height: height)
-                .offset(offset)
+                .frame(width: nil, height: topViewHeight)
+                .offset(topViewOffset)
         }
-        .frame(width: nil, height: parentGeometry.safeAreaInsets.top)
+        .frame(width: nil, height: safeArea.top, alignment: .top)
+    }
+
+    private var topViewHeight: CGFloat {
+        let offset = contentOffset >= 0.0 ? contentOffset : 0.0
+        return safeArea.top + offset
+    }
+
+    private var topViewOffset: CGSize {
+        guard contentOffset >= 0.0 else { return .zero }
+        return CGSize(width: 0.0, height: -contentOffset)
     }
     
-    private func topViewHeight(safeAreaInset: CGFloat, scrollOffset: CGFloat) -> CGFloat {
-        let offset = scrollOffset >= 0.0 ? scrollOffset : 0.0
-        return safeAreaInset + .standard + offset
+    private func header(with title: String) -> some View {
+        VStack {
+            ContainerView {
+                Text(title.uppercased())
+                    .padding(.top, safeArea.top)
+                    .textStyle(.paragraphBold, .light)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+            }
+            .background(Color.accentSecondary)
+            
+            Spacer()
+        }
+        .edgesIgnoringSafeArea(.top)
+        .hidden(contentOffset > headerVisibleOffset)
+        .transition(AnyTransition.opacity.animation(.easeInOut(duration: headerTransitionDuration)))
+        .zIndex(1)
     }
     
-    private func topViewOffset(scrollOffset: CGFloat) -> CGSize {
-        guard scrollOffset >= 0.0 else { return .zero }
-        return CGSize(width: 0.0, height: -scrollOffset)
-    }
-    
-    private func header(with title: String) -> AnyView {
-        let header = SectionHeader(title)
+    private func sectionHeader(with title: String) -> AnyView {
+        let sectionHeader = SectionHeader(title)
             .padding(.horizontal, .standard)
             .padding(.top, .small)
         
-        return AnyView(header)
+        return AnyView(sectionHeader)
     }
     
-    private func summaryView(
-        with viewModel: CVSummaryViewModel,
-        geometry: GeometryProxy
-    ) -> AnyView {
+    private func summaryView(with viewModel: CVSummaryViewModel) -> AnyView {
         let summaryView = CVSummaryView(viewModel: viewModel)
         let containerView = ContainerView(summaryView)
             .padding(.top, -.standard)
