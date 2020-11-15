@@ -19,6 +19,17 @@ extension DependencyPreviewContainer: CVSceneFactory {
     }
     
     static func createCV() -> CV {
-        return CVStaticFactory.createCvUseCase().cv()!
+        // TODO: Use Different approach to get Stub in synch
+        let group = DispatchGroup()
+        group.enter()
+        
+        var cv: CV?
+        CVStaticFactory.createCvUseCase().fetchCV { fetchedCv in
+            cv = fetchedCv
+            group.leave()
+        }
+        group.wait()
+        
+        return cv!
     }
 }

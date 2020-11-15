@@ -18,7 +18,7 @@ public final class CVUseCase {
     
     // MARK: - UseCase
     
-    public func cv() -> CV? {
-        return repository.cv()
+    public func fetchCV(completion: (CV?) -> Void) {
+        return repository.fetchCV(completion: completion)
     }
 }

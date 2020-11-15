@@ -20,7 +20,9 @@ final class CVViewModel {
     }
     
     private func setupCV() {
-        cv = useCase.cv()
+        useCase.fetchCV(completion: { cv in
+            self.cv = cv
+        })
     }
     
     // MARK: - Output

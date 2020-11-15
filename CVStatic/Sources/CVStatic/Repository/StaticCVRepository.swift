@@ -9,12 +9,14 @@ final class StaticCVRepository: CVRepository {
     
     // MARK: - CVRepository
     
-    func cv() -> CV? {
-        return CV(
+    func fetchCV(completion: (CV?) -> Void) {
+        let cv = CV(
             userData: userData(),
             education: education(),
             workExperience: workExperience(),
-            skills: skills())
+            skills: skills()
+        )
+        completion(cv)
     }
     
     // MARK: - UserData
