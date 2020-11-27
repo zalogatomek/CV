@@ -10,6 +10,8 @@
 		9A09025C2530F04C0011E478 /* CVEducationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A09025B2530F04C0011E478 /* CVEducationViewModel.swift */; };
 		9A0902622530F0570011E478 /* CVEducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0902612530F0570011E478 /* CVEducationView.swift */; };
 		9A0902662530F5BD0011E478 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0902652530F5BD0011E478 /* ContainerView.swift */; };
+		9A31683225719B0F00574342 /* View+ContentOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A31683125719B0F00574342 /* View+ContentOffset.swift */; };
+		9A31683825719D8900574342 /* View+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A31683725719D8900574342 /* View+SafeArea.swift */; };
 		9A46E344243BB699004A472E /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E343243BB699004A472E /* DependencyContainer.swift */; };
 		9A46E346243BB6FC004A472E /* DependencyContainer+CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E345243BB6FC004A472E /* DependencyContainer+CV.swift */; };
 		9A46E349243BB9DB004A472E /* DependencyPreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E348243BB9DB004A472E /* DependencyPreviewContainer.swift */; };
@@ -52,8 +54,6 @@
 		9ABC531525324A7A00FF128D /* CVContactItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC531425324A7A00FF128D /* CVContactItemFactory.swift */; };
 		9ABC531925324E5600FF128D /* CVContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC531825324E5600FF128D /* CVContactView.swift */; };
 		9ABC531F25324F7400FF128D /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC531E25324F7400FF128D /* CircleButton.swift */; };
-		9ADFEFA82555EA4F00F6A0A9 /* ScrollViewContentOffsetReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFEFA72555EA4F00F6A0A9 /* ScrollViewContentOffsetReader.swift */; };
-		9ADFEFAC2555EE5200F6A0A9 /* SafeAreaReaderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFEFAB2555EE5200F6A0A9 /* SafeAreaReaderer.swift */; };
 		9ADFEFB02555F90000F6A0A9 /* View+Hidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFEFAF2555F90000F6A0A9 /* View+Hidden.swift */; };
 		9AED6B34252E5FE6000D4808 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED6B33252E5FE6000D4808 /* CardView.swift */; };
 /* End PBXBuildFile section */
@@ -72,6 +72,8 @@
 		9A09025B2530F04C0011E478 /* CVEducationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationViewModel.swift; sourceTree = "<group>"; };
 		9A0902612530F0570011E478 /* CVEducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationView.swift; sourceTree = "<group>"; };
 		9A0902652530F5BD0011E478 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
+		9A31683125719B0F00574342 /* View+ContentOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ContentOffset.swift"; sourceTree = "<group>"; };
+		9A31683725719D8900574342 /* View+SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SafeArea.swift"; sourceTree = "<group>"; };
 		9A46E343243BB699004A472E /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		9A46E345243BB6FC004A472E /* DependencyContainer+CV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DependencyContainer+CV.swift"; sourceTree = "<group>"; };
 		9A46E348243BB9DB004A472E /* DependencyPreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyPreviewContainer.swift; sourceTree = "<group>"; };
@@ -118,8 +120,6 @@
 		9ABC531425324A7A00FF128D /* CVContactItemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVContactItemFactory.swift; sourceTree = "<group>"; };
 		9ABC531825324E5600FF128D /* CVContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVContactView.swift; sourceTree = "<group>"; };
 		9ABC531E25324F7400FF128D /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
-		9ADFEFA72555EA4F00F6A0A9 /* ScrollViewContentOffsetReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewContentOffsetReader.swift; sourceTree = "<group>"; };
-		9ADFEFAB2555EE5200F6A0A9 /* SafeAreaReaderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeAreaReaderer.swift; sourceTree = "<group>"; };
 		9ADFEFAF2555F90000F6A0A9 /* View+Hidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Hidden.swift"; sourceTree = "<group>"; };
 		9AED6B33252E5FE6000D4808 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,9 +187,9 @@
 			isa = PBXGroup;
 			children = (
 				9A590814246C87AE0080BE24 /* Color+Hex.swift */,
+				9A5571412539BE2000CB2947 /* EdgeInsets+Convenience.swift */,
 				9A46E352243BBE73004A472E /* RangeDateFormatter.swift */,
 				9A590816246C89A20080BE24 /* String+Hex.swift */,
-				9A5571412539BE2000CB2947 /* EdgeInsets+Convenience.swift */,
 				9ADFEFAF2555F90000F6A0A9 /* View+Hidden.swift */,
 			);
 			path = Utils;
@@ -386,8 +386,8 @@
 				9ABC531E25324F7400FF128D /* CircleButton.swift */,
 				9A0902652530F5BD0011E478 /* ContainerView.swift */,
 				9A4FE4E7246F358B0012A6BF /* SectionHeader.swift */,
-				9ADFEFA72555EA4F00F6A0A9 /* ScrollViewContentOffsetReader.swift */,
-				9ADFEFAB2555EE5200F6A0A9 /* SafeAreaReaderer.swift */,
+				9A31683125719B0F00574342 /* View+ContentOffset.swift */,
+				9A31683725719D8900574342 /* View+SafeArea.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -558,10 +558,10 @@
 				9A5CCF8424263251009006CD /* AppDelegate.swift in Sources */,
 				9A5571422539BE2000CB2947 /* EdgeInsets+Convenience.swift in Sources */,
 				9A09025C2530F04C0011E478 /* CVEducationViewModel.swift in Sources */,
+				9A31683825719D8900574342 /* View+SafeArea.swift in Sources */,
 				9A46E34D243BBA2B004A472E /* CVSceneFactory.swift in Sources */,
 				9ABC531525324A7A00FF128D /* CVContactItemFactory.swift in Sources */,
 				9A575B78252E4ED500DE722B /* CVViewItemFactory.swift in Sources */,
-				9ADFEFAC2555EE5200F6A0A9 /* SafeAreaReaderer.swift in Sources */,
 				9ABC52FC253239F500FF128D /* CVSkillsViewModel.swift in Sources */,
 				9A5CCF8624263251009006CD /* SceneDelegate.swift in Sources */,
 				9A46E353243BBE73004A472E /* RangeDateFormatter.swift in Sources */,
@@ -579,6 +579,7 @@
 				9ABC531925324E5600FF128D /* CVContactView.swift in Sources */,
 				9A4D606D2439EA11005F7F96 /* CircleImage.swift in Sources */,
 				9A46E344243BB699004A472E /* DependencyContainer.swift in Sources */,
+				9A31683225719B0F00574342 /* View+ContentOffset.swift in Sources */,
 				9A575B76252E4E7B00DE722B /* CVViewItem.swift in Sources */,
 				9A0902662530F5BD0011E478 /* ContainerView.swift in Sources */,
 				9A46E349243BB9DB004A472E /* DependencyPreviewContainer.swift in Sources */,
@@ -589,7 +590,6 @@
 				9A4D60742439F49B005F7F96 /* CVViewModel.swift in Sources */,
 				9A46E350243BBCC9004A472E /* CVExperienceView.swift in Sources */,
 				9A590815246C87AE0080BE24 /* Color+Hex.swift in Sources */,
-				9ADFEFA82555EA4F00F6A0A9 /* ScrollViewContentOffsetReader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

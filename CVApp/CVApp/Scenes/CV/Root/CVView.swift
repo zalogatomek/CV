@@ -15,7 +15,7 @@ struct CVView: View {
     // MARK: - Properties
     
     let viewModel: CVViewModel
-    @State var contentOffset: CGFloat = .zero
+    @State var contentOffset: CGPoint = .zero
     @State var safeArea: EdgeInsets = EdgeInsets()
     
     // MARK: - Lifecycle
@@ -28,13 +28,13 @@ struct CVView: View {
     
     var body: some View {
         ZStack {
-            SafeAreaReader($safeArea)
             header(with: viewModel.header)
+                .readSafeArea(to: $safeArea)
             
             ScrollView(showsIndicators: false) {
                 VStack(spacing: .zero) {
-                    ScrollViewContentOffsetReader($contentOffset)
                     topView()
+                        .readContentOffset(to: $contentOffset)
                     
                     LazyVStack(spacing: .standard) {
                         ForEach(viewModel.items) { item -> AnyView in
@@ -73,13 +73,13 @@ struct CVView: View {
     }
 
     private var topViewHeight: CGFloat {
-        let offset = contentOffset >= 0.0 ? contentOffset : 0.0
+        let offset = contentOffset.y >= 0.0 ? contentOffset.y : 0.0
         return safeArea.top + offset
     }
 
     private var topViewOffset: CGSize {
-        guard contentOffset >= 0.0 else { return .zero }
-        return CGSize(width: 0.0, height: -contentOffset)
+        guard contentOffset.y >= 0.0 else { return .zero }
+        return CGSize(width: 0.0, height: -contentOffset.y)
     }
     
     private func header(with title: String) -> some View {
@@ -95,7 +95,7 @@ struct CVView: View {
             Spacer()
         }
         .edgesIgnoringSafeArea(.top)
-        .hidden(contentOffset > headerVisibleOffset)
+        .hidden(contentOffset.y > headerVisibleOffset)
         .transition(AnyTransition.opacity.animation(.easeInOut(duration: headerTransitionDuration)))
         .zIndex(1)
     }
