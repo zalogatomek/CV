@@ -9,13 +9,13 @@ struct HomeController: RouteCollection {
     
     // MARK: - Boot
     
-    func boot(router: Router) throws {
-        router.get(use: homeHandler)
+    func boot(routes: RoutesBuilder) throws {
+        routes.get(use: homeHandler)
     }
     
     // MARK: - GET
 
-    func homeHandler(_ request: Request) throws -> Future<View> {
-        return try request.view().render("Home")
+    func homeHandler(_ request: Request) throws -> EventLoopFuture<View> {
+        return request.view.render("Education/Education")
     }
 }

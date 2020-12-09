@@ -1,4 +1,0 @@
-module CCryptoOpenSSL {
-    umbrella "/Users/omek/Library/Mobile Documents/com~apple~CloudDocs/Developer/Własne/CV/CVWeb/.build/checkouts/crypto/Sources/CCryptoOpenSSL/include"
-    export *
-}

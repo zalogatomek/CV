@@ -1,9 +1,9 @@
 import Vapor
 
-public func routes(_ router: Router) throws {
+func routes(_ app: Application) throws {
     
     // MARK: - Home
     
     let homeController = HomeController()
-    try router.register(collection: homeController)
+    try app.routes.register(collection: homeController)
 }

@@ -5,7 +5,7 @@
       location = "group:CVApp/CVApp.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CVWeb/CVWeb.xcodeproj">
+      location = "group:CVWeb">
    </FileRef>
    <FileRef
       location = "group:CVDomain">
