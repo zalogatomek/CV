@@ -1,9 +1,8 @@
-#set("content") {
-    #embed("Summary/Summary")
-    #embed("Experience/Experience")
-    #embed("Education/Education")
-    #embed("Skills/Skills")
-    #embed("Contact/Contact")
-}
 
-#embed("Base")
+    #extend("Summary/Summary")
+    #extend("Experience/Experience")
+    #extend("Education/Education")
+    #extend("Skills/Skills")
+    #extend("Contact/Contact")
+
+#extend("Base")

@@ -17,16 +17,20 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         
         <!-- Stylesheet -->
-        #embed("Stylesheet/Stylesheet")
+        #extend("Stylesheet/Stylesheet")
         
         <title>Tomasz Załoga</title>
     </head>
     <body id="BaseBody">
-        <!-- Page Content -->
-        #embed("NavigationBar/NavigationBar")
+        <!-- Navigation Bar -->
+        #extend("NavigationBar/NavigationBar")
         
         <!-- Page content -->
-        #get(content)
+        #extend("Summary/Summary")
+        #extend("Experience/Experience")
+        #extend("Education/Education")
+        #extend("Skills/Skills")
+        #extend("Contact/Contact")
         
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

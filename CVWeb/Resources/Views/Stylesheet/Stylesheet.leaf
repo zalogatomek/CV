@@ -14,18 +14,18 @@ body {
 }
 
 /* Fonts */
-#embed("Stylesheet/Fonts")
+#extend("Stylesheet/Fonts")
 
 /* Reusable items */
-#embed("Components/Divider/DividerStyle")
-#embed("Components/Rating/RatingStyle")
-#embed("Components/Section/SectionStyle")
-#embed("Components/SocialIcons/SocialIconsStyle")
+#extend("Components/Divider/DividerStyle")
+#extend("Components/Rating/RatingStyle")
+#extend("Components/Section/SectionStyle")
+#extend("Components/SocialIcons/SocialIconsStyle")
 
 /* Home page content */
-#embed("NavigationBar/NavigationBarStyle")
-#embed("Summary/SummaryStyle")
-#embed("Skills/SkillsStyle")
-#embed("Contact/ContactStyle")
+#extend("NavigationBar/NavigationBarStyle")
+#extend("Summary/SummaryStyle")
+#extend("Skills/SkillsStyle")
+#extend("Contact/ContactStyle")
 
 </style>

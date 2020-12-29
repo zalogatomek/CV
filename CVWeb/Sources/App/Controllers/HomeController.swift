@@ -16,6 +16,6 @@ struct HomeController: RouteCollection {
     // MARK: - GET
 
     func homeHandler(_ request: Request) throws -> EventLoopFuture<View> {
-        return request.view.render("Education/Education")
+        return request.view.render("Base")
     }
 }
