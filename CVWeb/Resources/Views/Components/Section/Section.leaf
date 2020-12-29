@@ -1,7 +1,7 @@
-<section class="section d-flex flex-column align-items-center" id="#get(sectionId)">
+<section class="section d-flex flex-column align-items-center" id="#(sectionId)">
     <div class="container">
-        <h2 class="section-heading mb-0">#get(title)</h2>
-        #embed("Components/Divider/Divider")
+        <h2 class="section-heading mb-0">#(title)</h2>
+        #extend("Components/Divider/Divider")
         #get(content)
     </div>
 </section>

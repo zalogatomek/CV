@@ -1,8 +1,8 @@
 
-    #extend("Summary/Summary")
-    #extend("Experience/Experience")
-    #extend("Education/Education")
-    #extend("Skills/Skills")
-    #extend("Contact/Contact")
+#extend("Summary/Summary")
+#extend("Experience/Experience")
+#extend("Education/Education")
+#extend("Skills/Skills")
+#extend("Contact/Contact")
 
 #extend("Base")

@@ -7,56 +7,56 @@
                 <div class="col-md-6">
                     #set("value") {three}
                     #set("name") {Swift}
-                    #embed("Components/Rating/Rating")
+                    #extend("Components/Rating/Rating")
                 </div>
                 <div class="col-md-6">
                     #set("value") {two}
                     #set("name") {Objective-C}
-                    #embed("Components/Rating/Rating")
+                    #extend("Components/Rating/Rating")
                 </div>
                 <div class="col-md-6">
                     #set("value") {two}
                     #set("name") {iOS SDK}
-                    #embed("Components/Rating/Rating")
+                    #extend("Components/Rating/Rating")
                 </div>
                 <div class="col-md-6">
                     #set("value") {twoAndAHalf}
                     #set("name") {UIKit}
-                    #embed("Components/Rating/Rating")
+                    #extend("Components/Rating/Rating")
                 </div>
                 <div class="col-md-6">
                     #set("value") {oneAndAHalf}
                     #set("name") {SwiftUI}
-                    #embed("Components/Rating/Rating")
+                    #extend("Components/Rating/Rating")
                 </div>
                 <div class="col-md-6">
                     #set("value") {one}
                     #set("name") {Vapor}
-                    #embed("Components/Rating/Rating")
+                    #extend("Components/Rating/Rating")
                 </div>
                 <div class="col-md-6">
                     #set("value") {twoAndAHalf}
                     #set("name") {Xcode}
-                    #embed("Components/Rating/Rating")
+                    #extend("Components/Rating/Rating")
                 </div>
                 <div class="col-md-6">
                     #set("value") {oneAndAHalf}
                     #set("name") {Swift Package Manager}
-                    #embed("Components/Rating/Rating")
+                    #extend("Components/Rating/Rating")
                 </div>
                 <div class="col-md-6">
                     #set("value") {three}
                     #set("name") {Polish}
-                    #embed("Components/Rating/Rating")
+                    #extend("Components/Rating/Rating")
                 </div>
                 <div class="col-md-6">
                     #set("value") {two}
                     #set("name") {English}
-                    #embed("Components/Rating/Rating")
+                    #extend("Components/Rating/Rating")
                 </div>
             </div>
         </div>
     </div>
 }
 
-#embed("Components/Section/Section")
+#extend("Components/Section/Section")

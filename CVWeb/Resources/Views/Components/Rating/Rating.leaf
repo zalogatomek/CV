@@ -4,40 +4,40 @@
             <div class="col">
             #if(value == "one") {
                 #set("style") {full}
-                #embed("Components/Rating/RatingIcon")
+                #extend("Components/Rating/RatingIcon")
                 #set("style") {empty}
-                #embed("Components/Rating/RatingIcon")
-                #embed("Components/Rating/RatingIcon")
+                #extend("Components/Rating/RatingIcon")
+                #extend("Components/Rating/RatingIcon")
             } else if(value == "oneAndAHalf") {
                 #set("style") {full}
-                #embed("Components/Rating/RatingIcon")
+                #extend("Components/Rating/RatingIcon")
                 #set("style") {half}
-                #embed("Components/Rating/RatingIcon")
+                #extend("Components/Rating/RatingIcon")
                 #set("style") {empty}
-                #embed("Components/Rating/RatingIcon")
+                #extend("Components/Rating/RatingIcon")
             } else if(value == "two") {
                 #set("style") {full}
-                #embed("Components/Rating/RatingIcon")
-                #embed("Components/Rating/RatingIcon")
+                #extend("Components/Rating/RatingIcon")
+                #extend("Components/Rating/RatingIcon")
                 #set("style") {empty}
-                #embed("Components/Rating/RatingIcon")
+                #extend("Components/Rating/RatingIcon")
             } else if(value == "twoAndAHalf") {
                 #set("style") {full}
-                #embed("Components/Rating/RatingIcon")
-                #embed("Components/Rating/RatingIcon")
+                #extend("Components/Rating/RatingIcon")
+                #extend("Components/Rating/RatingIcon")
                 #set("style") {half}
-                #embed("Components/Rating/RatingIcon")
+                #extend("Components/Rating/RatingIcon")
             } else {
                 #set("style") {full}
-                #embed("Components/Rating/RatingIcon")
-                #embed("Components/Rating/RatingIcon")
-                #embed("Components/Rating/RatingIcon")
+                #extend("Components/Rating/RatingIcon")
+                #extend("Components/Rating/RatingIcon")
+                #extend("Components/Rating/RatingIcon")
             }
             </div>
         </div>
         <div class="col">
             <div class="rating-name">
-                <h3>#get(name)</h3>
+                <h3>#(name)</h3>
             </div>
         </div>
     </div>
