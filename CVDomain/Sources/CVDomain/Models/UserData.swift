@@ -9,6 +9,8 @@ public struct UserData {
     public struct Contact {
         public enum Kind {
             case email
+            case phone
+            case webpage
             case linkedIn
             case stackOverflow
             case github

@@ -26,16 +26,22 @@ final class StaticCVRepository: CVRepository {
             .set(firstName: "Tomasz")
             .set(lastName: "Załoga")
             .set(birthDate: date(year: 1989, month: 12, day: 4))
-            // TODO: Since image is referenced by name, should be providen with package
+            // TODO: Since images are referenced by name, should be providen with package
             .set(avatarName: "Avatar")
-            .set(contactKind: .linkedIn,
-                 link: "https://www.linkedin.com/in/tomasz-zaloga",
-                 imageName: "LinkedIn")
+            .set(contactKind: .phone,
+                 link: "507-891-204",
+                 imageName: "Phone")
             .set(contactKind: .email,
                  link: "zalogatomek@gmail.com",
                  imageName: "Email")
+            .set(contactKind: .webpage,
+                 link: "http://zalogatomek.com",
+                 imageName: "Webpage")
+            .set(contactKind: .linkedIn,
+                 link: "https://linkedin.com/in/tomasz-zaloga",
+                 imageName: "LinkedIn")
             .set(contactKind: .stackOverflow,
-                 link: "https://stackoverflow.com/users/4850928/tzaloga",
+                 link: "https://stackoverflow.com/users/4850928/zalogatomek",
                  imageName: "StackOverflow")
             .set(contactKind: .github,
                  link: "https://github.com/zalogatomek?tab=repositories",

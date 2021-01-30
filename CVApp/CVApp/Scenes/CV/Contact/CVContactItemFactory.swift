@@ -35,6 +35,7 @@ struct CVContactItemFactory {
     private static func url(for kind: UserData.Contact.Kind, link: String) -> URL? {
         switch kind {
         case .email: return URL(string: "mailto:\(link)")
+        case .phone: return URL(string: "tel:\(link)")
         default: return URL(string: link)
         }
     }
@@ -50,6 +51,9 @@ struct CVContactItemFactory {
         if let query = url.query {
             displayableUrl = displayableUrl.replacingOccurrences(of: query, with: "")
             displayableUrl = displayableUrl.trimmingCharacters(in: CharacterSet.init(charactersIn: "?"))
+        }
+        if kind == .phone {
+            displayableUrl = displayableUrl.replacingOccurrences(of: "-", with: " ")
         }
         
         return displayableUrl
