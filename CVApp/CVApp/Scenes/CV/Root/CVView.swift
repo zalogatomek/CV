@@ -48,7 +48,7 @@ struct CVView: View {
                             case .education(let viewModel):
                                 return educationView(with: viewModel)
                             case .skills(let viewModel):
-                                return skillsView(with: viewModel)
+                                return skillsGridView(with: viewModel)
                             case .contact(let viewModel):
                                 return contactView(with: viewModel)
                             }
@@ -133,12 +133,11 @@ struct CVView: View {
         return AnyView(cardView)
     }
     
-    private func skillsView(with viewModel: CVSkillsViewModel) -> AnyView {
-        let skillsView = CVSkillsView(viewModel: viewModel)
-        let cardView = CardView(skillsView)
+    private func skillsGridView(with viewModel: CVSkillsGridViewModel) -> AnyView {
+        let skillsView = CVSkillsGridView(viewModel: viewModel)
             .padding(.horizontal, .standard)
             
-        return AnyView(cardView)
+        return AnyView(skillsView)
     }
     
     private func contactView(with viewModel: CVContactViewModel) -> AnyView {

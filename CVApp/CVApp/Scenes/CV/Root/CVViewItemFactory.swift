@@ -19,15 +19,21 @@ struct CVViewItemFactory {
             .education(viewModel: CVEducationViewModel(education: $0))
         })
         items.append(.header(title: "Skills"))
-        Skill.Kind.allCases.forEach { kind in
-            let skills = cv.skills.filter({ $0.kind == kind })
-            if skills.count > 0 {
-                items.append(.skills(viewModel: CVSkillsViewModel(skills: skills)))
-            }
-        }
+        items.append(skillsItem(with: cv))
         items.append(.header(title: "Contact"))
         items.append(.contact(viewModel: CVContactViewModel(contacts: cv.userData.contacts)))
         
         return items
+    }
+    
+    private static func skillsItem(with cv: CV) -> CVViewItem {
+        var skillsViewModels: [CVSkillsViewModel] = []
+        Skill.Kind.allCases.forEach { kind in
+            let skills = cv.skills.filter({ $0.kind == kind })
+            if skills.count > 0 {
+                skillsViewModels.append(CVSkillsViewModel(skills: skills))
+            }
+        }
+        return .skills(viewModel: CVSkillsGridViewModel(items: skillsViewModels))
     }
 }

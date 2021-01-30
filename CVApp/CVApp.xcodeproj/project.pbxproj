@@ -45,6 +45,8 @@
 		9A5CCF8D24263253009006CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8C24263253009006CD /* Preview Assets.xcassets */; };
 		9A5CCF9024263253009006CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CCF8E24263253009006CD /* LaunchScreen.storyboard */; };
 		9A5CCF9B24263253009006CD /* CV_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF9A24263253009006CD /* CV_AppTests.swift */; };
+		9A62DE7E25C5902B0028163C /* CVSkillsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62DE7D25C5902B0028163C /* CVSkillsGridView.swift */; };
+		9A62DE8225C590520028163C /* CVSkillsGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62DE8125C590520028163C /* CVSkillsGridViewModel.swift */; };
 		9A717D5E243895B700AB3AD4 /* CVSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A717D5D243895B700AB3AD4 /* CVSummaryView.swift */; };
 		9ABC52F6253239E700FF128D /* CVSkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC52F5253239E700FF128D /* CVSkillsView.swift */; };
 		9ABC52FC253239F500FF128D /* CVSkillsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC52FB253239F500FF128D /* CVSkillsViewModel.swift */; };
@@ -111,6 +113,8 @@
 		9A5CCF9624263253009006CD /* CVAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CVAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A5CCF9A24263253009006CD /* CV_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CV_AppTests.swift; sourceTree = "<group>"; };
 		9A5CCF9C24263253009006CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A62DE7D25C5902B0028163C /* CVSkillsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSkillsGridView.swift; sourceTree = "<group>"; };
+		9A62DE8125C590520028163C /* CVSkillsGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSkillsGridViewModel.swift; sourceTree = "<group>"; };
 		9A717D5D243895B700AB3AD4 /* CVSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSummaryView.swift; sourceTree = "<group>"; };
 		9ABC52F5253239E700FF128D /* CVSkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSkillsView.swift; sourceTree = "<group>"; };
 		9ABC52FB253239F500FF128D /* CVSkillsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSkillsViewModel.swift; sourceTree = "<group>"; };
@@ -403,6 +407,8 @@
 		9ABC52F4253239CE00FF128D /* Skills */ = {
 			isa = PBXGroup;
 			children = (
+				9A62DE8125C590520028163C /* CVSkillsGridViewModel.swift */,
+				9A62DE7D25C5902B0028163C /* CVSkillsGridView.swift */,
 				9ABC52FB253239F500FF128D /* CVSkillsViewModel.swift */,
 				9ABC52F5253239E700FF128D /* CVSkillsView.swift */,
 				9ABC530125323B8100FF128D /* SkillKind+DisplayName.swift */,
@@ -551,6 +557,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ABC531F25324F7400FF128D /* CircleButton.swift in Sources */,
+				9A62DE8225C590520028163C /* CVSkillsGridViewModel.swift in Sources */,
 				9ABC52F6253239E700FF128D /* CVSkillsView.swift in Sources */,
 				9A46E346243BB6FC004A472E /* DependencyContainer+CV.swift in Sources */,
 				9ABC531125324A1800FF128D /* CVContactItem.swift in Sources */,
@@ -583,6 +590,7 @@
 				9A575B76252E4E7B00DE722B /* CVViewItem.swift in Sources */,
 				9A0902662530F5BD0011E478 /* ContainerView.swift in Sources */,
 				9A46E349243BB9DB004A472E /* DependencyPreviewContainer.swift in Sources */,
+				9A62DE7E25C5902B0028163C /* CVSkillsGridView.swift in Sources */,
 				9A4FE4E1246F2EA60012A6BF /* Font+Theme.swift in Sources */,
 				9A4FE4E8246F358B0012A6BF /* SectionHeader.swift in Sources */,
 				9A55713A2539A79600CB2947 /* View+TextStyle.swift in Sources */,
