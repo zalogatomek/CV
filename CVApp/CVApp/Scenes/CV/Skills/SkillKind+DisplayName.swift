@@ -9,8 +9,10 @@ extension Skill.Kind {
     var displayName: String {
         switch self {
         case .programmingLanguage: return "Programming Languages"
-        case .tools: return "Tools"
         case .framework: return "Frameworks"
+        case .tool: return "Tools"
+        case .metodology: return "Metodology"
+        case .softSkill: return "Soft skills"
         case .language: return "Languages"
         }
     }

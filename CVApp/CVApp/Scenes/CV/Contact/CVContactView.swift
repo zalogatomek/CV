@@ -10,6 +10,7 @@ struct CVContactView: View {
     // MARK: - Configuration
     
     private let buttonSize: CGFloat = 50.0
+    private let buttonPadding: CGFloat = 10.0
     @Environment(\.horizontalSizeClass) var sizeClass
     var columns: [GridItem] {
         if sizeClass == .regular {
@@ -37,7 +38,7 @@ struct CVContactView: View {
                 HStack(spacing: .small, content: {
                     Link(destination: item.url, label: {
                         CircleImage(item.imageName)
-                            .accent(.light, background: .accentSecondary, padding: .small)
+                            .accent(.light, background: .accentSecondary, padding: buttonPadding)
                             .frame(width: buttonSize, height: buttonSize, alignment: .center)
                     })
                     Text(item.displayableUrl)

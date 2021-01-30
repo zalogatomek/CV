@@ -28,12 +28,12 @@ final class StaticCVRepository: CVRepository {
             .set(birthDate: date(year: 1989, month: 12, day: 4))
             // TODO: Since images are referenced by name, should be providen with package
             .set(avatarName: "Avatar")
-            .set(contactKind: .phone,
-                 link: "507-891-204",
-                 imageName: "Phone")
             .set(contactKind: .email,
                  link: "zalogatomek@gmail.com",
                  imageName: "Email")
+            .set(contactKind: .phone,
+                 link: "507-891-204",
+                 imageName: "Phone")
             .set(contactKind: .webpage,
                  link: "http://zalogatomek.com",
                  imageName: "Webpage")
@@ -109,22 +109,34 @@ final class StaticCVRepository: CVRepository {
             .set(level: 0.6)
             .build()
         
-        let uiKit = SkillBuilder()
-            .set(kind: .framework)
-            .set(name: "UIKit")
-            .set(level: 0.8)
-            .build()
-        
         let iOSSDK = SkillBuilder()
             .set(kind: .framework)
             .set(name: "iOS SDK")
             .set(level: 0.7)
             .build()
         
+        let uiKit = SkillBuilder()
+            .set(kind: .framework)
+            .set(name: "UIKit")
+            .set(level: 0.8)
+            .build()
+        
         let swiftUi = SkillBuilder()
             .set(kind: .framework)
             .set(name: "SwiftUI")
             .set(level: 0.4)
+            .build()
+        
+        let rxSwift = SkillBuilder()
+            .set(kind: .framework)
+            .set(name: "RxSwift")
+            .set(level: 0.7)
+            .build()
+        
+        let optimizely = SkillBuilder()
+            .set(kind: .framework)
+            .set(name: "Optimizely")
+            .set(level: 0.5)
             .build()
         
         let vapor = SkillBuilder()
@@ -134,15 +146,87 @@ final class StaticCVRepository: CVRepository {
             .build()
         
         let xcode = SkillBuilder()
-            .set(kind: .tools)
+            .set(kind: .tool)
             .set(name: "Xcode")
             .set(level: 0.8)
             .build()
         
+        let git = SkillBuilder()
+            .set(kind: .tool)
+            .set(name: "Git")
+            .set(level: 0.6)
+            .build()
+        
+        let jira = SkillBuilder()
+            .set(kind: .tool)
+            .set(name: "Jira")
+            .set(level: 0.6)
+            .build()
+        
+        let cocoaPods = SkillBuilder()
+            .set(kind: .tool)
+            .set(name: "CocoaPods")
+            .set(level: 0.8)
+            .build()
+        
+        let carthage = SkillBuilder()
+            .set(kind: .tool)
+            .set(name: "Carthage")
+            .set(level: 0.8)
+            .build()
+        
         let swiftPackageManager = SkillBuilder()
-            .set(kind: .tools)
-            .set(name: "Swift Package Manager")
+            .set(kind: .tool)
+            .set(name: "SPM")
             .set(level: 0.4)
+            .build()
+        
+        let scrum = SkillBuilder()
+            .set(kind: .metodology)
+            .set(name: "Scrum")
+            .set(level: 0.8)
+            .build()
+        
+        let ddd = SkillBuilder()
+            .set(kind: .metodology)
+            .set(name: "DDD")
+            .set(level: 0.7)
+            .build()
+        
+        let cleanCode = SkillBuilder()
+            .set(kind: .metodology)
+            .set(name: "Clean Code")
+            .set(level: 0.7)
+            .build()
+        
+        let mvvm = SkillBuilder()
+            .set(kind: .metodology)
+            .set(name: "MVVM")
+            .set(level: 0.9)
+            .build()
+        
+        let unitTesting = SkillBuilder()
+            .set(kind: .metodology)
+            .set(name: "Unit testing")
+            .set(level: 0.7)
+            .build()
+        
+        let proactivity = SkillBuilder()
+            .set(kind: .softSkill)
+            .set(name: "Proactivity")
+            .set(level: 0.9)
+            .build()
+        
+        let teamPlayer = SkillBuilder()
+            .set(kind: .softSkill)
+            .set(name: "Team player")
+            .set(level: 0.8)
+            .build()
+        
+        let problemSolving = SkillBuilder()
+            .set(kind: .softSkill)
+            .set(name: "Problem solving")
+            .set(level: 0.8)
             .build()
         
         let polish = SkillBuilder()
@@ -157,7 +241,14 @@ final class StaticCVRepository: CVRepository {
             .set(level: 0.6)
             .build()
         
-        return [swift, objectiveC, uiKit, iOSSDK, swiftUi, vapor, xcode, swiftPackageManager, polish, english].compactMap { $0 }
+        return [
+            swift, objectiveC,
+            iOSSDK, uiKit, swiftUi, rxSwift, optimizely, vapor,
+            xcode, git, jira, cocoaPods, carthage, swiftPackageManager,
+            scrum, ddd, cleanCode, mvvm, unitTesting,
+            proactivity, teamPlayer, problemSolving,
+            polish, english
+        ].compactMap { $0 }
     }
     
     // MARK: - Utils

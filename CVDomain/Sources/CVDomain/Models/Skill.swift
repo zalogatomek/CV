@@ -7,8 +7,10 @@ import Foundation
 public struct Skill {
     public enum Kind: CaseIterable {
         case programmingLanguage
-        case tools
         case framework
+        case tool
+        case metodology
+        case softSkill
         case language
     }
     

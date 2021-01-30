@@ -14,16 +14,19 @@ struct CVSkillsView: View {
     // MARK: - View
     
     var body: some View {
-        VStack(alignment: .leading, spacing: .small) {
-            Text(viewModel.title)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .textStyle(.paragraphBold)
-            
-            if let description = viewModel.description {
-                Text(description)
+        VStack(spacing: 0.0) {
+            VStack(alignment: .leading, spacing: .small) {
+                Text(viewModel.title)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .textStyle(.paragraph)
+                    .textStyle(.paragraphBold)
+                
+                if let description = viewModel.description {
+                    Text(description)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .textStyle(.paragraph)
+                }
             }
+            Spacer(minLength: 0.0)
         }
     }
 }
