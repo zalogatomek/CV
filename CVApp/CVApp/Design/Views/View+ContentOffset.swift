@@ -21,7 +21,6 @@ extension View {
             )
         })
         .onPreferenceChange(ContentOffsetPreferenceKey.self) {
-            print("contentOffset: \($0.y)")
             contentOffset.wrappedValue = $0
         }
     }
