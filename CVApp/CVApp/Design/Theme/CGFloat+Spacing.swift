@@ -8,7 +8,8 @@ extension CGFloat {
     
     private static var spacingMultipier: CGFloat {
         let horizontalSizeClass = UIApplication.shared.windows.first?.rootViewController?.traitCollection.horizontalSizeClass
-        return horizontalSizeClass == .regular ? 1.5 : 1.0
+        // TODO: Reduced regular spacing from 1.5 for PDF support
+        return horizontalSizeClass == .regular ? 1.2 : 1.0
     }
     
     // MARK: - Spacing values

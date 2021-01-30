@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		368E857A47A26BDCAE5449DF /* Pods_CVApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44AD0329A05D26D9620C86E1 /* Pods_CVApp.framework */; };
 		9A09025C2530F04C0011E478 /* CVEducationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A09025B2530F04C0011E478 /* CVEducationViewModel.swift */; };
 		9A0902622530F0570011E478 /* CVEducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0902612530F0570011E478 /* CVEducationView.swift */; };
 		9A0902662530F5BD0011E478 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0902652530F5BD0011E478 /* ContainerView.swift */; };
@@ -47,6 +48,7 @@
 		9A5CCF9B24263253009006CD /* CV_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CCF9A24263253009006CD /* CV_AppTests.swift */; };
 		9A62DE7E25C5902B0028163C /* CVSkillsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62DE7D25C5902B0028163C /* CVSkillsGridView.swift */; };
 		9A62DE8225C590520028163C /* CVSkillsGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62DE8125C590520028163C /* CVSkillsGridViewModel.swift */; };
+		9A63D2EC25C5BD4E001A4DC0 /* PDFCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63D2EB25C5BD4E001A4DC0 /* PDFCreator.swift */; };
 		9A717D5E243895B700AB3AD4 /* CVSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A717D5D243895B700AB3AD4 /* CVSummaryView.swift */; };
 		9ABC52F6253239E700FF128D /* CVSkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC52F5253239E700FF128D /* CVSkillsView.swift */; };
 		9ABC52FC253239F500FF128D /* CVSkillsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC52FB253239F500FF128D /* CVSkillsViewModel.swift */; };
@@ -71,6 +73,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C226E44AFF79C2E52589CEC /* Pods-CVApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVApp.debug.xcconfig"; path = "Target Support Files/Pods-CVApp/Pods-CVApp.debug.xcconfig"; sourceTree = "<group>"; };
+		44AD0329A05D26D9620C86E1 /* Pods_CVApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CVApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CD693A14D1CBD319C791062 /* Pods-CVApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CVApp.release.xcconfig"; path = "Target Support Files/Pods-CVApp/Pods-CVApp.release.xcconfig"; sourceTree = "<group>"; };
 		9A09025B2530F04C0011E478 /* CVEducationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationViewModel.swift; sourceTree = "<group>"; };
 		9A0902612530F0570011E478 /* CVEducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationView.swift; sourceTree = "<group>"; };
 		9A0902652530F5BD0011E478 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
@@ -115,6 +120,7 @@
 		9A5CCF9C24263253009006CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A62DE7D25C5902B0028163C /* CVSkillsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSkillsGridView.swift; sourceTree = "<group>"; };
 		9A62DE8125C590520028163C /* CVSkillsGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSkillsGridViewModel.swift; sourceTree = "<group>"; };
+		9A63D2EB25C5BD4E001A4DC0 /* PDFCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDFCreator.swift; sourceTree = "<group>"; };
 		9A717D5D243895B700AB3AD4 /* CVSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSummaryView.swift; sourceTree = "<group>"; };
 		9ABC52F5253239E700FF128D /* CVSkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSkillsView.swift; sourceTree = "<group>"; };
 		9ABC52FB253239F500FF128D /* CVSkillsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSkillsViewModel.swift; sourceTree = "<group>"; };
@@ -136,6 +142,7 @@
 				9A4BD2B724389FD80049BE17 /* CVDomain in Frameworks */,
 				9A4BD2B924389FDB0049BE17 /* CVStatic in Frameworks */,
 				9A590813246C86A80080BE24 /* CVDesign in Frameworks */,
+				368E857A47A26BDCAE5449DF /* Pods_CVApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +156,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48AF426D0D9B01EC6047BE77 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0C226E44AFF79C2E52589CEC /* Pods-CVApp.debug.xcconfig */,
+				6CD693A14D1CBD319C791062 /* Pods-CVApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
 		9A09025A2530F0350011E478 /* Education */ = {
 			isa = PBXGroup;
 			children = (
@@ -195,6 +212,7 @@
 				9A46E352243BBE73004A472E /* RangeDateFormatter.swift */,
 				9A590816246C89A20080BE24 /* String+Hex.swift */,
 				9ADFEFAF2555F90000F6A0A9 /* View+Hidden.swift */,
+				9A63D2EB25C5BD4E001A4DC0 /* PDFCreator.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -279,6 +297,7 @@
 				9A4D603B2439E49C005F7F96 /* SwiftLint */,
 				9AAAC643242639E900BAD4EC /* Frameworks */,
 				9A5CCF8124263251009006CD /* Products */,
+				48AF426D0D9B01EC6047BE77 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -400,6 +419,7 @@
 			isa = PBXGroup;
 			children = (
 				9A590811246C86A00080BE24 /* CVDesign */,
+				44AD0329A05D26D9620C86E1 /* Pods_CVApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -434,10 +454,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9A5CCF9F24263253009006CD /* Build configuration list for PBXNativeTarget "CVApp" */;
 			buildPhases = (
+				BB0D0064350A9AC86F43A112 /* [CP] Check Pods Manifest.lock */,
 				9A5CCF7C24263251009006CD /* Sources */,
 				9A5CCF7D24263251009006CD /* Frameworks */,
 				9A5CCF7E24263251009006CD /* Resources */,
 				9A4D603A2439E41C005F7F96 /* Run Script: SwiftLint */,
+				58F8A3B8F31AF67F0A4054E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -531,6 +553,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		58F8A3B8F31AF67F0A4054E6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CVApp/Pods-CVApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CVApp/Pods-CVApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CVApp/Pods-CVApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9A4D603A2439E41C005F7F96 /* Run Script: SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -548,6 +587,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n  swiftlint --config ../SwiftLint/.swiftlint.yml --quiet\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		BB0D0064350A9AC86F43A112 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CVApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -590,6 +651,7 @@
 				9A575B76252E4E7B00DE722B /* CVViewItem.swift in Sources */,
 				9A0902662530F5BD0011E478 /* ContainerView.swift in Sources */,
 				9A46E349243BB9DB004A472E /* DependencyPreviewContainer.swift in Sources */,
+				9A63D2EC25C5BD4E001A4DC0 /* PDFCreator.swift in Sources */,
 				9A62DE7E25C5902B0028163C /* CVSkillsGridView.swift in Sources */,
 				9A4FE4E1246F2EA60012A6BF /* Font+Theme.swift in Sources */,
 				9A4FE4E8246F358B0012A6BF /* SectionHeader.swift in Sources */,
@@ -749,6 +811,7 @@
 		};
 		9A5CCFA024263253009006CD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C226E44AFF79C2E52589CEC /* Pods-CVApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -770,6 +833,7 @@
 		};
 		9A5CCFA124263253009006CD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CD693A14D1CBD319C791062 /* Pods-CVApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

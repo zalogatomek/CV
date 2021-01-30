@@ -15,10 +15,11 @@ struct CVSummaryView: View {
     
     var body: some View {
         VStack(spacing: .standard) {
-            if let imageName = viewModel.imageName {
-                CircleImage(imageName)
-                    .frame(width: 120.0, height: 120.0)
-            }
+            // TODO: Temporary removed image form CV
+//            if let imageName = viewModel.imageName {
+//                CircleImage(imageName)
+//                    .frame(width: 120.0, height: 120.0)
+//            }
             
             Text(viewModel.name.uppercased())
                 .frame(maxWidth: .infinity, alignment: .center)

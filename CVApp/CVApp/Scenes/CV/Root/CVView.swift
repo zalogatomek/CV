@@ -22,6 +22,14 @@ struct CVView: View {
     
     init(viewModel: CVViewModel) {
         self.viewModel = viewModel
+        // TODO: temporary approach to generate PDF on every launch
+        createPdf()
+    }
+    
+    private func createPdf() {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+            PDFCreator.generate(view: self, name: "CV", completion: { _ in })
+        }
     }
     
     // MARK: - View
@@ -102,7 +110,8 @@ struct CVView: View {
     
     private func sectionHeader(with title: String) -> AnyView {
         let sectionHeader = SectionHeader(title)
-            .padding(.horizontal, .standard)
+            // TODO: PDF Support - bigger side margins (all cells)
+            .padding(.horizontal, .wide)
             .padding(.top, .small)
         
         return AnyView(sectionHeader)
@@ -111,6 +120,7 @@ struct CVView: View {
     private func summaryView(with viewModel: CVSummaryViewModel) -> AnyView {
         let summaryView = CVSummaryView(viewModel: viewModel)
         let containerView = ContainerView(summaryView)
+            .padding(.horizontal, .standard + .small)
             .padding(.top, -.standard)
             .background(Color.accentPrimary)
 
@@ -120,7 +130,7 @@ struct CVView: View {
     private func experienceView(with viewModel: CVExperienceViewModel) -> AnyView {
         let experienceView = CVExperienceView(viewModel: viewModel)
         let cardView = CardView(experienceView)
-            .padding(.horizontal, .standard)
+            .padding(.horizontal, .wide)
             
         return AnyView(cardView)
     }
@@ -128,21 +138,21 @@ struct CVView: View {
     private func educationView(with viewModel: CVEducationViewModel) -> AnyView {
         let educationView = CVEducationView(viewModel: viewModel)
         let cardView = CardView(educationView)
-            .padding(.horizontal, .standard)
+            .padding(.horizontal, .wide)
             
         return AnyView(cardView)
     }
     
     private func skillsGridView(with viewModel: CVSkillsGridViewModel) -> AnyView {
         let skillsView = CVSkillsGridView(viewModel: viewModel)
-            .padding(.horizontal, .standard)
+            .padding(.horizontal, .wide)
             
         return AnyView(skillsView)
     }
     
     private func contactView(with viewModel: CVContactViewModel) -> AnyView {
         let contactView = CVContactView(viewModel: viewModel)
-            .padding(.horizontal, .standard)
+            .padding(.horizontal, .wide)
             .padding(.bottom, safeArea.bottom + .standard)
             
         return AnyView(contactView)

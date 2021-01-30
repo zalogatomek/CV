@@ -33,7 +33,7 @@ struct CVContactView: View {
     // MARK: - View
     
     var body: some View {
-        LazyVGrid(columns: columns, spacing: .standard) {
+        LazyVGrid(columns: columns, spacing: .small) {
             ForEach(viewModel.items) { item in
                 HStack(spacing: .small, content: {
                     Link(destination: item.url, label: {
@@ -41,13 +41,47 @@ struct CVContactView: View {
                             .accent(.light, background: .accentSecondary, padding: buttonPadding)
                             .frame(width: buttonSize, height: buttonSize, alignment: .center)
                     })
-                    Text(item.displayableUrl)
+                    // TODO: Temporary solution to make text selectable in PDF
+                    //Text(item.displayableUrl)
+                    PDFDrawableText(item.displayableUrl)
                         .textStyle(.paragraph)
                     
                 })
                 .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal, .standard)
             }
         }
+    }
+}
+
+final class PDFDrawableLabel: UILabel {
+    override func draw(_ layer: CALayer, in ctx: CGContext) {
+        let isPDF = !UIGraphicsGetPDFContextBounds().isEmpty
+        if (!layer.shouldRasterize && isPDF) {
+            draw(bounds)
+        } else {
+            super.draw(layer, in: ctx)
+        }
+    }
+}
+
+
+struct PDFDrawableText: UIViewRepresentable {
+    let text: String
+     
+    init(_ text: String) {
+        self.text = text
+    }
+
+    func makeUIView(context: Context) -> UILabel {
+        return PDFDrawableLabel()
+    }
+    
+    func updateUIView(_ label: UILabel, context: Context) {
+        label.text = text
+        label.font = UIFont(name: "Montserrat", size: 16.0)
+        label.textColor = UIColor(Color.textPrimary)
+        label.numberOfLines = 0
     }
 }
 
