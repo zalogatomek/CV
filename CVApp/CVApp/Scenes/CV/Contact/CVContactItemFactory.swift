@@ -10,10 +10,15 @@ struct CVContactItemFactory {
     // MARK: - Create
     
     static func create(with contacts: [UserData.Contact]) -> [CVContactItem] {
-        return contacts.map { contact in
-            CVContactItem(
+        return contacts.compactMap { contact in
+            guard let url = url(for: contact.kind, link: contact.link),
+                  let displayableUrl = displayableUrl(for: contact.kind, link: contact.link)
+            else { return nil }
+            
+            return CVContactItem(
                 imageName: imageName(with: contact.image),
-                action: action(for: contact.kind, link: contact.link)
+                url: url,
+                displayableUrl: displayableUrl
             )
         }
     }
@@ -25,28 +30,28 @@ struct CVContactItemFactory {
         return imageName
     }
     
-    // MARK: - Action
+    // MARK: - URL
     
-    private static func action(for kind: UserData.Contact.Kind, link: String) -> () -> Void {
+    private static func url(for kind: UserData.Contact.Kind, link: String) -> URL? {
         switch kind {
-        case .email:
-            return emailAction(with: link)
-        default:
-            return websiteAction(with: link)
+        case .email: return URL(string: "mailto:\(link)")
+        default: return URL(string: link)
         }
     }
     
-    private static func emailAction(with email: String) -> () -> Void {
-        return {
-            guard let emailUrl = URL(string: "mailto:\(email)") else { return }
-            UIApplication.shared.open(emailUrl)
+    private static func displayableUrl(for kind: UserData.Contact.Kind, link: String) -> String? {
+        guard let url = url(for: kind, link: link) else { return nil }
+        var displayableUrl = url.absoluteString
+        
+        if let scheme = url.scheme {
+            displayableUrl = displayableUrl.replacingOccurrences(of: scheme, with: "")
+            displayableUrl = displayableUrl.trimmingCharacters(in: CharacterSet.init(charactersIn: ":/"))
         }
-    }
-    
-    private static func websiteAction(with link: String) -> () -> Void {
-        return {
-            guard let url = URL(string: link) else { return }
-            UIApplication.shared.open(url)
+        if let query = url.query {
+            displayableUrl = displayableUrl.replacingOccurrences(of: query, with: "")
+            displayableUrl = displayableUrl.trimmingCharacters(in: CharacterSet.init(charactersIn: "?"))
         }
+        
+        return displayableUrl
     }
 }

@@ -6,7 +6,8 @@ import Foundation
 
 struct CVContactItem: Identifiable {
     let imageName: String
-    let action: () -> Void
+    let url: URL
+    let displayableUrl: String
     
     // MARK: - Identifiable
     
