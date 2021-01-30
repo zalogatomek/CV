@@ -10,8 +10,7 @@ class RangeDateFormatter {
     
     private lazy var dateFormatter: DateFormatter = {
         let dateFormatter: DateFormatter = DateFormatter()
-        dateFormatter.dateStyle = .short
-        dateFormatter.timeStyle = .none
+        dateFormatter.setLocalizedDateFormatFromTemplate("LLLLYYYY")
         return dateFormatter
     }()
     
