@@ -58,6 +58,8 @@
 		9ABC531525324A7A00FF128D /* CVContactItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC531425324A7A00FF128D /* CVContactItemFactory.swift */; };
 		9ABC531925324E5600FF128D /* CVContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC531825324E5600FF128D /* CVContactView.swift */; };
 		9ABC531F25324F7400FF128D /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC531E25324F7400FF128D /* CircleButton.swift */; };
+		9AC6F56C25CB40D9000E12B6 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AC6F56E25CB40D9000E12B6 /* Localizable.strings */; };
+		9AC6F57325CB4108000E12B6 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC6F57225CB4108000E12B6 /* String+Localized.swift */; };
 		9ADFEFB02555F90000F6A0A9 /* View+Hidden.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADFEFAF2555F90000F6A0A9 /* View+Hidden.swift */; };
 		9AED6B34252E5FE6000D4808 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED6B33252E5FE6000D4808 /* CardView.swift */; };
 /* End PBXBuildFile section */
@@ -130,6 +132,10 @@
 		9ABC531425324A7A00FF128D /* CVContactItemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVContactItemFactory.swift; sourceTree = "<group>"; };
 		9ABC531825324E5600FF128D /* CVContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVContactView.swift; sourceTree = "<group>"; };
 		9ABC531E25324F7400FF128D /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
+		9AC6F56425CB409E000E12B6 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		9AC6F56D25CB40D9000E12B6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9AC6F57125CB40DE000E12B6 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		9AC6F57225CB4108000E12B6 /* String+Localized.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
 		9ADFEFAF2555F90000F6A0A9 /* View+Hidden.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Hidden.swift"; sourceTree = "<group>"; };
 		9AED6B33252E5FE6000D4808 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,6 +219,7 @@
 				9A590816246C89A20080BE24 /* String+Hex.swift */,
 				9ADFEFAF2555F90000F6A0A9 /* View+Hidden.swift */,
 				9A63D2EB25C5BD4E001A4DC0 /* PDFCreator.swift */,
+				9AC6F57225CB4108000E12B6 /* String+Localized.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -363,6 +370,7 @@
 				9A5CCFAA242632A8009006CD /* Info */,
 				9A5CCFA92426329A009006CD /* Launch */,
 				9A5CCFAE242633C8009006CD /* Assets */,
+				9AC6F56B25CB40C8000E12B6 /* Texts */,
 				9A5CCFAD242633BC009006CD /* Preview */,
 				9A4FE4E2246F31F10012A6BF /* Fonts */,
 			);
@@ -447,6 +455,14 @@
 			path = Contact;
 			sourceTree = "<group>";
 		};
+		9AC6F56B25CB40C8000E12B6 /* Texts */ = {
+			isa = PBXGroup;
+			children = (
+				9AC6F56E25CB40D9000E12B6 /* Localizable.strings */,
+			);
+			path = Texts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -518,6 +534,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pl,
 			);
 			mainGroup = 9A5CCF7724263251009006CD;
 			productRefGroup = 9A5CCF8124263251009006CD /* Products */;
@@ -536,6 +553,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A4FE4E6246F32A10012A6BF /* Montserrat-Bold.ttf in Resources */,
+				9AC6F56C25CB40D9000E12B6 /* Localizable.strings in Resources */,
 				9A4FE4E5246F329E0012A6BF /* Montserrat-Regular.ttf in Resources */,
 				9A5CCF9024263253009006CD /* LaunchScreen.storyboard in Resources */,
 				9A5CCF8D24263253009006CD /* Preview Assets.xcassets in Resources */,
@@ -642,6 +660,7 @@
 				9A4FE4EA246F3A380012A6BF /* CVExperienceViewModel.swift in Sources */,
 				9A4D60712439F383005F7F96 /* CVSummaryViewModel.swift in Sources */,
 				9ABC530225323B8100FF128D /* SkillKind+DisplayName.swift in Sources */,
+				9AC6F57325CB4108000E12B6 /* String+Localized.swift in Sources */,
 				9AED6B34252E5FE6000D4808 /* CardView.swift in Sources */,
 				9A590817246C89A20080BE24 /* String+Hex.swift in Sources */,
 				9ABC531925324E5600FF128D /* CVContactView.swift in Sources */,
@@ -686,8 +705,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				9A5CCF8F24263253009006CD /* Base */,
+				9AC6F56425CB409E000E12B6 /* pl */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9AC6F56E25CB40D9000E12B6 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AC6F56D25CB40D9000E12B6 /* en */,
+				9AC6F57125CB40DE000E12B6 /* pl */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -697,6 +726,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -758,6 +788,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

@@ -22,7 +22,7 @@ class RangeDateFormatter {
             let endString = dateFormatter.string(from: endDate)
             return "\(startString) - \(endString)"
         } else {
-            return "\(startString) - currently"
+            return "\(startString) - \("CURRENTLY".localized)"
         }
     }
 }

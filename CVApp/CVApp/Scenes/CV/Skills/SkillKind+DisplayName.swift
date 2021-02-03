@@ -8,12 +8,18 @@ import CVDomain
 extension Skill.Kind {
     var displayName: String {
         switch self {
-        case .programmingLanguage: return "Programming Languages"
-        case .framework: return "Frameworks"
-        case .tool: return "Tools"
-        case .metodology: return "Metodology"
-        case .softSkill: return "Soft skills"
-        case .language: return "Languages"
+        case .programmingLanguage:
+            return "PROGRAMMING_LANGUAGES".localized
+        case .framework:
+            return "FRAMEWORKS".localized
+        case .tool:
+            return "TOOLS".localized
+        case .metodology:
+            return "METHODOLOGY".localized
+        case .softSkill:
+            return "SOFT_SKILLS".localized
+        case .language:
+            return "LANGUAGES".localized
         }
     }
 }

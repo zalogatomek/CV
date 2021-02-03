@@ -24,7 +24,7 @@ extension DependencyPreviewContainer: CVSceneFactory {
         group.enter()
         
         var cv: CV?
-        CVStaticFactory.createCvUseCase().fetchCV { fetchedCv in
+        CVStaticFactory.createCvUseCase(locale: Locale.current).fetchCV { fetchedCv in
             cv = fetchedCv
             group.leave()
         }
