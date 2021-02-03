@@ -15,6 +15,6 @@ extension DependencyContainer: CVSceneFactory {
     }
     
     static func createCvViewModel() -> CVViewModel {
-        return CVViewModel(useCase: CVStaticFactory.createCvUseCase())
+        return CVViewModel(useCase: CVStaticFactory.createCvUseCase(locale: Locale.current))
     }
 }

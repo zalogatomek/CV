@@ -6,7 +6,12 @@ import Foundation
 import CVDomain
 
 public final class CVStaticFactory {
-    public static func createCvUseCase() -> CVUseCase {
-        return CVUseCase(repository: StaticCVRepository())
+    public static func createCvUseCase(locale: Locale) -> CVUseCase {
+        switch LanguageFactory.language(with: locale) {
+        case .english:
+            return CVUseCase(repository: StaticCVRepository())
+        case .polish:
+            return CVUseCase(repository: StaticCVPolishRepository())
+        }
     }
 }

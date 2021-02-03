@@ -1,0 +1,27 @@
+/* 
+  Localizable.strings
+  CVApp
+
+  Created by Tomasz Załoga on 03/02/2021.
+  
+*/
+
+// MARK: - Common
+
+"CURRENTLY" = "currently";
+
+// MARK: - CV Headers
+
+"EXPERIENCE" = "Experience";
+"EDUCATION" = "Education";
+"SKILLS" = "Skills";
+"CONTACT" = "Contact";
+
+// MARK: - Skill Categories
+
+"PROGRAMMING_LANGUAGES" = "Programming Languages";
+"FRAMEWORKS" = "Frameworks";
+"TOOLS" = "Tools";
+"METHODOLOGY" = "Methodology";
+"SOFT_SKILLS" = "Soft skills";
+"LANGUAGES" = "Languages";
