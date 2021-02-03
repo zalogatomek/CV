@@ -96,6 +96,10 @@ final class StaticCVPolishRepository: CVRepository {
             .rxSwiftBuilder()
             .build()
         
+        let mapBox = NonLocalizedCVRepositorDataProvider
+            .mapBoxBuilder()
+            .build()
+        
         let optimizely = NonLocalizedCVRepositorDataProvider
             .optimizelyBuilder()
             .build()
@@ -177,7 +181,7 @@ final class StaticCVPolishRepository: CVRepository {
         
         return [
             swift, objectiveC,
-            iOSSDK, uiKit, swiftUi, rxSwift, optimizely, vapor,
+            iOSSDK, uiKit, swiftUi, rxSwift, mapBox, optimizely, vapor,
             xcode, git, jira, cocoaPods, carthage, swiftPackageManager,
             scrum, ddd, cleanCode, mvvm, unitTesting,
             proactivity, teamPlayer, problemSolving,

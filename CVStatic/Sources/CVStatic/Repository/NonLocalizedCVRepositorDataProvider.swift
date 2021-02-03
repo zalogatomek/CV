@@ -107,6 +107,13 @@ struct NonLocalizedCVRepositorDataProvider {
             .set(level: 0.7)
     }
     
+    static func mapBoxBuilder() -> SkillBuilder {
+        return SkillBuilder()
+            .set(kind: .framework)
+            .set(name: "MapBox")
+            .set(level: 0.7)
+    }
+    
     static func optimizelyBuilder() -> SkillBuilder {
         return SkillBuilder()
             .set(kind: .framework)
