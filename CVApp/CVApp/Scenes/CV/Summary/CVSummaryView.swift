@@ -41,7 +41,7 @@ struct CVSummaryView_Previews: PreviewProvider {
     }
     
     private static var previewViewModel: CVSummaryViewModel {
-        let userData = DependencyPreviewContainer.createCV().userData
+        let userData = CVDependencyContainer.previewCV.userData
         return CVSummaryViewModel(userData: userData)
     }
 }

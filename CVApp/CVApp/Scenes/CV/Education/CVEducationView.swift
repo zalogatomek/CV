@@ -47,7 +47,7 @@ struct CVEducationView_Previews: PreviewProvider {
     }
     
     private static var previewViewModel: CVEducationViewModel {
-        let education = DependencyPreviewContainer.createCV().education.first!
+        let education = CVDependencyContainer.previewCV.education.first!
         return CVEducationViewModel(education: education)
     }
 }

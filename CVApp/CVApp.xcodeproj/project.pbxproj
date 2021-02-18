@@ -12,11 +12,6 @@
 		9A0902662530F5BD0011E478 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0902652530F5BD0011E478 /* ContainerView.swift */; };
 		9A31683225719B0F00574342 /* View+ContentOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A31683125719B0F00574342 /* View+ContentOffset.swift */; };
 		9A31683825719D8900574342 /* View+SafeArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A31683725719D8900574342 /* View+SafeArea.swift */; };
-		9A46E344243BB699004A472E /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E343243BB699004A472E /* DependencyContainer.swift */; };
-		9A46E346243BB6FC004A472E /* DependencyContainer+CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E345243BB6FC004A472E /* DependencyContainer+CV.swift */; };
-		9A46E349243BB9DB004A472E /* DependencyPreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E348243BB9DB004A472E /* DependencyPreviewContainer.swift */; };
-		9A46E34B243BBA07004A472E /* DependencyPreviewContainer+CV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E34A243BBA07004A472E /* DependencyPreviewContainer+CV.swift */; };
-		9A46E34D243BBA2B004A472E /* CVSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E34C243BBA2B004A472E /* CVSceneFactory.swift */; };
 		9A46E350243BBCC9004A472E /* CVExperienceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E34F243BBCC9004A472E /* CVExperienceView.swift */; };
 		9A46E353243BBE73004A472E /* RangeDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A46E352243BBE73004A472E /* RangeDateFormatter.swift */; };
 		9A4BD2B724389FD80049BE17 /* CVDomain in Frameworks */ = {isa = PBXBuildFile; productRef = 9A4BD2B624389FD80049BE17 /* CVDomain */; };
@@ -48,6 +43,10 @@
 		9A62DE7E25C5902B0028163C /* CVSkillsGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62DE7D25C5902B0028163C /* CVSkillsGridView.swift */; };
 		9A62DE8225C590520028163C /* CVSkillsGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A62DE8125C590520028163C /* CVSkillsGridViewModel.swift */; };
 		9A717D5E243895B700AB3AD4 /* CVSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A717D5D243895B700AB3AD4 /* CVSummaryView.swift */; };
+		9A87429B25DF09C200E1BDF0 /* CVDependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A87429A25DF09C200E1BDF0 /* CVDependencyContainer.swift */; };
+		9A8742A025DF0AA400E1BDF0 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 9A87429F25DF0AA400E1BDF0 /* RxCocoa */; };
+		9A8742A225DF0AA400E1BDF0 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 9A8742A125DF0AA400E1BDF0 /* RxSwift */; };
+		9A8742A625DF0C8100E1BDF0 /* RxBlocking in Frameworks */ = {isa = PBXBuildFile; productRef = 9A8742A525DF0C8100E1BDF0 /* RxBlocking */; };
 		9ABC52F6253239E700FF128D /* CVSkillsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC52F5253239E700FF128D /* CVSkillsView.swift */; };
 		9ABC52FC253239F500FF128D /* CVSkillsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC52FB253239F500FF128D /* CVSkillsViewModel.swift */; };
 		9ABC530225323B8100FF128D /* SkillKind+DisplayName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC530125323B8100FF128D /* SkillKind+DisplayName.swift */; };
@@ -78,11 +77,6 @@
 		9A0902652530F5BD0011E478 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 		9A31683125719B0F00574342 /* View+ContentOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ContentOffset.swift"; sourceTree = "<group>"; };
 		9A31683725719D8900574342 /* View+SafeArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+SafeArea.swift"; sourceTree = "<group>"; };
-		9A46E343243BB699004A472E /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
-		9A46E345243BB6FC004A472E /* DependencyContainer+CV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DependencyContainer+CV.swift"; sourceTree = "<group>"; };
-		9A46E348243BB9DB004A472E /* DependencyPreviewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyPreviewContainer.swift; sourceTree = "<group>"; };
-		9A46E34A243BBA07004A472E /* DependencyPreviewContainer+CV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DependencyPreviewContainer+CV.swift"; sourceTree = "<group>"; };
-		9A46E34C243BBA2B004A472E /* CVSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSceneFactory.swift; sourceTree = "<group>"; };
 		9A46E34F243BBCC9004A472E /* CVExperienceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVExperienceView.swift; sourceTree = "<group>"; };
 		9A46E352243BBE73004A472E /* RangeDateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RangeDateFormatter.swift; sourceTree = "<group>"; };
 		9A4D603C2439E49C005F7F96 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
@@ -118,6 +112,7 @@
 		9A62DE7D25C5902B0028163C /* CVSkillsGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSkillsGridView.swift; sourceTree = "<group>"; };
 		9A62DE8125C590520028163C /* CVSkillsGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSkillsGridViewModel.swift; sourceTree = "<group>"; };
 		9A717D5D243895B700AB3AD4 /* CVSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSummaryView.swift; sourceTree = "<group>"; };
+		9A87429A25DF09C200E1BDF0 /* CVDependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVDependencyContainer.swift; sourceTree = "<group>"; };
 		9ABC52F5253239E700FF128D /* CVSkillsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSkillsView.swift; sourceTree = "<group>"; };
 		9ABC52FB253239F500FF128D /* CVSkillsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSkillsViewModel.swift; sourceTree = "<group>"; };
 		9ABC530125323B8100FF128D /* SkillKind+DisplayName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SkillKind+DisplayName.swift"; sourceTree = "<group>"; };
@@ -140,7 +135,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A4BD2B724389FD80049BE17 /* CVDomain in Frameworks */,
+				9A8742A625DF0C8100E1BDF0 /* RxBlocking in Frameworks */,
 				9A4BD2B924389FDB0049BE17 /* CVStatic in Frameworks */,
+				9A8742A225DF0AA400E1BDF0 /* RxSwift in Frameworks */,
+				9A8742A025DF0AA400E1BDF0 /* RxCocoa in Frameworks */,
 				9A590813246C86A80080BE24 /* CVDesign in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,21 +165,9 @@
 		9A46E342243BB65C004A472E /* DependencyContainer */ = {
 			isa = PBXGroup;
 			children = (
-				9A46E343243BB699004A472E /* DependencyContainer.swift */,
-				9A46E348243BB9DB004A472E /* DependencyPreviewContainer.swift */,
-				9A46E347243BB990004A472E /* CVScene */,
+				9A87429A25DF09C200E1BDF0 /* CVDependencyContainer.swift */,
 			);
 			path = DependencyContainer;
-			sourceTree = "<group>";
-		};
-		9A46E347243BB990004A472E /* CVScene */ = {
-			isa = PBXGroup;
-			children = (
-				9A46E34C243BBA2B004A472E /* CVSceneFactory.swift */,
-				9A46E345243BB6FC004A472E /* DependencyContainer+CV.swift */,
-				9A46E34A243BBA07004A472E /* DependencyPreviewContainer+CV.swift */,
-			);
-			path = CVScene;
 			sourceTree = "<group>";
 		};
 		9A46E34E243BBCA7004A472E /* Experience */ = {
@@ -464,6 +450,9 @@
 				9A4BD2B624389FD80049BE17 /* CVDomain */,
 				9A4BD2B824389FDB0049BE17 /* CVStatic */,
 				9A590812246C86A80080BE24 /* CVDesign */,
+				9A87429F25DF0AA400E1BDF0 /* RxCocoa */,
+				9A8742A125DF0AA400E1BDF0 /* RxSwift */,
+				9A8742A525DF0C8100E1BDF0 /* RxBlocking */,
 			);
 			productName = "CV App";
 			productReference = 9A5CCF8024263251009006CD /* CVApp.app */;
@@ -515,6 +504,9 @@
 				pl,
 			);
 			mainGroup = 9A5CCF7724263251009006CD;
+			packageReferences = (
+				9A87429E25DF0AA400E1BDF0 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 9A5CCF8124263251009006CD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -577,20 +569,17 @@
 				9ABC531F25324F7400FF128D /* CircleButton.swift in Sources */,
 				9A62DE8225C590520028163C /* CVSkillsGridViewModel.swift in Sources */,
 				9ABC52F6253239E700FF128D /* CVSkillsView.swift in Sources */,
-				9A46E346243BB6FC004A472E /* DependencyContainer+CV.swift in Sources */,
 				9ABC531125324A1800FF128D /* CVContactItem.swift in Sources */,
 				9A590810246C86870080BE24 /* Color+Theme.swift in Sources */,
 				9A5CCF8424263251009006CD /* AppDelegate.swift in Sources */,
 				9A5571422539BE2000CB2947 /* EdgeInsets+Convenience.swift in Sources */,
 				9A09025C2530F04C0011E478 /* CVEducationViewModel.swift in Sources */,
 				9A31683825719D8900574342 /* View+SafeArea.swift in Sources */,
-				9A46E34D243BBA2B004A472E /* CVSceneFactory.swift in Sources */,
 				9ABC531525324A7A00FF128D /* CVContactItemFactory.swift in Sources */,
 				9A575B78252E4ED500DE722B /* CVViewItemFactory.swift in Sources */,
 				9ABC52FC253239F500FF128D /* CVSkillsViewModel.swift in Sources */,
 				9A5CCF8624263251009006CD /* SceneDelegate.swift in Sources */,
 				9A46E353243BBE73004A472E /* RangeDateFormatter.swift in Sources */,
-				9A46E34B243BBA07004A472E /* DependencyPreviewContainer+CV.swift in Sources */,
 				9A59081A246C8A6C0080BE24 /* CGFloat+Spacing.swift in Sources */,
 				9ADFEFB02555F90000F6A0A9 /* View+Hidden.swift in Sources */,
 				9A717D5E243895B700AB3AD4 /* CVSummaryView.swift in Sources */,
@@ -603,12 +592,11 @@
 				9AED6B34252E5FE6000D4808 /* CardView.swift in Sources */,
 				9A590817246C89A20080BE24 /* String+Hex.swift in Sources */,
 				9ABC531925324E5600FF128D /* CVContactView.swift in Sources */,
+				9A87429B25DF09C200E1BDF0 /* CVDependencyContainer.swift in Sources */,
 				9A4D606D2439EA11005F7F96 /* CircleImage.swift in Sources */,
-				9A46E344243BB699004A472E /* DependencyContainer.swift in Sources */,
 				9A31683225719B0F00574342 /* View+ContentOffset.swift in Sources */,
 				9A575B76252E4E7B00DE722B /* CVViewItem.swift in Sources */,
 				9A0902662530F5BD0011E478 /* ContainerView.swift in Sources */,
-				9A46E349243BB9DB004A472E /* DependencyPreviewContainer.swift in Sources */,
 				9A62DE7E25C5902B0028163C /* CVSkillsGridView.swift in Sources */,
 				9A4FE4E1246F2EA60012A6BF /* Font+Theme.swift in Sources */,
 				9A4FE4E8246F358B0012A6BF /* SectionHeader.swift in Sources */,
@@ -896,6 +884,17 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCRemoteSwiftPackageReference section */
+		9A87429E25DF0AA400E1BDF0 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
 /* Begin XCSwiftPackageProductDependency section */
 		9A4BD2B624389FD80049BE17 /* CVDomain */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -908,6 +907,21 @@
 		9A590812246C86A80080BE24 /* CVDesign */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = CVDesign;
+		};
+		9A87429F25DF0AA400E1BDF0 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A87429E25DF0AA400E1BDF0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		9A8742A125DF0AA400E1BDF0 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A87429E25DF0AA400E1BDF0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		9A8742A525DF0C8100E1BDF0 /* RxBlocking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A87429E25DF0AA400E1BDF0 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxBlocking;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

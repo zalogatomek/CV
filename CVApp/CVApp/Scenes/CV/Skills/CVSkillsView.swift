@@ -39,7 +39,7 @@ struct CVSkillsView_Previews: PreviewProvider {
     }
     
     private static var previewViewModel: CVSkillsViewModel {
-        let skill = DependencyPreviewContainer.createCV().skills.first!
+        let skill = CVDependencyContainer.previewCV.skills.first!
         return CVSkillsViewModel(skills: [skill])
     }
 }

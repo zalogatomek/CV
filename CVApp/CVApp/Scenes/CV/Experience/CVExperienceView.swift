@@ -40,7 +40,7 @@ struct CVExperienceView_Previews: PreviewProvider {
     }
     
     private static var previewViewModel: CVExperienceViewModel {
-        let experience = DependencyPreviewContainer.createCV().workExperience.first!
+        let experience = CVDependencyContainer.previewCV.workExperience.first!
         return CVExperienceViewModel(experience: experience)
     }
 }

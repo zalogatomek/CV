@@ -151,6 +151,6 @@ struct CVView: View {
 
 struct CVView_Previews: PreviewProvider {
     static var previews: some View {
-        return CVView(viewModel: DependencyPreviewContainer.createCvViewModel())
+        return CVView(viewModel: CVDependencyContainer.previewCVViewModel)
     }
 }

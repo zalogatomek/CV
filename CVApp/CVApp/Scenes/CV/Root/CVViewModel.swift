@@ -3,26 +3,30 @@
 //
 
 import Foundation
+import RxSwift
 import CVDomain
 
 final class CVViewModel {
     
     // MARK: - Properties
     
-    private let useCase: CVUseCase
+    private let api: CVAPI
     private var cv: CV?
+    private let disposeBag: DisposeBag = DisposeBag()
     
     // MARK: - Lifecycle
     
-    init(useCase: CVUseCase) {
-        self.useCase = useCase
+    init(api: CVAPI) {
+        self.api = api
         setupCV()
     }
     
     private func setupCV() {
-        useCase.fetchCV(completion: { cv in
-            self.cv = cv
-        })
+        api.cv()
+            .subscribe(onSuccess: { (cv) in
+                self.cv = cv
+            })
+            .disposed(by: disposeBag)
     }
     
     // MARK: - Output

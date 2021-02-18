@@ -59,7 +59,7 @@ struct CVContactView_Previews: PreviewProvider {
     }
     
     private static var previewViewModel: CVContactViewModel {
-        let contacts = DependencyPreviewContainer.createCV().userData.contacts
+        let contacts = CVDependencyContainer.previewCV.userData.contacts
         return CVContactViewModel(contacts: contacts)
     }
 }

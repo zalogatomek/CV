@@ -7,7 +7,7 @@ import RxSwift
 import CVDomain
 
 public extension CVAPIFactory {
-    static func staticAPI(locale: Locale) -> CVAPI {
+    static func createStatic(locale: Locale) -> CVAPI {
         switch LanguageFactory.language(with: locale) {
         case .english:
             return create(repository: StaticCVRepository())
