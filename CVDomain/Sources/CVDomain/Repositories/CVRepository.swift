@@ -2,8 +2,8 @@
 //  Created by Tomasz Załoga on 02/04/2020.
 //  
 
-import Foundation
+import RxSwift
 
 public protocol CVRepository {
-    func fetchCV(completion: (CV?) -> Void)
+    func cv() -> Single<CV>
 }
