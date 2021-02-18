@@ -6,19 +6,23 @@ import PackageDescription
 let package = Package(
     name: "CVStatic",
     products: [
-        .library(
-            name: "CVStatic",
-            targets: ["CVStatic"]),
+        .library(name: "CVStatic", targets: ["CVStatic"])
     ],
     dependencies: [
-        .package(path: "CVDomain")
+        .package(path: "CVDomain"),
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.0.0"))
     ],
     targets: [
         .target(
             name: "CVStatic",
-            dependencies: ["CVDomain"]),
+            dependencies: [
+                "CVDomain",
+                .product(name: "RxSwift", package: "RxSwift")
+            ]
+        ),
         .testTarget(
             name: "CVStaticTests",
-            dependencies: ["CVStatic", "CVDomain"]),
+            dependencies: ["CVStatic", "CVDomain"]
+        )
     ]
 )
