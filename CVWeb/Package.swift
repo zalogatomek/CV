@@ -1,4 +1,5 @@
-// swift-tools-version:5.2
+// swift-tools-version:5.3
+
 import PackageDescription
 
 let package = Package(
@@ -11,15 +12,24 @@ let package = Package(
         .package(url: "https://github.com/vapor/leaf.git", from: "4.0.0")
     ],
     targets: [
-        .target(name: "App", dependencies: [
-            .product(name: "Vapor", package: "vapor"),
-            .product(name: "Leaf", package: "leaf")
-        ]),
-        .target(name: "Run", dependencies: [
-            .target(name: "App")
-        ]),
-        .testTarget(name: "App-Tests", dependencies: [
-            .target(name: "App")
-        ])
+        .target(
+            name: "App",
+            dependencies: [
+                .product(name: "Vapor", package: "vapor"),
+                .product(name: "Leaf", package: "leaf")
+            ]
+        ),
+        .target(
+            name: "Run",
+            dependencies: [
+                .target(name: "App")
+            ]
+        ),
+        .testTarget(
+            name: "App-Tests",
+            dependencies: [
+                .target(name: "App")
+            ]
+        )
     ]
 )
