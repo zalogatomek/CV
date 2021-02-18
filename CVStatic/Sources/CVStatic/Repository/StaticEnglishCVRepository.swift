@@ -3,20 +3,21 @@
 //
 
 import Foundation
+import RxSwift
 import CVDomain
 
 final class StaticCVRepository: CVRepository {
     
     // MARK: - CVRepository
     
-    func fetchCV(completion: (CV?) -> Void) {
+    func cv() -> Single<CV> {
         let cv = CV(
             userData: userData(),
             education: education(),
             workExperience: workExperience(),
             skills: skills()
-        )
-        completion(cv)
+        )!
+        return .just(cv)
     }
     
     // MARK: - UserData

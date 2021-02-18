@@ -9,15 +9,15 @@ let package = Package(
         .library(name: "CVStatic", targets: ["CVStatic"])
     ],
     dependencies: [
-        .package(path: "CVDomain"),
-        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.0.0"))
+        .package(url: "https://github.com/ReactiveX/RxSwift.git", .upToNextMajor(from: "6.0.0")),
+        .package(path: "CVDomain")
     ],
     targets: [
         .target(
             name: "CVStatic",
             dependencies: [
-                "CVDomain",
-                .product(name: "RxSwift", package: "RxSwift")
+                .product(name: "RxSwift", package: "RxSwift"),
+                "CVDomain"
             ]
         ),
         .testTarget(
