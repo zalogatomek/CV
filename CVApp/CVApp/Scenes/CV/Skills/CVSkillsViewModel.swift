@@ -5,6 +5,24 @@
 import Foundation
 import CVDomain
 
+struct CVSkillsViewData {
+    let title: String
+    let description: String?
+}
+
+let commaSeparator: String = ", "
+
+func createSkills(with skills: [Skill]) -> CVSkillsViewData {
+    let kinds = skills.map { $0.kind.displayName }
+    let title = Set(kinds).joined(separator: commaSeparator)
+    let description = skills.map { $0.name.value }.joined(separator: commaSeparator)
+    
+    return CVSkillsViewData(
+        title: title,
+        description: description
+    )
+}
+
 final class CVSkillsViewModel {
     
     // MARK: - Contants

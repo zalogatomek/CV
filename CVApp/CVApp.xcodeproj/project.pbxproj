@@ -52,7 +52,7 @@
 		9ABC52FC253239F500FF128D /* CVSkillsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC52FB253239F500FF128D /* CVSkillsViewModel.swift */; };
 		9ABC530225323B8100FF128D /* SkillKind+DisplayName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC530125323B8100FF128D /* SkillKind+DisplayName.swift */; };
 		9ABC53072532408B00FF128D /* CVContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC53062532408B00FF128D /* CVContactViewModel.swift */; };
-		9ABC531125324A1800FF128D /* CVContactItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC531025324A1800FF128D /* CVContactItem.swift */; };
+		9ABC531125324A1800FF128D /* CVContactViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC531025324A1800FF128D /* CVContactViewData.swift */; };
 		9ABC531525324A7A00FF128D /* CVContactItemFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC531425324A7A00FF128D /* CVContactItemFactory.swift */; };
 		9ABC531925324E5600FF128D /* CVContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC531825324E5600FF128D /* CVContactView.swift */; };
 		9ABC531F25324F7400FF128D /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ABC531E25324F7400FF128D /* CircleButton.swift */; };
@@ -119,7 +119,7 @@
 		9ABC52FB253239F500FF128D /* CVSkillsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVSkillsViewModel.swift; sourceTree = "<group>"; };
 		9ABC530125323B8100FF128D /* SkillKind+DisplayName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SkillKind+DisplayName.swift"; sourceTree = "<group>"; };
 		9ABC53062532408B00FF128D /* CVContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVContactViewModel.swift; sourceTree = "<group>"; };
-		9ABC531025324A1800FF128D /* CVContactItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVContactItem.swift; sourceTree = "<group>"; };
+		9ABC531025324A1800FF128D /* CVContactViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVContactViewData.swift; sourceTree = "<group>"; };
 		9ABC531425324A7A00FF128D /* CVContactItemFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVContactItemFactory.swift; sourceTree = "<group>"; };
 		9ABC531825324E5600FF128D /* CVContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVContactView.swift; sourceTree = "<group>"; };
 		9ABC531E25324F7400FF128D /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
@@ -418,7 +418,7 @@
 			children = (
 				9ABC53062532408B00FF128D /* CVContactViewModel.swift */,
 				9ABC531825324E5600FF128D /* CVContactView.swift */,
-				9ABC531025324A1800FF128D /* CVContactItem.swift */,
+				9ABC531025324A1800FF128D /* CVContactViewData.swift */,
 				9ABC531425324A7A00FF128D /* CVContactItemFactory.swift */,
 			);
 			path = Contact;
@@ -572,7 +572,7 @@
 				9ABC531F25324F7400FF128D /* CircleButton.swift in Sources */,
 				9A62DE8225C590520028163C /* CVSkillsGridViewModel.swift in Sources */,
 				9ABC52F6253239E700FF128D /* CVSkillsView.swift in Sources */,
-				9ABC531125324A1800FF128D /* CVContactItem.swift in Sources */,
+				9ABC531125324A1800FF128D /* CVContactViewData.swift in Sources */,
 				9A590810246C86870080BE24 /* Color+Theme.swift in Sources */,
 				9A5CCF8424263251009006CD /* AppDelegate.swift in Sources */,
 				9A5571422539BE2000CB2947 /* EdgeInsets+Convenience.swift in Sources */,

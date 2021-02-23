@@ -5,6 +5,25 @@
 import Foundation
 import CVDomain
 
+struct CVSummaryViewData {
+    let name: String
+    let summary: String?
+    let imageName: String?
+}
+
+func createSummary(with userData: UserData) -> CVSummaryViewData {
+    return CVSummaryViewData(
+        name: "\(userData.firstName) \(userData.lastName)",
+        summary: userData.summary,
+        imageName: summaryImageName(with: userData)
+    )
+}
+
+func summaryImageName(with userData: UserData) -> String? {
+    guard case .asset(let name) = userData.photo ?? userData.avatar else { return nil }
+    return name
+}
+
 final class CVSummaryViewModel {
     
     // MARK: - Properties

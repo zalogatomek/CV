@@ -5,6 +5,25 @@
 import Foundation
 import CVDomain
 
+struct CVExperienceViewData {
+    let title: String
+    let summary: String?
+    let date: String
+}
+
+func createExperience(with experience: Experience) -> CVExperienceViewData {
+    let title = "\(experience.role.value) \("AT".localized) \(experience.company.value)"
+    let date = RangeDateFormatter().string(
+        from: experience.dateRange.startDate,
+        to: experience.dateRange.endDate
+    )
+    return CVExperienceViewData(
+        title: title,
+        summary: experience.summary,
+        date: date
+    )
+}
+
 final class CVExperienceViewModel {
     
     // MARK: - Properties

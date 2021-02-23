@@ -5,17 +5,17 @@
 import UIKit
 import CVDomain
 
-struct CVContactItemFactory {
+struct CVContactViewDataFactory {
     
     // MARK: - Create
     
-    static func create(with contacts: [UserData.Contact]) -> [CVContactItem] {
+    static func create(with contacts: [UserData.Contact]) -> [CVContactViewData] {
         return contacts.compactMap { contact in
             guard let url = url(for: contact.kind, link: contact.link),
                   let displayableUrl = displayableUrl(for: contact.kind, link: contact.link)
             else { return nil }
             
-            return CVContactItem(
+            return CVContactViewData(
                 imageName: imageName(with: contact.image),
                 url: url,
                 displayableUrl: displayableUrl

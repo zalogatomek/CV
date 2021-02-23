@@ -19,7 +19,7 @@ final class CVContactViewModel {
     
     // MARK: - Output
     
-    var items: [CVContactItem] {
-        CVContactItemFactory.create(with: contacts)
+    var items: [CVContactViewData] {
+        CVContactViewDataFactory.create(with: contacts)
     }
 }
