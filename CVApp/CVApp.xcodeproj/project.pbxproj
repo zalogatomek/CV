@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A03DEA725E59F5500E4BEE5 /* CVStateObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A03DEA625E59F5500E4BEE5 /* CVStateObservable.swift */; };
 		9A09025C2530F04C0011E478 /* CVEducationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A09025B2530F04C0011E478 /* CVEducationViewModel.swift */; };
 		9A0902622530F0570011E478 /* CVEducationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0902612530F0570011E478 /* CVEducationView.swift */; };
 		9A0902662530F5BD0011E478 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A0902652530F5BD0011E478 /* ContainerView.swift */; };
@@ -72,6 +73,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A03DEA625E59F5500E4BEE5 /* CVStateObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVStateObservable.swift; sourceTree = "<group>"; };
 		9A09025B2530F04C0011E478 /* CVEducationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationViewModel.swift; sourceTree = "<group>"; };
 		9A0902612530F0570011E478 /* CVEducationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CVEducationView.swift; sourceTree = "<group>"; };
 		9A0902652530F5BD0011E478 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 				9A5CCF8724263251009006CD /* CVView.swift */,
 				9A575B75252E4E7B00DE722B /* CVViewItem.swift */,
 				9A575B77252E4ED500DE722B /* CVViewItemFactory.swift */,
+				9A03DEA625E59F5500E4BEE5 /* CVStateObservable.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -583,6 +586,7 @@
 				9A59081A246C8A6C0080BE24 /* CGFloat+Spacing.swift in Sources */,
 				9ADFEFB02555F90000F6A0A9 /* View+Hidden.swift in Sources */,
 				9A717D5E243895B700AB3AD4 /* CVSummaryView.swift in Sources */,
+				9A03DEA725E59F5500E4BEE5 /* CVStateObservable.swift in Sources */,
 				9A5CCF8824263251009006CD /* CVView.swift in Sources */,
 				9A0902622530F0570011E478 /* CVEducationView.swift in Sources */,
 				9A4FE4EA246F3A380012A6BF /* CVExperienceViewModel.swift in Sources */,
