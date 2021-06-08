@@ -29,7 +29,7 @@ final class StaticCVRepository: CVRepository {
     }
     
     private var summary: String {
-        "I am a software developer with 7 years of experience, focused on developing applications for the iOS platform for 5 years. I have experience in both one-man and large agile teams. I feel best writing in Swift, but I'm not afraid of Objective-C either. Recently, I have been enthusiastically expanding my knowledge about Vapor - a web framework written in Swift."
+        "I am an iOS Developer with over 7 years of experience in creating mobile apps. I have worked both in one-man projects and in large scrum teams. I love writing in Swift, spending some of my spare time developing applications in this language for other platforms."
     }
     
     // MARK: - Education
@@ -60,7 +60,7 @@ final class StaticCVRepository: CVRepository {
     }
     
     var siroccoSummary: String {
-        "From the very beginning, my adventure with Sirocco was related to work on the iOS application for Toyota and Lexus. Working in a large scrum team, I was SPOC (Single Point of Contact) for over half a year, being the contact person between the client and the development team."
+        "From the very beginning, my adventure with Sirocco was related to work on the iOS application for Toyota and Lexus. Working in a large scrum team, I was a Single Point of Contact for over half a year, being the contact person between the client and the development team."
     }
     
     var ipixSummary: String {
@@ -159,7 +159,6 @@ final class StaticCVRepository: CVRepository {
         let teamPlayer = NonLocalizedCVRepositorDataProvider
             .teamPlayerBuilder()
             .set(name: "Team player")
-            .set(level: 0.8)
             .build()
         
         let problemSolving = NonLocalizedCVRepositorDataProvider
