@@ -29,7 +29,7 @@ final class StaticCVPolishRepository: CVRepository {
     }
     
     private var summary: String {
-        "Jestem software developerem z 7 letnim stażem, od 5 lat skupionym na tworzeniu aplikacji na platformę iOS. Posiadam doświadczenie zarówno w jednoosobowych jak i dużych zespołach scrumowych. Najlepiej czuję się pisząc w Swift, ale nie boję się również Objective-C. Ostatnio z entuzjazmem poszerzam swoją wiedzę o Vapor - framework dla tworzenia aplikacji webowych w Swifcie."
+        "Jestem programistą iOS z ponad 7-letnim doświadczeniem w tworzeniu aplikacji mobilnych. Pracowałem zarówno w samodzielnych projektach jak i w dużych zespołach scrumowych. Uwielbiam pisać kod w Swift'cie, część swojego wolnego czasu poświęcając na tworzenie aplikacji w tym języku na inne platformy."
     }
     
     // MARK: - Education
@@ -62,7 +62,7 @@ final class StaticCVPolishRepository: CVRepository {
     }
     
     var siroccoSummary: String {
-        "Moja przygoda z Sirocco od początku związana jest z pracą nad aplikacją iOS dla Toyoty oraz Lexusa. Pracując w dużym zespole scrumowym, przez okres ponad pół roku pełniłem rolę SPOCa (Single Point of Contact), będąc osobą kontaktową pomiędzy klientem a zespołem developerskim."
+        "Moja przygoda z Sirocco od początku związana jest z pracą nad aplikacją iOS dla Toyoty oraz Lexusa. Pracując w dużym zespole scrumowym, przez okres ponad pół roku pełniłem rolę osoby kontaktowej (Single Point of Contact), pomiędzy klientem a zespołem developerskim."
     }
     
     var ipixSummary: String {
@@ -161,7 +161,6 @@ final class StaticCVPolishRepository: CVRepository {
         let teamPlayer = NonLocalizedCVRepositorDataProvider
             .teamPlayerBuilder()
             .set(name: "Praca zespołowa")
-            .set(level: 0.8)
             .build()
         
         let problemSolving = NonLocalizedCVRepositorDataProvider
