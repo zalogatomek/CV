@@ -21,7 +21,7 @@ final class CVExperienceViewModel {
     // MARK: - Output
     
     var title: String {
-        "\(experience.role.value) at \(experience.company.value)"
+        "\(experience.role.value) \("AT".localized) \(experience.company.value)"
     }
     
     var summary: String? {
