@@ -110,8 +110,6 @@ struct CVView: View {
     
     private func sectionHeader(with title: String) -> AnyView {
         let sectionHeader = SectionHeader(title)
-            // TODO: PDF Support - bigger side margins (all cells)
-            .padding(.horizontal, .wide)
             .padding(.top, .small)
         
         return AnyView(sectionHeader)
@@ -120,7 +118,7 @@ struct CVView: View {
     private func summaryView(with viewModel: CVSummaryViewModel) -> AnyView {
         let summaryView = CVSummaryView(viewModel: viewModel)
         let containerView = ContainerView(summaryView)
-            .padding(.horizontal, .standard + .small)
+            .padding(.horizontal, 2 * .wide)
             .padding(.top, -.standard)
             .background(Color.accentPrimary)
 
@@ -130,7 +128,7 @@ struct CVView: View {
     private func experienceView(with viewModel: CVExperienceViewModel) -> AnyView {
         let experienceView = CVExperienceView(viewModel: viewModel)
         let cardView = CardView(experienceView)
-            .padding(.horizontal, .wide)
+            .padding(.horizontal, 2 * .wide)
             
         return AnyView(cardView)
     }
@@ -138,21 +136,21 @@ struct CVView: View {
     private func educationView(with viewModel: CVEducationViewModel) -> AnyView {
         let educationView = CVEducationView(viewModel: viewModel)
         let cardView = CardView(educationView)
-            .padding(.horizontal, .wide)
+            .padding(.horizontal, 2 * .wide)
             
         return AnyView(cardView)
     }
     
     private func skillsGridView(with viewModel: CVSkillsGridViewModel) -> AnyView {
         let skillsView = CVSkillsGridView(viewModel: viewModel)
-            .padding(.horizontal, .wide)
+            .padding(.horizontal, 2 * .wide)
             
         return AnyView(skillsView)
     }
     
     private func contactView(with viewModel: CVContactViewModel) -> AnyView {
         let contactView = CVContactView(viewModel: viewModel)
-            .padding(.horizontal, .wide)
+            .padding(.horizontal, 2 * .wide)
             .padding(.bottom, safeArea.bottom + .standard)
             
         return AnyView(contactView)
