@@ -10,24 +10,38 @@ struct CVExperienceView: View {
     // MARK: - Properties
     
     let viewModel: CVExperienceViewModel
+
+    @Environment(\.horizontalSizeClass) var sizeClass
     
     // MARK: - View
     
     var body: some View {
         VStack(alignment: .leading, spacing: .small) {
-            Text(viewModel.title)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .textStyle(.paragraphBold)
-            
+            HStack(spacing: .small) {
+                Text(viewModel.title)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .textStyle(.paragraphBold)
+
+                Spacer(minLength: 0.0)
+
+                if sizeClass == .regular {
+                    Text(viewModel.date)
+                        .frame(alignment: .trailing)
+                        .textStyle(.paragraph, .secondary)
+                }
+            }
+
             if let summary = viewModel.summary {
                 Text(summary)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .textStyle(.paragraph)
             }
-            
-            Text(viewModel.date)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .textStyle(.paragraph, .secondary)
+
+            if sizeClass != .regular {
+                Text(viewModel.date)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .textStyle(.paragraph, .secondary)
+            }
         }
     }
 }
