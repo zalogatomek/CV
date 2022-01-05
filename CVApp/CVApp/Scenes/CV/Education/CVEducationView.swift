@@ -10,31 +10,49 @@ struct CVEducationView: View {
     // MARK: - Properties
     
     let viewModel: CVEducationViewModel
+
+    @Environment(\.horizontalSizeClass) var sizeClass
     
     // MARK: - View
     
     var body: some View {
         VStack(alignment: .leading, spacing: .small) {
-            Text(viewModel.title)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .font(.paragraphBold)
-                .textStyle(.paragraphBold)
-        
-            if let subtitle = viewModel.subtitle {
-                Text(subtitle)
+            HStack(spacing: .small) {
+                Text(viewModel.title)
                     .frame(maxWidth: .infinity, alignment: .leading)
+                    .font(.paragraphBold)
                     .textStyle(.paragraphBold)
+
+                Spacer(minLength: 0.0)
+
+                if sizeClass == .regular {
+                    Text(viewModel.date)
+                        .frame(alignment: .trailing)
+                        .textStyle(.paragraph, .secondary)
+                }
             }
-            
-            if let summary = viewModel.summary {
-                Text(summary)
+
+            HStack(spacing: .small) {
+                if let subtitle = viewModel.subtitle {
+                    Text(subtitle)
+                        .frame(alignment: .leading)
+                        .textStyle(.paragraphBold)
+                }
+
+                if let summary = viewModel.summary {
+                    Text(summary)
+                        .frame(alignment: .leading)
+                        .textStyle(.paragraph)
+                }
+
+                Spacer()
+            }
+
+            if sizeClass != .regular {
+                Text(viewModel.date)
                     .frame(maxWidth: .infinity, alignment: .leading)
-                    .textStyle(.paragraph)
+                    .textStyle(.paragraph, .secondary)
             }
-            
-            Text(viewModel.date)
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .textStyle(.paragraph, .secondary)
         }
     }
 }

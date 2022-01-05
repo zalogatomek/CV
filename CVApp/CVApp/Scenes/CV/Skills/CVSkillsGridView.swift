@@ -10,7 +10,9 @@ struct CVSkillsGridView: View {
     // MARK: - Properties
     
     let viewModel: CVSkillsGridViewModel
+
     @Environment(\.horizontalSizeClass) var sizeClass
+
     var columns: [GridItem] {
         if sizeClass == .regular {
             return [
