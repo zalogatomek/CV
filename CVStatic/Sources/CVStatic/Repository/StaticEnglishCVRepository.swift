@@ -29,7 +29,7 @@ final class StaticCVRepository: CVRepository {
     }
     
     private var summary: String {
-        "I am an iOS Developer with over 7 years of experience in creating mobile apps. I have worked both in one-man projects and in large scrum teams. I love writing in Swift, spending some of my spare time developing applications in this language for other platforms."
+        "I am a software developer with 8 years of experience, focused on developing applications for the iOS platform for 6 years. I love writing in Swift, spending some of my spare time developing applications in this language for other platforms."
     }
     
     // MARK: - Education
@@ -48,6 +48,10 @@ final class StaticCVRepository: CVRepository {
     // MARK: - Work experience
     
     private func workExperience() -> [Experience] {
+        let alsoft = NonLocalizedCVRepositorDataProvider
+            .alsoftBuilder()
+            .set(summary: alsoftSummary)
+            .build()
         let sirocco = NonLocalizedCVRepositorDataProvider
             .siroccoBuilder()
             .set(summary: siroccoSummary)
@@ -56,7 +60,11 @@ final class StaticCVRepository: CVRepository {
             .ipixBuilder()
             .set(summary: ipixSummary)
             .build()
-        return [sirocco, ipix].compactMap { $0 }
+        return [alsoft, sirocco, ipix].compactMap { $0 }
+    }
+
+    var alsoftSummary: String {
+        "At Alsoft I'm working in a large scrum team developing the Colgate hum app."
     }
     
     var siroccoSummary: String {
@@ -64,7 +72,7 @@ final class StaticCVRepository: CVRepository {
     }
     
     var ipixSummary: String {
-        "My first job was related to gaining experience in several technologies for several clients. I participated in the development of the desktop application in C++ for Polkomtel (Mobile phone network operator), I wrote database functions in SQL for DPD, I also created NCL (NCAR Command Language) scripts for IMGW (Polish Meteorological Institute).\nHowever, I gained the most experience (and satisfaction) by creating small internal iOS applications and associated my career with this technology."
+        "My first job was related to gaining experience in several technologies for several clients. I participated in the development of the desktop application in C++, I wrote database functions in SQL, I also created NCL (NCAR Command Language).\nHowever, I gained the most experience (and satisfaction) by creating small internal iOS applications and associated my career with this technology."
     }
     
     // MARK: - Skills

@@ -29,7 +29,7 @@ final class StaticCVPolishRepository: CVRepository {
     }
     
     private var summary: String {
-        "Jestem programistą iOS z ponad 7-letnim doświadczeniem w tworzeniu aplikacji mobilnych. Pracowałem zarówno w samodzielnych projektach jak i w dużych zespołach scrumowych. Uwielbiam pisać kod w Swift'cie, część swojego wolnego czasu poświęcając na tworzenie aplikacji w tym języku na inne platformy."
+        "Jestem software developerem z 8 letnim stażem, od 6 lat skupionym na tworzeniu aplikacji na platformę iOS. Uwielbiam pisać kod w Swift'cie, część swojego wolnego czasu poświęcając na tworzenie aplikacji w tym języku na inne platformy."
     }
     
     // MARK: - Education
@@ -48,17 +48,24 @@ final class StaticCVPolishRepository: CVRepository {
     // MARK: - Work experience
     
     private func workExperience() -> [Experience] {
+        let alsoft = NonLocalizedCVRepositorDataProvider
+            .alsoftBuilder()
+            .set(summary: alsoftSummary)
+            .build()
         let sirocco = NonLocalizedCVRepositorDataProvider
             .siroccoBuilder()
             .set(summary: siroccoSummary)
             .build()
-        
         let ipix = NonLocalizedCVRepositorDataProvider
             .ipixBuilder()
             .set(summary: ipixSummary)
             .build()
         
-        return [sirocco, ipix].compactMap { $0 }
+        return [alsoft, sirocco, ipix].compactMap { $0 }
+    }
+
+    var alsoftSummary: String {
+        "W Alsoft pracuje w dużym zespole scrumowym, będąc jednym z developerów odpowiedzialnym za rozwój aplikacji Colgate hum."
     }
     
     var siroccoSummary: String {

@@ -20,7 +20,7 @@ struct NonLocalizedCVRepositorDataProvider {
                  link: "zalogatomek@gmail.com",
                  imageName: "Email")
             .set(contactKind: .phone,
-                 link: "507-891-204",
+                 link: "+48 507 891 204",
                  imageName: "Phone")
             .set(contactKind: .webpage,
                  link: "http://zalogatomek.com",
@@ -47,11 +47,19 @@ struct NonLocalizedCVRepositorDataProvider {
     }
     
     // MARK: - Work Experience
+
+    static func alsoftBuilder() -> ExperienceBuilder {
+        return ExperienceBuilder()
+            .set(role: "iOS Developer")
+            .set(startDate: date(year: 2021, month: 11, day: 2))
+            .set(company: "Alsoft")
+    }
     
     static func siroccoBuilder() -> ExperienceBuilder {
         return ExperienceBuilder()
             .set(role: "iOS Developer")
             .set(startDate: date(year: 2018, month: 3, day: 26))
+            .set(endDate: date(year: 2021, month: 10, day: 31))
             .set(company: "Sirocco Mobile")
     }
     
@@ -76,7 +84,7 @@ struct NonLocalizedCVRepositorDataProvider {
         return SkillBuilder()
             .set(kind: .programmingLanguage)
             .set(name: "Objective-C")
-            .set(level: 0.6)
+            .set(level: 0.5)
     }
     
     static func iOSSDKBuilder() -> SkillBuilder {
@@ -97,7 +105,7 @@ struct NonLocalizedCVRepositorDataProvider {
         return SkillBuilder()
             .set(kind: .framework)
             .set(name: "SwiftUI")
-            .set(level: 0.4)
+            .set(level: 0.5)
     }
     
     static func rxSwiftBuilder() -> SkillBuilder {
