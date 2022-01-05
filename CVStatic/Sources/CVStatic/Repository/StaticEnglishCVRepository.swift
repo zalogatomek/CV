@@ -72,7 +72,7 @@ final class StaticCVRepository: CVRepository {
     }
     
     var ipixSummary: String {
-        "My first job was related to gaining experience in several technologies for several clients. I participated in the development of the desktop application in C++, I wrote database functions in SQL, I also created NCL (NCAR Command Language).\nHowever, I gained the most experience (and satisfaction) by creating small internal iOS applications and associated my career with this technology."
+        "My first job was related to gaining experience in several technologies for several clients. I participated in the development of the desktop application in C++, I wrote database functions in SQL, I also created NCL (NCAR Command Language) scripts.\nHowever, I gained the most experience (and satisfaction) by creating small internal iOS applications and associated my career with this technology."
     }
     
     // MARK: - Skills

@@ -20,7 +20,7 @@ struct NonLocalizedCVRepositorDataProvider {
                  link: "zalogatomek@gmail.com",
                  imageName: "Email")
             .set(contactKind: .phone,
-                 link: "+48 507 891 204",
+                 link: "507-891-204",
                  imageName: "Phone")
             .set(contactKind: .webpage,
                  link: "http://zalogatomek.com",
